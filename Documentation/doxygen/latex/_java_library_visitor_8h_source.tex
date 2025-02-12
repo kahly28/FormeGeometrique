@@ -1,0 +1,191 @@
+\doxysection{Java\+Library\+Visitor.\+h}
+\hypertarget{_java_library_visitor_8h_source}{}\label{_java_library_visitor_8h_source}\index{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Visitor/JavaLibraryVisitor.h@{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Visitor/JavaLibraryVisitor.h}}
+\mbox{\hyperlink{_java_library_visitor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Ahmet\ on\ 22/02/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ APP2\_JAVALIBRARYVISITOR\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ APP2\_JAVALIBRARYVISITOR\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_forme_visitor_8h}{FormeVisitor.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_erreur_8h}{../Erreur.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_java_library_visitor}{JavaLibraryVisitor}}\ :\ \textcolor{keyword}{public}\ \ \mbox{\hyperlink{class_forme_visitor}{FormeVisitor}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{class_forme}{Forme}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_java_library_visitor}{JavaLibraryVisitor}}*\ instance;\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_java_library_visitor}{JavaLibraryVisitor}}(\textcolor{keywordtype}{string}\ adr,\ \textcolor{keywordtype}{int}\ port,\mbox{\hyperlink{class_fenetre}{Fenetre}}\ *\ f):\ \mbox{\hyperlink{class_forme_visitor_ac63c6c499c75ed644ebc0fcc5e62a513}{FormeVisitor}}(adr,port,f)}
+\DoxyCodeLine{00029\ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ detruire()}
+\DoxyCodeLine{00036\ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ instance;}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_java_library_visitor}{JavaLibraryVisitor}}*\ \mbox{\hyperlink{class_java_library_visitor_ad750c7780a09cc7e40872c9ce6e69407}{getInstance}}(\textcolor{keywordtype}{string}\ adr,\ \textcolor{keywordtype}{int}\ port,\ \mbox{\hyperlink{class_fenetre}{Fenetre}}*\ f)\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!instance)\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ instance\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_java_library_visitor}{JavaLibraryVisitor}}(adr,\ port,\ f);}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_java_library_visitor_a42f444d35a0b6411501bc23b20785e61}{visiterGroupe}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_groupe}{Groupe}}\ \&\ G)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00062\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ groupe\ =\ \textcolor{stringliteral}{"{}groupe:"{}};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ rep\ =\ groupe\ ;}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;i\ <\ G.\mbox{\hyperlink{class_groupe_ae0eff2697ffd3fbe8c6d15fd784c3a5b}{getListeForme}}().size();i++)}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_forme}{Forme}}\ *\ f\ =\ G.\mbox{\hyperlink{class_groupe_ae0eff2697ffd3fbe8c6d15fd784c3a5b}{getListeForme}}()[i];}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//string\ fo\ =\ visiterForme(this);}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ f-\/>\mbox{\hyperlink{class_forme_aab0f3cbc4f2427324b2136d2c92acdbf}{accepter}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//rep\ =\ rep\ +\ fo\ +\ "{}|"{};}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_java_library_visitor_acac35e22f33846f4305e3a1a53d0690b}{visiterRond}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rond}{Rond}}\ \&\ R)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00082\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x,\ y,\ rayon;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ xCoinSuperieurGauche\ =\ R.\mbox{\hyperlink{class_rond_ac8c1246052b983cacbfb01a91cf70afa}{getPoint}}().\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}\ -\/\ R.\mbox{\hyperlink{class_rond_aa3fce1635a236d591ffec403779df04e}{getRayon}}();}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ yCoinSuperieurGauche\ =\ R.\mbox{\hyperlink{class_rond_ac8c1246052b983cacbfb01a91cf70afa}{getPoint}}().\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}\ +\ R.\mbox{\hyperlink{class_rond_aa3fce1635a236d591ffec403779df04e}{getRayon}}();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ x\ =\ (\mbox{\hyperlink{class_forme_visitor_a6f81fcffc2bf7b610dafd0c9cf0492f2}{getEps1}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ xCoinSuperieurGauche)\ +\ \mbox{\hyperlink{class_forme_visitor_aa9d15253a094c338f142d837fac690a7}{aGet}}();}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ y\ =\ (\mbox{\hyperlink{class_forme_visitor_ab2456f022f1e43069acb8b2375f418da}{getEps2}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ yCoinSuperieurGauche)\ +\ \mbox{\hyperlink{class_forme_visitor_a9ad146cfe59c5b223f8e9906cd3e5c3e}{bGet}}();}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ rayon\ =\ R.\mbox{\hyperlink{class_rond_aa3fce1635a236d591ffec403779df04e}{getRayon}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}();}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ XString\ =\ to\_string(x);}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ YString\ =\ to\_string(y);}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ rond\ =\ \textcolor{stringliteral}{"{}rond"{}};}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ couleur;}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (R.\mbox{\hyperlink{class_forme_geometrique_a0471c35e6c3879907fb66ffef55e75c9}{recevoirGroupeParent}}()\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_groupe}{Groupe}}\ *g\ =\ R.\mbox{\hyperlink{class_forme_a33990ce1db54541f081106026dfd7e86}{getGroupeParent}}();}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ c\ =\ g-\/>\mbox{\hyperlink{class_forme_a4fb5ac9b55ecb4af4ceeb05aeb618873}{getCouleur}}();}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ couleur\ =\ R.\mbox{\hyperlink{class_forme_af7b13a32b3b169d30e4efc288cbbc06e}{enumToString}}(c);}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ c\ =\ R.\mbox{\hyperlink{class_forme_a4fb5ac9b55ecb4af4ceeb05aeb618873}{getCouleur}}();}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ couleur\ =\ R.\mbox{\hyperlink{class_forme_af7b13a32b3b169d30e4efc288cbbc06e}{enumToString}}(c);}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ msg\ =\ rond\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ couleur\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ XString\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ YString\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ to\_string(rayon);}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_forme_visitor_a421589b89b2e8c39a64dea4e945f0f5c}{sendMessage}}(msg);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00108\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ cout\ <<\ "{}visiteur\ rond"{}\ <<\ endl;}}
+\DoxyCodeLine{00109\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ string\ rep\ =\ R.algo(getEps1(),getEps2(),getLambda(),aGet(),bGet());}}
+\DoxyCodeLine{00110\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ cout\ <<\ rep\ <<\ endl;}}
+\DoxyCodeLine{00111\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_java_library_visitor_a43a9817892d25c87b9cdda6c042595ce}{visiterPolygone}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_polygone}{Polygone}}\ \&\ P)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00121\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ pol\ =\ \textcolor{stringliteral}{"{}polygone"{}};}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ couleur;}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (P.\mbox{\hyperlink{class_forme_geometrique_a0471c35e6c3879907fb66ffef55e75c9}{recevoirGroupeParent}}()\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_groupe}{Groupe}}\ *g\ =\ P.\mbox{\hyperlink{class_forme_a33990ce1db54541f081106026dfd7e86}{getGroupeParent}}();}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ c\ =\ g-\/>\mbox{\hyperlink{class_forme_a4fb5ac9b55ecb4af4ceeb05aeb618873}{getCouleur}}();}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ couleur\ =\ P.\mbox{\hyperlink{class_forme_af7b13a32b3b169d30e4efc288cbbc06e}{enumToString}}(c);}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ c\ =\ P.\mbox{\hyperlink{class_forme_a4fb5ac9b55ecb4af4ceeb05aeb618873}{getCouleur}}();}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ couleur\ =\ P.\mbox{\hyperlink{class_forme_af7b13a32b3b169d30e4efc288cbbc06e}{enumToString}}(c);}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ msg\ =\ pol\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ couleur\ +\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ P.\mbox{\hyperlink{class_polygone_af155b11b22a09472022f9d07150ddb80}{getTabPoints}}().size();\ i++)\ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ v\ =\ *P.\mbox{\hyperlink{class_polygone_af155b11b22a09472022f9d07150ddb80}{getTabPoints}}()[i];}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x\ =\ \mbox{\hyperlink{class_forme_visitor_a6f81fcffc2bf7b610dafd0c9cf0492f2}{getEps1}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ v.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}\ +\ \mbox{\hyperlink{class_forme_visitor_aa9d15253a094c338f142d837fac690a7}{aGet}}();}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ y\ =\ \mbox{\hyperlink{class_forme_visitor_ab2456f022f1e43069acb8b2375f418da}{getEps2}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ v.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}\ +\ \mbox{\hyperlink{class_forme_visitor_a9ad146cfe59c5b223f8e9906cd3e5c3e}{bGet}}();}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ XString\ =\ to\_string(x);}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ YString\ =\ to\_string(y);}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ msg\ +\ XString\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ YString;}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ !=\ P.\mbox{\hyperlink{class_polygone_af155b11b22a09472022f9d07150ddb80}{getTabPoints}}().size()\ -\/\ 1)\ \{}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ msg\ +\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00149\ \textcolor{comment}{\ \ \ \ \ \ \ \ string\ rep\ =\ P.algo(getEps1(),getEps2(),getLambda(),aGet(),bGet());}}
+\DoxyCodeLine{00150\ \textcolor{comment}{\ \ \ \ \ \ \ \ cout\ <<\ rep\ <<\ endl;}}
+\DoxyCodeLine{00151\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_forme_visitor_a421589b89b2e8c39a64dea4e945f0f5c}{sendMessage}}(msg);}
+\DoxyCodeLine{00153\ \ \ \ \ \}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_java_library_visitor_aac9da558b379afddd392a5a4fc4254f3}{visiterCroix}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_croix}{Croix}}\ \&\ C)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00161\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x1,x2,x3,x4,y1,y2,y3,y4;}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ x1\ =\ \mbox{\hyperlink{class_forme_visitor_a6f81fcffc2bf7b610dafd0c9cf0492f2}{getEps1}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ C.\mbox{\hyperlink{class_croix_a24e4cb655c1aec13ba27ff4014b806c2}{getBasGauche}}().\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}\ +\ \mbox{\hyperlink{class_forme_visitor_aa9d15253a094c338f142d837fac690a7}{aGet}}();}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ y1\ =\ \mbox{\hyperlink{class_forme_visitor_ab2456f022f1e43069acb8b2375f418da}{getEps2}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ C.\mbox{\hyperlink{class_croix_a24e4cb655c1aec13ba27ff4014b806c2}{getBasGauche}}().\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}\ +\ \mbox{\hyperlink{class_forme_visitor_a9ad146cfe59c5b223f8e9906cd3e5c3e}{bGet}}();}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ x2\ =\ \mbox{\hyperlink{class_forme_visitor_a6f81fcffc2bf7b610dafd0c9cf0492f2}{getEps1}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ C.\mbox{\hyperlink{class_croix_accdd15dbc09828045c79d20043acf9e2}{getHautGauche}}().\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}\ +\ \mbox{\hyperlink{class_forme_visitor_aa9d15253a094c338f142d837fac690a7}{aGet}}();}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ y2\ =\ \mbox{\hyperlink{class_forme_visitor_ab2456f022f1e43069acb8b2375f418da}{getEps2}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ C.\mbox{\hyperlink{class_croix_accdd15dbc09828045c79d20043acf9e2}{getHautGauche}}().\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}\ +\ \mbox{\hyperlink{class_forme_visitor_a9ad146cfe59c5b223f8e9906cd3e5c3e}{bGet}}();}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ x3\ =\ \mbox{\hyperlink{class_forme_visitor_a6f81fcffc2bf7b610dafd0c9cf0492f2}{getEps1}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ C.\mbox{\hyperlink{class_croix_a63db6017aae744e72f2a2ee09c3f9728}{getHautDroite}}().\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}\ +\ \mbox{\hyperlink{class_forme_visitor_aa9d15253a094c338f142d837fac690a7}{aGet}}();}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ y3\ =\ \mbox{\hyperlink{class_forme_visitor_ab2456f022f1e43069acb8b2375f418da}{getEps2}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ C.\mbox{\hyperlink{class_croix_a63db6017aae744e72f2a2ee09c3f9728}{getHautDroite}}().\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}\ +\ \mbox{\hyperlink{class_forme_visitor_a9ad146cfe59c5b223f8e9906cd3e5c3e}{bGet}}();}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ x4\ =\ \mbox{\hyperlink{class_forme_visitor_a6f81fcffc2bf7b610dafd0c9cf0492f2}{getEps1}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ C.\mbox{\hyperlink{class_croix_ad95c972eeaa40644d4b12dd04d797b53}{getBasDroite}}().\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}\ +\ \mbox{\hyperlink{class_forme_visitor_aa9d15253a094c338f142d837fac690a7}{aGet}}();}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ y4\ =\ \mbox{\hyperlink{class_forme_visitor_ab2456f022f1e43069acb8b2375f418da}{getEps2}}()\ *\ \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{getLambda}}()\ *\ C.\mbox{\hyperlink{class_croix_ad95c972eeaa40644d4b12dd04d797b53}{getBasDroite}}().\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}\ +\ \mbox{\hyperlink{class_forme_visitor_a9ad146cfe59c5b223f8e9906cd3e5c3e}{bGet}}();}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ StringX1\ =\ to\_string(x1);}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ StringY1\ =\ to\_string(y1);}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ StringX2\ =\ to\_string(x2);}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ StringY2\ =\ to\_string(y2);}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ StringX3\ =\ to\_string(x3);}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ StringY3\ =\ to\_string(y3);}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ StringX4\ =\ to\_string(x4);}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ StringY4\ =\ to\_string(y4);}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ croix\ =\ \textcolor{stringliteral}{"{}croix"{}};}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ couleur;}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(C.\mbox{\hyperlink{class_forme_a33990ce1db54541f081106026dfd7e86}{getGroupeParent}}()\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_groupe}{Groupe}}\ *\ g\ =\ C.\mbox{\hyperlink{class_forme_a33990ce1db54541f081106026dfd7e86}{getGroupeParent}}();}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ c\ =\ g-\/>\mbox{\hyperlink{class_forme_a4fb5ac9b55ecb4af4ceeb05aeb618873}{getCouleur}}();}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ couleur\ =\ C.\mbox{\hyperlink{class_forme_af7b13a32b3b169d30e4efc288cbbc06e}{enumToString}}(c);}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ c\ =\ C.\mbox{\hyperlink{class_forme_a4fb5ac9b55ecb4af4ceeb05aeb618873}{getCouleur}}();}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ couleur\ =\ C.\mbox{\hyperlink{class_forme_af7b13a32b3b169d30e4efc288cbbc06e}{enumToString}}(c);}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}fin\ algo\ ?\ "{}}\ <<\ endl;}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ msg\ =\ croix\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ couleur\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ StringX1\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ StringY1\ +\ \textcolor{stringliteral}{"{},"{}}+}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ StringX2\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ StringY2\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ StringX3\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ StringY3\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ StringX4\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ StringY4;}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}msg\ :\ "{}}\ <<\ endl;}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ cout\ <<\ msg\ <<\ endl;}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00205\ \textcolor{comment}{\ \ \ \ \ \ \ \ cout\ <<\ "{}visiteurr\ de\ \ croix\ "{}\ <<\ endl;}}
+\DoxyCodeLine{00206\ \textcolor{comment}{\ \ \ \ \ \ \ //\ calcul();}}
+\DoxyCodeLine{00207\ \textcolor{comment}{\ \ \ \ \ \ \ \ string\ rep\ =\ C.algo(getEps1(),getEps2(),getLambda(),aGet(),bGet());}}
+\DoxyCodeLine{00208\ \textcolor{comment}{\ \ \ \ \ \ \ \ cout\ <<\ rep\ <<\ endl;}}
+\DoxyCodeLine{00209\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_forme_visitor_a421589b89b2e8c39a64dea4e945f0f5c}{sendMessage}}(msg);}
+\DoxyCodeLine{00211\ \ \ \ \ \}}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00217\ \ \ \ \ \mbox{\hyperlink{class_java_library_visitor_a8077f46149495af7ec02f60299374268}{\string~JavaLibraryVisitor}}()}
+\DoxyCodeLine{00218\ \ \ \ \ \{}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ detruire();}
+\DoxyCodeLine{00220\ \ \ \ \ \}}
+\DoxyCodeLine{00221\ \};}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//APP2\_JAVALIBRARYVISITOR\_H}}
+
+\end{DoxyCode}

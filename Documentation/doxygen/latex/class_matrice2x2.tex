@@ -1,0 +1,122 @@
+\doxysection{Matrice2x2 Class Reference}
+\hypertarget{class_matrice2x2}{}\label{class_matrice2x2}\index{Matrice2x2@{Matrice2x2}}
+
+
+Représente une matrice 2x2 avec des colonnes représentées par des vecteurs 2D.  
+
+
+
+
+{\ttfamily \#include $<$Matrice2x2.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_matrice2x2_a7a7d11c0f44e311fa0d406310cddb4cb}{Matrice2x2}} (\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} col1, \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} col2)
+\begin{DoxyCompactList}\small\item\em Constructeur pour \doxylink{class_matrice2x2}{Matrice2x2}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}} \mbox{\hyperlink{class_matrice2x2_a1af6e364b24b81cda8f2e785c12f347b}{operator+}} (const \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}} \&V) const
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur d\textquotesingle{}addition pour les matrices 2x2. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}} \mbox{\hyperlink{class_matrice2x2_a4e80072711c073ee0d7054ba1473a6dd}{operator\texorpdfstring{$\ast$}{*}}} (const \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}} \&V) const
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur de multiplication pour les matrices 2x2. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_matrice2x2_a82cef0310806342de26278b8976234f9}{operator\texorpdfstring{$\ast$}{*}}} (const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&V) const
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur de multiplication pour une matrice 2x2 avec un vecteur 2D. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrice2x2_a96d0140dbe0cc8874163e4dc453b7a77}{operator string}} () const
+\begin{DoxyCompactList}\small\item\em Conversion implicite en chaîne de caractères. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Représente une matrice 2x2 avec des colonnes représentées par des vecteurs 2D. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_matrice2x2_a7a7d11c0f44e311fa0d406310cddb4cb}\label{class_matrice2x2_a7a7d11c0f44e311fa0d406310cddb4cb} 
+\index{Matrice2x2@{Matrice2x2}!Matrice2x2@{Matrice2x2}}
+\index{Matrice2x2@{Matrice2x2}!Matrice2x2@{Matrice2x2}}
+\doxysubsubsection{\texorpdfstring{Matrice2x2()}{Matrice2x2()}}
+{\footnotesize\ttfamily Matrice2x2\+::\+Matrice2x2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}}]{col1,  }\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}}]{col2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur pour \doxylink{class_matrice2x2}{Matrice2x2}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col1} & Première colonne de la matrice. \\
+\hline
+{\em col2} & Deuxième colonne de la matrice. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_matrice2x2_a96d0140dbe0cc8874163e4dc453b7a77}\label{class_matrice2x2_a96d0140dbe0cc8874163e4dc453b7a77} 
+\index{Matrice2x2@{Matrice2x2}!operator string@{operator string}}
+\index{operator string@{operator string}!Matrice2x2@{Matrice2x2}}
+\doxysubsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily Matrice2x2\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Conversion implicite en chaîne de caractères. 
+
+\begin{DoxyReturn}{Returns}
+Représentation en chaîne de caractères de la matrice 2x2. 
+\end{DoxyReturn}
+\Hypertarget{class_matrice2x2_a4e80072711c073ee0d7054ba1473a6dd}\label{class_matrice2x2_a4e80072711c073ee0d7054ba1473a6dd} 
+\index{Matrice2x2@{Matrice2x2}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Matrice2x2@{Matrice2x2}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}} Matrice2x2\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}} \&}]{V }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur de multiplication pour les matrices 2x2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & Matrice 2x2 à multiplier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrice 2x2 résultante après la multiplication. 
+\end{DoxyReturn}
+\Hypertarget{class_matrice2x2_a82cef0310806342de26278b8976234f9}\label{class_matrice2x2_a82cef0310806342de26278b8976234f9} 
+\index{Matrice2x2@{Matrice2x2}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Matrice2x2@{Matrice2x2}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Matrice2x2\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{V }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur de multiplication pour une matrice 2x2 avec un vecteur 2D. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & Vecteur 2D à multiplier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vecteur 2D résultant après la multiplication. 
+\end{DoxyReturn}
+\Hypertarget{class_matrice2x2_a1af6e364b24b81cda8f2e785c12f347b}\label{class_matrice2x2_a1af6e364b24b81cda8f2e785c12f347b} 
+\index{Matrice2x2@{Matrice2x2}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrice2x2@{Matrice2x2}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}} Matrice2x2\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}} \&}]{V }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur d\textquotesingle{}addition pour les matrices 2x2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & Matrice 2x2 à ajouter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrice 2x2 résultante après l\textquotesingle{}addition. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\mbox{\hyperlink{_matrice2x2_8h}{Matrice2x2.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,451 @@
+\doxysection{Rond Class Reference}
+\hypertarget{class_rond}{}\label{class_rond}\index{Rond@{Rond}}
+
+
+Représente un cercle dans le plan.  
+
+
+
+
+{\ttfamily \#include $<$Rond.\+h$>$}
+
+Inheritance diagram for Rond\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_rond}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rond_a41611c18b6000f44bf4f72946dded24d}{Rond}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur, \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} pt, double rayon)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \doxylink{class_rond}{Rond}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rond_a7281e3ed582c71d3cf0bea510f38db4f}{Rond}} (const \mbox{\hyperlink{class_rond}{Rond}} \&R)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie de la classe \doxylink{class_rond}{Rond}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_rond_ac8c1246052b983cacbfb01a91cf70afa}{get\+Point}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le point central du rond. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_rond_aa3fce1635a236d591ffec403779df04e}{get\+Rayon}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le rayon du rond. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rond}{Rond}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rond_aca451d1d0caa9f4fdcd6e99cecd1370e}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Crée une copie du rond. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rond_a73e4c296cddc76248b69c6a61dd22708}{\texorpdfstring{$\sim$}{\string~}\+Rond}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \doxylink{class_rond}{Rond}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_rond_a3e44567cefdffaa8d418b63dd3a985d2}{get\+MinX}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la valeur minimale en X parmi les points formant le rond. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_rond_afb99e3b80c050a60c84df264411af407}{get\+MinY}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la valeur minimale en Y parmi les points formant le rond. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_rond_a615b16bcbd416f4fb01c5b97e71d1f96}{get\+MaxX}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la valeur maximale en X parmi les points formant le rond. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_rond_af9a7f4f5785ef79d3ddcef1435acfbd2}{get\+MaxY}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la valeur maximale en Y parmi les points formant le rond. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_rond_a6b30ed516fc622698b362fb87d350d78}{algo}} (int eps1, int eps2, double \+\_\+\+Lambda, int \+\_\+a, int \+\_\+b) const override
+\item 
+double \mbox{\hyperlink{class_rond_a8b922dbdea8853706051f8e0302b77cc}{Calcul\+Aire}} () const
+\begin{DoxyCompactList}\small\item\em Calcule l\textquotesingle{}aire du rond. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rond_a413f527e8f537f2d412712af81747d81}{translation}} (\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&v) override
+\begin{DoxyCompactList}\small\item\em Effectue une translation du rond. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rond_a7ece876c90da8a794fa6bfd33cee8a92}{homothetie}} (double rapport, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&V) override
+\begin{DoxyCompactList}\small\item\em Effectue une homothétie du rond. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rond_a1df066b40906bb2cfaa28c0f01c8da62}{rotation}} (double angle, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&centre\+Rotation) override
+\begin{DoxyCompactList}\small\item\em Effectue une rotation du rond. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rond_adde18c9dbae70235fc549b49c7a8cb0d}{afficher}} (ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em Affiche les informations du rond sur un flux de sortie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rond_a159b406465392ac63685eeb93e237cb3}{accepter}} (\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}F) const override
+\begin{DoxyCompactList}\small\item\em Accepte un visiteur de formes pour appliquer des actions spécifiques. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rond_a7742197d8b255ada420bdf4753c13cdf}{accepter}} (\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}S) const override
+\begin{DoxyCompactList}\small\item\em Accepte un visiteur de sauvegarde pour sauvegarder la forme. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rond_a6b9604f908fc5b3ea12d52f5fac83f3c}{operator string}} () const override
+\begin{DoxyCompactList}\small\item\em Opérateur de conversion en chaîne de caractères. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_rond}{Rond}} \& \mbox{\hyperlink{class_rond_a551b12534a508a5f9e85640a00069e6f}{operator=}} (const \mbox{\hyperlink{class_rond}{Rond}} \&R)
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}assignation d\textquotesingle{}un cercle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_forme_geometrique_ae274d5e4cf4eba85b27087cb16c77b2b}{Forme\+Geometrique}} (\mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \&F)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie d\textquotesingle{}une forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_forme_geometrique_a02e20bc5f01271da3ee1a4e123329bb5}{Forme\+Geometrique}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur, int nb\+Points)
+\begin{DoxyCompactList}\small\item\em Constructeur d\textquotesingle{}une forme géométrique avec couleur et nombre de points. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_forme_geometrique_aa9c13cc292ae5b7c0ca6be6580dcfcd0}{get\+Nb\+Points}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de points de la forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_forme_geometrique_a0471c35e6c3879907fb66ffef55e75c9}{recevoir\+Groupe\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le groupe parent de la forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \& \mbox{\hyperlink{class_forme_geometrique_a72939d67cea4a5a6076a30c07e8a4959}{operator+}} (\mbox{\hyperlink{class_forme}{Forme}} \&F) override
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}ajout d\textquotesingle{}une forme au groupe. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_forme_geometrique_a43845058df14a48ad3700eef4a207618}{\texorpdfstring{$\sim$}{\string~}\+Forme\+Geometrique}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la forme géométrique. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \& \mbox{\hyperlink{class_forme_geometrique_a812e01ba9f9b169462ec08888ae9b8f1}{operator=}} (const \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \&F)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_forme}{Forme}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_forme_a6c8d18b565986c69ede4789d0430d9ed}{Forme}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_forme_a75f2948beec045d69eaa0cd841b552e0}{Forme}} (const \mbox{\hyperlink{class_forme}{Forme}} \&F)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_a6de3808a0a11ee7259d60e4e8ee3f346}{set\+Groupe\+Parent}} (\mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*}nouveau\+Groupe\+Parent)
+\begin{DoxyCompactList}\small\item\em Définit le groupe parent de la forme. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_forme_a33990ce1db54541f081106026dfd7e86}{get\+Groupe\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le groupe parent de la forme. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_a065ea58a29610722f1aa58147493b87a}{set\+Couleur}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Définit la couleur de la forme. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \mbox{\hyperlink{class_forme_a4fb5ac9b55ecb4af4ceeb05aeb618873}{get\+Couleur}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la couleur de la forme. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_forme_af6ad0735f86713459453c9d775f44aca}{\texorpdfstring{$\sim$}{\string~}\+Forme}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_forme_af7b13a32b3b169d30e4efc288cbbc06e}{enum\+To\+String}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} c) const
+\begin{DoxyCompactList}\small\item\em Convertit une valeur de l\textquotesingle{}énumération Couleur en une chaîne de caractères. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_forme_ac9055cf244bef40ffae7606a9c3eff8c}{rotation\+Point}} (const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&point, double angle, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&centre\+Rotation) const
+\begin{DoxyCompactList}\small\item\em Effectue la rotation d\textquotesingle{}un point autour d\textquotesingle{}un centre donné. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Représente un cercle dans le plan. 
+
+Le cercle est défini par un point et un rayon dans le plan. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_rond_a41611c18b6000f44bf4f72946dded24d}\label{class_rond_a41611c18b6000f44bf4f72946dded24d} 
+\index{Rond@{Rond}!Rond@{Rond}}
+\index{Rond@{Rond}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{Rond()}{Rond()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rond\+::\+Rond (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}]{couleur,  }\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}}]{pt,  }\item[{double}]{rayon }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \doxylink{class_rond}{Rond}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em couleur} & Couleur du rond. \\
+\hline
+{\em pt} & Point central du rond. \\
+\hline
+{\em rayon} & Rayon du rond. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rond_a7281e3ed582c71d3cf0bea510f38db4f}\label{class_rond_a7281e3ed582c71d3cf0bea510f38db4f} 
+\index{Rond@{Rond}!Rond@{Rond}}
+\index{Rond@{Rond}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{Rond()}{Rond()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rond\+::\+Rond (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rond}{Rond}} \&}]{R }\end{DoxyParamCaption})}
+
+
+
+Constructeur de copie de la classe \doxylink{class_rond}{Rond}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & \doxylink{class_rond}{Rond} à copier. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rond_a73e4c296cddc76248b69c6a61dd22708}\label{class_rond_a73e4c296cddc76248b69c6a61dd22708} 
+\index{Rond@{Rond}!````~Rond@{\texorpdfstring{$\sim$}{\string~}Rond}}
+\index{````~Rond@{\texorpdfstring{$\sim$}{\string~}Rond}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Rond()}{\string~Rond()}}
+{\footnotesize\ttfamily Rond\+::\texorpdfstring{$\sim$}{\string~}\+Rond (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la classe \doxylink{class_rond}{Rond}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_rond_a159b406465392ac63685eeb93e237cb3}\label{class_rond_a159b406465392ac63685eeb93e237cb3} 
+\index{Rond@{Rond}!accepter@{accepter}}
+\index{accepter@{accepter}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{accepter()}{accepter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rond\+::accepter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}}]{F }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accepte un visiteur de formes pour appliquer des actions spécifiques. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F} & Visiteur de formes. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a15f8c9bbeb8db0a20a1d45d6aee4451e}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_a7742197d8b255ada420bdf4753c13cdf}\label{class_rond_a7742197d8b255ada420bdf4753c13cdf} 
+\index{Rond@{Rond}!accepter@{accepter}}
+\index{accepter@{accepter}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{accepter()}{accepter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Rond\+::accepter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}}]{S }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accepte un visiteur de sauvegarde pour sauvegarder la forme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & Visiteur de sauvegarde. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aec38169c7a89661519c4a1036bf6cc6c}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_adde18c9dbae70235fc549b49c7a8cb0d}\label{class_rond_adde18c9dbae70235fc549b49c7a8cb0d} 
+\index{Rond@{Rond}!afficher@{afficher}}
+\index{afficher@{afficher}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void Rond\+::afficher (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Affiche les informations du rond sur un flux de sortie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_af350c40a6d1e27694e2ce9016a272857}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_a6b30ed516fc622698b362fb87d350d78}\label{class_rond_a6b30ed516fc622698b362fb87d350d78} 
+\index{Rond@{Rond}!algo@{algo}}
+\index{algo@{algo}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{algo()}{algo()}}
+{\footnotesize\ttfamily string Rond\+::algo (\begin{DoxyParamCaption}\item[{int}]{eps1,  }\item[{int}]{eps2,  }\item[{double}]{\+\_\+\+Lambda,  }\item[{int}]{\+\_\+a,  }\item[{int}]{\+\_\+b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a0d3b663664b4cbe2d162578ab23080ef}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_a8b922dbdea8853706051f8e0302b77cc}\label{class_rond_a8b922dbdea8853706051f8e0302b77cc} 
+\index{Rond@{Rond}!CalculAire@{CalculAire}}
+\index{CalculAire@{CalculAire}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{CalculAire()}{CalculAire()}}
+{\footnotesize\ttfamily double Rond\+::\+Calcul\+Aire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calcule l\textquotesingle{}aire du rond. 
+
+\begin{DoxyReturn}{Returns}
+Valeur de l\textquotesingle{}aire du rond. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a0bd130a23cba848754a76207334d7b0a}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_aca451d1d0caa9f4fdcd6e99cecd1370e}\label{class_rond_aca451d1d0caa9f4fdcd6e99cecd1370e} 
+\index{Rond@{Rond}!clone@{clone}}
+\index{clone@{clone}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rond}{Rond}} \texorpdfstring{$\ast$}{*} Rond\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Crée une copie du rond. 
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers la copie du rond. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aa23ecaccd7263d1807b37c96099d4483}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_a615b16bcbd416f4fb01c5b97e71d1f96}\label{class_rond_a615b16bcbd416f4fb01c5b97e71d1f96} 
+\index{Rond@{Rond}!getMaxX@{getMaxX}}
+\index{getMaxX@{getMaxX}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{getMaxX()}{getMaxX()}}
+{\footnotesize\ttfamily double Rond\+::get\+MaxX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la valeur maximale en X parmi les points formant le rond. 
+
+\begin{DoxyReturn}{Returns}
+Valeur maximale en X. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a99ac122c3c15b0934b5a7fabe3d709db}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_af9a7f4f5785ef79d3ddcef1435acfbd2}\label{class_rond_af9a7f4f5785ef79d3ddcef1435acfbd2} 
+\index{Rond@{Rond}!getMaxY@{getMaxY}}
+\index{getMaxY@{getMaxY}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{getMaxY()}{getMaxY()}}
+{\footnotesize\ttfamily double Rond\+::get\+MaxY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la valeur maximale en Y parmi les points formant le rond. 
+
+\begin{DoxyReturn}{Returns}
+Valeur maximale en Y. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a8560742419419c09764cc38c52f4d9f2}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_a3e44567cefdffaa8d418b63dd3a985d2}\label{class_rond_a3e44567cefdffaa8d418b63dd3a985d2} 
+\index{Rond@{Rond}!getMinX@{getMinX}}
+\index{getMinX@{getMinX}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{getMinX()}{getMinX()}}
+{\footnotesize\ttfamily double Rond\+::get\+MinX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la valeur minimale en X parmi les points formant le rond. 
+
+\begin{DoxyReturn}{Returns}
+Valeur minimale en X. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_acd3401362579d11bc151b3d83056a1c2}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_afb99e3b80c050a60c84df264411af407}\label{class_rond_afb99e3b80c050a60c84df264411af407} 
+\index{Rond@{Rond}!getMinY@{getMinY}}
+\index{getMinY@{getMinY}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{getMinY()}{getMinY()}}
+{\footnotesize\ttfamily double Rond\+::get\+MinY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la valeur minimale en Y parmi les points formant le rond. 
+
+\begin{DoxyReturn}{Returns}
+Valeur minimale en Y. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aa563f88322640bf49ab36b7315562e9c}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_ac8c1246052b983cacbfb01a91cf70afa}\label{class_rond_ac8c1246052b983cacbfb01a91cf70afa} 
+\index{Rond@{Rond}!getPoint@{getPoint}}
+\index{getPoint@{getPoint}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{getPoint()}{getPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Rond\+::get\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient le point central du rond. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_vecteur2_d}{Vecteur2D} représentant le point central du rond. 
+\end{DoxyReturn}
+\Hypertarget{class_rond_aa3fce1635a236d591ffec403779df04e}\label{class_rond_aa3fce1635a236d591ffec403779df04e} 
+\index{Rond@{Rond}!getRayon@{getRayon}}
+\index{getRayon@{getRayon}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{getRayon()}{getRayon()}}
+{\footnotesize\ttfamily double Rond\+::get\+Rayon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient le rayon du rond. 
+
+\begin{DoxyReturn}{Returns}
+Valeur du rayon du rond. 
+\end{DoxyReturn}
+\Hypertarget{class_rond_a7ece876c90da8a794fa6bfd33cee8a92}\label{class_rond_a7ece876c90da8a794fa6bfd33cee8a92} 
+\index{Rond@{Rond}!homothetie@{homothetie}}
+\index{homothetie@{homothetie}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{homothetie()}{homothetie()}}
+{\footnotesize\ttfamily void Rond\+::homothetie (\begin{DoxyParamCaption}\item[{double}]{rapport,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{V }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Effectue une homothétie du rond. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rapport} & Rapport d\textquotesingle{}homothétie. \\
+\hline
+{\em V} & Point invariant. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aee8eb47f684d903b8beeb37135de4d38}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_a6b9604f908fc5b3ea12d52f5fac83f3c}\label{class_rond_a6b9604f908fc5b3ea12d52f5fac83f3c} 
+\index{Rond@{Rond}!operator string@{operator string}}
+\index{operator string@{operator string}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily Rond\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Opérateur de conversion en chaîne de caractères. 
+
+\begin{DoxyReturn}{Returns}
+Chaîne de caractères représentant le rond. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a47a99e86eaef4f7e536ee7063b6e5d82}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_a551b12534a508a5f9e85640a00069e6f}\label{class_rond_a551b12534a508a5f9e85640a00069e6f} 
+\index{Rond@{Rond}!operator=@{operator=}}
+\index{operator=@{operator=}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_rond}{Rond}} \& Rond\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rond}{Rond}} \&}]{R }\end{DoxyParamCaption})}
+
+
+
+Opérateur d\textquotesingle{}assignation d\textquotesingle{}un cercle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G} & Cercle à assigner. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence vers le cercle actuel. 
+\end{DoxyReturn}
+\Hypertarget{class_rond_a1df066b40906bb2cfaa28c0f01c8da62}\label{class_rond_a1df066b40906bb2cfaa28c0f01c8da62} 
+\index{Rond@{Rond}!rotation@{rotation}}
+\index{rotation@{rotation}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily void Rond\+::rotation (\begin{DoxyParamCaption}\item[{double}]{angle,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{centre\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Effectue une rotation du rond. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Angle de rotation. \\
+\hline
+{\em centre\+Rotation} & Centre de rotation. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a9eda2099d3a3b0270bce1481d5571950}{Forme\+Geometrique}}.
+
+\Hypertarget{class_rond_a413f527e8f537f2d412712af81747d81}\label{class_rond_a413f527e8f537f2d412712af81747d81} 
+\index{Rond@{Rond}!translation@{translation}}
+\index{translation@{translation}!Rond@{Rond}}
+\doxysubsubsection{\texorpdfstring{translation()}{translation()}}
+{\footnotesize\ttfamily void Rond\+::translation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Effectue une translation du rond. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vecteur de translation. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a0bf5e5ca2d815c57f2c276598946e595}{Forme\+Geometrique}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Forme/\mbox{\hyperlink{_rond_8h}{Rond.\+h}}\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Forme/\mbox{\hyperlink{_rond_8cpp}{Rond.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\doxysection{Chargement\+COR.\+h}
+\hypertarget{_chargement_c_o_r_8h_source}{}\label{_chargement_c_o_r_8h_source}\index{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/ChargementCOR/ChargementCOR.h@{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/ChargementCOR/ChargementCOR.h}}
+\mbox{\hyperlink{_chargement_c_o_r_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Ahmet\ on\ 04/03/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ APP2\_CHARGEMENTCOR\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ APP2\_CHARGEMENTCOR\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_forme_8h}{../Forme/Forme.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_black_c_o_r_8h}{../CouleurCOR/BlackCOR.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_blue_c_o_r_8h}{../CouleurCOR/BlueCOR.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_cyan_c_o_r_8h}{../CouleurCOR/CyanCOR.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_green_c_o_r_8h}{../CouleurCOR/GreenCOR.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_red_c_o_r_8h}{../CouleurCOR/RedCOR.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_yellow_c_o_r_8h}{../CouleurCOR/YellowCOR.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_chargement_c_o_r}{ChargementCOR}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_chargement_c_o_r}{ChargementCOR}}\ *\ \_suivant;\ \ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{protected}:\ \mbox{\hyperlink{class_couleur_c_o_r}{CouleurCOR}}\ *\ \mbox{\hyperlink{class_chargement_c_o_r_a87a9d6f96f8ab3bce0a6f4208537903c}{\_CoulCOR}};\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_chargement_c_o_r_aaf538591a9b8e37d197744fe127e7c02}{ChargementCOR}}(\mbox{\hyperlink{class_chargement_c_o_r}{ChargementCOR}}\ *\ suivant):\ \_suivant(suivant)}
+\DoxyCodeLine{00036\ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_couleur_c_o_r}{CouleurCOR}}\ *\ cor\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_black_c_o_r}{BlackCOR}}\ *\ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7a775364fe1f3fffe99686bf6d572a7370}{black}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_black_c_o_r}{BlackCOR}}(\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_blue_c_o_r}{BlueCOR}}\ *\ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7a8f5fa6b484ac7e2a97943d915cf224e2}{blue}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_blue_c_o_r}{BlueCOR}}(\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7a775364fe1f3fffe99686bf6d572a7370}{black}});}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cyan_c_o_r}{CyanCOR}}\ *\ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7af86e4e7e79173ee87c1976080bb250b7}{cyan}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_cyan_c_o_r}{CyanCOR}}(\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7a8f5fa6b484ac7e2a97943d915cf224e2}{blue}});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_green_c_o_r}{GreenCOR}}\ *\ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7a6aa25890c44e0aac424e56338abe47ca}{green}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_green_c_o_r}{GreenCOR}}(\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7af86e4e7e79173ee87c1976080bb250b7}{cyan}});}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_red_c_o_r}{RedCOR}}\ *\ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7aace9033470c7bfe9523c814271251908}{red}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_red_c_o_r}{RedCOR}}(\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7a6aa25890c44e0aac424e56338abe47ca}{green}});}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_yellow_c_o_r}{YellowCOR}}\ *\ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7ab31edea3fab8c488c7a8f78545e7f5a9}{yellow}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_yellow_c_o_r}{YellowCOR}}(\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7aace9033470c7bfe9523c814271251908}{red}});}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ cor\ =\ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7ab31edea3fab8c488c7a8f78545e7f5a9}{yellow}};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_chargement_c_o_r_a87a9d6f96f8ab3bce0a6f4208537903c}{\_CoulCOR}}\ =\ cor;}
+\DoxyCodeLine{00046\ \ \ \ \ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chargement_c_o_r_af3cad1913655e7e2124fde2f54e01518}{charger}}(\textcolor{keywordtype}{string}\ ligne,\mbox{\hyperlink{class_forme}{Forme}}\ *\ \&pForme)\ =\ 0;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chargement_c_o_r_a6c931e529a7376556c29eb0fdf8413d3}{chargerSuivant}}(\textcolor{keywordtype}{string}\ ligne,\mbox{\hyperlink{class_forme}{Forme}}\ *\&\ pForme)}
+\DoxyCodeLine{00061\ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \_suivant-\/>\mbox{\hyperlink{class_chargement_c_o_r_af3cad1913655e7e2124fde2f54e01518}{charger}}(ligne,pForme);}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//APP2\_CHARGEMENTCOR\_H}}
+
+\end{DoxyCode}

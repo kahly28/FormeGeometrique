@@ -1,0 +1,87 @@
+\doxysection{Charger\+Groupe Class Reference}
+\hypertarget{class_charger_groupe}{}\label{class_charger_groupe}\index{ChargerGroupe@{ChargerGroupe}}
+
+
+La classe \doxylink{class_charger_groupe}{Charger\+Groupe} est une classe concrète de la chaîne de responsabilité qui traite le chargement des groupes. Elle hérite de \doxylink{class_chargement_c_o_r}{Chargement\+COR}.  
+
+
+
+
+{\ttfamily \#include $<$Charger\+Groupe.\+h$>$}
+
+Inheritance diagram for Charger\+Groupe\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_charger_groupe}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_charger_groupe_ad69c1f5a5c4edaedf42a934165299b9b}{Charger\+Groupe}} (\mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}} \texorpdfstring{$\ast$}{*}suivant)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_charger_groupe}{Charger\+Groupe}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_charger_groupe_aadb78a3acace1ef68d7565e569e84f32}{charger}} (string ligne, \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*}\&p\+Forme) override
+\begin{DoxyCompactList}\small\item\em Méthode chargée de traiter la ligne de chargement pour créer une forme de type \doxylink{class_groupe}{Groupe}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_chargement_c_o_r_aaf538591a9b8e37d197744fe127e7c02}{Chargement\+COR}} (\mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}} \texorpdfstring{$\ast$}{*}suivant)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_chargement_c_o_r}{Chargement\+COR}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chargement_c_o_r_a6c931e529a7376556c29eb0fdf8413d3}{charger\+Suivant}} (string ligne, \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*}\&p\+Forme)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de passer la ligne au maillon suivant dans la chaîne de responsabilité. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_chargement_c_o_r_a87a9d6f96f8ab3bce0a6f4208537903c}{\+\_\+\+Coul\+COR}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \doxylink{class_charger_groupe}{Charger\+Groupe} est une classe concrète de la chaîne de responsabilité qui traite le chargement des groupes. Elle hérite de \doxylink{class_chargement_c_o_r}{Chargement\+COR}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_charger_groupe_ad69c1f5a5c4edaedf42a934165299b9b}\label{class_charger_groupe_ad69c1f5a5c4edaedf42a934165299b9b} 
+\index{ChargerGroupe@{ChargerGroupe}!ChargerGroupe@{ChargerGroupe}}
+\index{ChargerGroupe@{ChargerGroupe}!ChargerGroupe@{ChargerGroupe}}
+\doxysubsubsection{\texorpdfstring{ChargerGroupe()}{ChargerGroupe()}}
+{\footnotesize\ttfamily Charger\+Groupe\+::\+Charger\+Groupe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}} \texorpdfstring{$\ast$}{*}}]{suivant }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de \doxylink{class_charger_groupe}{Charger\+Groupe}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suivant} & Pointeur vers le maillon suivant dans la chaîne de responsabilité. Initialise le maillon avec le suivant de la chaîne. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_charger_groupe_aadb78a3acace1ef68d7565e569e84f32}\label{class_charger_groupe_aadb78a3acace1ef68d7565e569e84f32} 
+\index{ChargerGroupe@{ChargerGroupe}!charger@{charger}}
+\index{charger@{charger}!ChargerGroupe@{ChargerGroupe}}
+\doxysubsubsection{\texorpdfstring{charger()}{charger()}}
+{\footnotesize\ttfamily void Charger\+Groupe\+::charger (\begin{DoxyParamCaption}\item[{string}]{ligne,  }\item[{\mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*}\&}]{p\+Forme }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Méthode chargée de traiter la ligne de chargement pour créer une forme de type \doxylink{class_groupe}{Groupe}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ligne} & Ligne de chargement. \\
+\hline
+{\em p\+Forme} & Pointeur vers la forme à créer et charger. Si la ligne commence par "{}groupe-\/"{}, elle crée une instance de \doxylink{class_groupe}{Groupe} avec les informations fournies et met à jour le pointeur vers la forme. Sinon, elle passe la ligne au maillon suivant dans la chaîne de responsabilité. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_chargement_c_o_r_af3cad1913655e7e2124fde2f54e01518}{Chargement\+COR}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Chargement\+COR/\mbox{\hyperlink{_charger_groupe_8h}{Charger\+Groupe.\+h}}\end{DoxyCompactItemize}

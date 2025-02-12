@@ -1,0 +1,79 @@
+\doxysection{Matrice2x2.\+h}
+\hypertarget{_matrice2x2_8h_source}{}\label{_matrice2x2_8h_source}\index{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Matrice2x2.h@{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Matrice2x2.h}}
+\mbox{\hyperlink{_matrice2x2_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Ahmet\ on\ 21/02/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ APP2\_MATRICE2X2\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ APP2\_MATRICE2X2\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_vecteur2_d_8h}{Vecteur2D.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_matrice2x2}{Matrice2x2}}\ \{}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ colonne1;\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ colonne2;\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_matrice2x2_a7a7d11c0f44e311fa0d406310cddb4cb}{Matrice2x2}}(\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ col1,\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ col2):\ colonne1(col1),colonne2(col2)}
+\DoxyCodeLine{00032\ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}fdmjdmjdfd"{}}\ <<\ endl;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}}\ \mbox{\hyperlink{class_matrice2x2_a1af6e364b24b81cda8f2e785c12f347b}{operator\ +\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}}\ \&V)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00044\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ vec1(colonne1\ +\ V.colonne1);}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ vec2(colonne2\ +\ V.colonne2);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_matrice2x2_a7a7d11c0f44e311fa0d406310cddb4cb}{Matrice2x2}}(vec1,vec2);}
+\DoxyCodeLine{00048\ \ \ \ \ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}}\ \mbox{\hyperlink{class_matrice2x2_a4e80072711c073ee0d7054ba1473a6dd}{operator\ *\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}}\ \&V)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00057\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ vec1(\ (colonne1.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}*V.colonne1.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}})\ +\ (colonne2.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}*V.colonne1.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}),}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (colonne1.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}*V.colonne1.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}})\ +\ (colonne2.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}\ *\ V.colonne1.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}));}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ vec2(\ (colonne1.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}*V.colonne2.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}})\ +\ (colonne2.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}*V.colonne2.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}),}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (colonne1.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}\ *\ V.colonne2.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}})\ +\ (colonne2.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}*\ V.colonne2.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}));}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_matrice2x2_a7a7d11c0f44e311fa0d406310cddb4cb}{Matrice2x2}}(vec1,vec2);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \mbox{\hyperlink{class_matrice2x2_a4e80072711c073ee0d7054ba1473a6dd}{operator\ *\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \&V)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00075\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}(\ (colonne1.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}\ *\ V.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}})\ +\ (colonne2.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}\ *\ V.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}),}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (colonne1.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}*V.\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}\ )\ +\ (colonne2.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}\ *\ V.\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}));}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{operator}\ string\ ()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00088\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ ostringstream\ o;}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ o\ <<\ \textcolor{stringliteral}{"{}\{\ "{}}\ <<\ colonne1\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ colonne2\ <<\textcolor{stringliteral}{"{}\ \}"{}}\ <<\ endl;}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ o.str();}
+\DoxyCodeLine{00092\ \ \ \ \ \}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{inline}\ ostream\ \&\ \mbox{\hyperlink{_matrice2x2_8h_a20c8bdca3093761f699c3692a932ac4d}{operator\ <<\ }}(ostream\ \&s,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_matrice2x2}{Matrice2x2}}\ \&V)}
+\DoxyCodeLine{00103\ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordflow}{return}\ s\ <<\ (string)V;}
+\DoxyCodeLine{00105\ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//APP2\_MATRICE2X2\_H}}
+
+\end{DoxyCode}

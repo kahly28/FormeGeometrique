@@ -1,0 +1,87 @@
+\doxysection{Charger\+Rond Class Reference}
+\hypertarget{class_charger_rond}{}\label{class_charger_rond}\index{ChargerRond@{ChargerRond}}
+
+
+La classe \doxylink{class_charger_rond}{Charger\+Rond} est une classe concrète de la chaîne de responsabilité qui traite le chargement des ronds. Elle hérite de \doxylink{class_chargement_c_o_r}{Chargement\+COR}.  
+
+
+
+
+{\ttfamily \#include $<$Charger\+Rond.\+h$>$}
+
+Inheritance diagram for Charger\+Rond\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_charger_rond}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_charger_rond_a383292817f58f43f0fc703a4853a29de}{Charger\+Rond}} (\mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}} \texorpdfstring{$\ast$}{*}suivant)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_charger_rond}{Charger\+Rond}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_charger_rond_a082e8ca44c6698fd7e700f273cd07664}{charger}} (string ligne, \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*}\&p\+Forme) override
+\begin{DoxyCompactList}\small\item\em Méthode chargée de traiter la ligne de chargement pour créer une forme de type \doxylink{class_rond}{Rond}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_chargement_c_o_r_aaf538591a9b8e37d197744fe127e7c02}{Chargement\+COR}} (\mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}} \texorpdfstring{$\ast$}{*}suivant)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_chargement_c_o_r}{Chargement\+COR}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chargement_c_o_r_a6c931e529a7376556c29eb0fdf8413d3}{charger\+Suivant}} (string ligne, \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*}\&p\+Forme)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de passer la ligne au maillon suivant dans la chaîne de responsabilité. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_chargement_c_o_r_a87a9d6f96f8ab3bce0a6f4208537903c}{\+\_\+\+Coul\+COR}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \doxylink{class_charger_rond}{Charger\+Rond} est une classe concrète de la chaîne de responsabilité qui traite le chargement des ronds. Elle hérite de \doxylink{class_chargement_c_o_r}{Chargement\+COR}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_charger_rond_a383292817f58f43f0fc703a4853a29de}\label{class_charger_rond_a383292817f58f43f0fc703a4853a29de} 
+\index{ChargerRond@{ChargerRond}!ChargerRond@{ChargerRond}}
+\index{ChargerRond@{ChargerRond}!ChargerRond@{ChargerRond}}
+\doxysubsubsection{\texorpdfstring{ChargerRond()}{ChargerRond()}}
+{\footnotesize\ttfamily Charger\+Rond\+::\+Charger\+Rond (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}} \texorpdfstring{$\ast$}{*}}]{suivant }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de \doxylink{class_charger_rond}{Charger\+Rond}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suivant} & Pointeur vers le maillon suivant dans la chaîne de responsabilité. Initialise le maillon avec le suivant de la chaîne. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_charger_rond_a082e8ca44c6698fd7e700f273cd07664}\label{class_charger_rond_a082e8ca44c6698fd7e700f273cd07664} 
+\index{ChargerRond@{ChargerRond}!charger@{charger}}
+\index{charger@{charger}!ChargerRond@{ChargerRond}}
+\doxysubsubsection{\texorpdfstring{charger()}{charger()}}
+{\footnotesize\ttfamily void Charger\+Rond\+::charger (\begin{DoxyParamCaption}\item[{string}]{ligne,  }\item[{\mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*}\&}]{p\+Forme }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Méthode chargée de traiter la ligne de chargement pour créer une forme de type \doxylink{class_rond}{Rond}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ligne} & Ligne de chargement. \\
+\hline
+{\em p\+Forme} & Pointeur vers la forme à créer et charger. Si la ligne commence par "{}rond,"{}, elle crée une instance de \doxylink{class_rond}{Rond} avec les informations fournies et met à jour le pointeur vers la forme. Sinon, elle passe la ligne au maillon suivant dans la chaîne de responsabilité. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_chargement_c_o_r_af3cad1913655e7e2124fde2f54e01518}{Chargement\+COR}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Chargement\+COR/\mbox{\hyperlink{_charger_rond_8h}{Charger\+Rond.\+h}}\end{DoxyCompactItemize}

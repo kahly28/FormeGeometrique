@@ -1,0 +1,492 @@
+\doxysection{Forme\+Geometrique Class Reference}
+\hypertarget{class_forme_geometrique}{}\label{class_forme_geometrique}\index{FormeGeometrique@{FormeGeometrique}}
+
+
+{\ttfamily \#include $<$Forme\+Geometrique.\+h$>$}
+
+Inheritance diagram for Forme\+Geometrique\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_forme_geometrique}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_forme_geometrique_ae274d5e4cf4eba85b27087cb16c77b2b}{Forme\+Geometrique}} (\mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \&F)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie d\textquotesingle{}une forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_forme_geometrique_a02e20bc5f01271da3ee1a4e123329bb5}{Forme\+Geometrique}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur, int nb\+Points)
+\begin{DoxyCompactList}\small\item\em Constructeur d\textquotesingle{}une forme géométrique avec couleur et nombre de points. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_forme_geometrique_aa9c13cc292ae5b7c0ca6be6580dcfcd0}{get\+Nb\+Points}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de points de la forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_forme_geometrique_a0471c35e6c3879907fb66ffef55e75c9}{recevoir\+Groupe\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le groupe parent de la forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \& \mbox{\hyperlink{class_forme_geometrique_a72939d67cea4a5a6076a30c07e8a4959}{operator+}} (\mbox{\hyperlink{class_forme}{Forme}} \&F) override
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}ajout d\textquotesingle{}une forme au groupe. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_forme_geometrique_aa23ecaccd7263d1807b37c96099d4483}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em Clone la forme géométrique. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_forme_geometrique_acd3401362579d11bc151b3d83056a1c2}{get\+MinX}} () const =0
+\begin{DoxyCompactList}\small\item\em Retourne la coordonnée X minimale de la forme géométrique. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_forme_geometrique_aa563f88322640bf49ab36b7315562e9c}{get\+MinY}} () const =0
+\begin{DoxyCompactList}\small\item\em Retourne la coordonnée Y minimale de la forme géométrique. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_forme_geometrique_a99ac122c3c15b0934b5a7fabe3d709db}{get\+MaxX}} () const =0
+\begin{DoxyCompactList}\small\item\em Retourne la coordonnée X maximale de la forme géométrique. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_forme_geometrique_a8560742419419c09764cc38c52f4d9f2}{get\+MaxY}} () const =0
+\begin{DoxyCompactList}\small\item\em Retourne la coordonnée Y maximale de la forme géométrique. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_forme_geometrique_a0bd130a23cba848754a76207334d7b0a}{Calcul\+Aire}} () const =0
+\begin{DoxyCompactList}\small\item\em Calcul de l\textquotesingle{}aire de la forme géométrique. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_forme_geometrique_a0bf5e5ca2d815c57f2c276598946e595}{translation}} (\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&v)=0
+\begin{DoxyCompactList}\small\item\em Translation de la forme géométrique. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_forme_geometrique_aee8eb47f684d903b8beeb37135de4d38}{homothetie}} (double rapport, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&point\+Invariant)=0
+\begin{DoxyCompactList}\small\item\em Homothétie de la forme géométrique. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_forme_geometrique_a9eda2099d3a3b0270bce1481d5571950}{rotation}} (double angle, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&centre\+Rotation)=0
+\begin{DoxyCompactList}\small\item\em Rotation de la forme géométrique. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_forme_geometrique_a0d3b663664b4cbe2d162578ab23080ef}{algo}} (int eps1, int eps2, double \+\_\+\+Lambda, int \+\_\+a, int \+\_\+b) const =0
+\item 
+virtual \mbox{\hyperlink{class_forme_geometrique_a47a99e86eaef4f7e536ee7063b6e5d82}{operator string}} () const =0
+\begin{DoxyCompactList}\small\item\em Conversion de la forme géométrique en chaîne de caractères. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_forme_geometrique_a43845058df14a48ad3700eef4a207618}{\texorpdfstring{$\sim$}{\string~}\+Forme\+Geometrique}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la forme géométrique. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_forme_geometrique_af350c40a6d1e27694e2ce9016a272857}{afficher}} (ostream \&os) const =0
+\begin{DoxyCompactList}\small\item\em Affichage de la forme géométrique. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \& \mbox{\hyperlink{class_forme_geometrique_a812e01ba9f9b169462ec08888ae9b8f1}{operator=}} (const \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \&F)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_forme}{Forme}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_forme_a6c8d18b565986c69ede4789d0430d9ed}{Forme}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_forme_a75f2948beec045d69eaa0cd841b552e0}{Forme}} (const \mbox{\hyperlink{class_forme}{Forme}} \&F)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_a6de3808a0a11ee7259d60e4e8ee3f346}{set\+Groupe\+Parent}} (\mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*}nouveau\+Groupe\+Parent)
+\begin{DoxyCompactList}\small\item\em Définit le groupe parent de la forme. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_forme_a33990ce1db54541f081106026dfd7e86}{get\+Groupe\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le groupe parent de la forme. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_a065ea58a29610722f1aa58147493b87a}{set\+Couleur}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Définit la couleur de la forme. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \mbox{\hyperlink{class_forme_a4fb5ac9b55ecb4af4ceeb05aeb618873}{get\+Couleur}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la couleur de la forme. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_forme_af6ad0735f86713459453c9d775f44aca}{\texorpdfstring{$\sim$}{\string~}\+Forme}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_forme_af7b13a32b3b169d30e4efc288cbbc06e}{enum\+To\+String}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} c) const
+\begin{DoxyCompactList}\small\item\em Convertit une valeur de l\textquotesingle{}énumération Couleur en une chaîne de caractères. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_forme_ac9055cf244bef40ffae7606a9c3eff8c}{rotation\+Point}} (const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&point, double angle, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&centre\+Rotation) const
+\begin{DoxyCompactList}\small\item\em Effectue la rotation d\textquotesingle{}un point autour d\textquotesingle{}un centre donné. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_forme_geometrique_a15f8c9bbeb8db0a20a1d45d6aee4451e}{accepter}} (\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}F) const =0
+\begin{DoxyCompactList}\small\item\em Accepte un visiteur de forme. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_forme_geometrique_aec38169c7a89661519c4a1036bf6cc6c}{accepter}} (\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}S) const =0
+\begin{DoxyCompactList}\small\item\em Accepte un visiteur de sauvegarde. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_forme_geometrique_ae274d5e4cf4eba85b27087cb16c77b2b}\label{class_forme_geometrique_ae274d5e4cf4eba85b27087cb16c77b2b} 
+\index{FormeGeometrique@{FormeGeometrique}!FormeGeometrique@{FormeGeometrique}}
+\index{FormeGeometrique@{FormeGeometrique}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{FormeGeometrique()}{FormeGeometrique()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Forme\+Geometrique\+::\+Forme\+Geometrique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \&}]{F }\end{DoxyParamCaption})}
+
+
+
+Constructeur de copie d\textquotesingle{}une forme géométrique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F} & \doxylink{class_forme}{Forme} géométrique à copier. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_forme_geometrique_a02e20bc5f01271da3ee1a4e123329bb5}\label{class_forme_geometrique_a02e20bc5f01271da3ee1a4e123329bb5} 
+\index{FormeGeometrique@{FormeGeometrique}!FormeGeometrique@{FormeGeometrique}}
+\index{FormeGeometrique@{FormeGeometrique}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{FormeGeometrique()}{FormeGeometrique()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Forme\+Geometrique\+::\+Forme\+Geometrique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}]{couleur,  }\item[{int}]{nb\+Points }\end{DoxyParamCaption})}
+
+
+
+Constructeur d\textquotesingle{}une forme géométrique avec couleur et nombre de points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em couleur} & Couleur de la forme géométrique. \\
+\hline
+{\em nb\+Points} & Nombre de points. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_forme_geometrique_a43845058df14a48ad3700eef4a207618}\label{class_forme_geometrique_a43845058df14a48ad3700eef4a207618} 
+\index{FormeGeometrique@{FormeGeometrique}!````~FormeGeometrique@{\texorpdfstring{$\sim$}{\string~}FormeGeometrique}}
+\index{````~FormeGeometrique@{\texorpdfstring{$\sim$}{\string~}FormeGeometrique}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FormeGeometrique()}{\string~FormeGeometrique()}}
+{\footnotesize\ttfamily Forme\+Geometrique\+::\texorpdfstring{$\sim$}{\string~}\+Forme\+Geometrique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructeur de la forme géométrique. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_forme_geometrique_a15f8c9bbeb8db0a20a1d45d6aee4451e}\label{class_forme_geometrique_a15f8c9bbeb8db0a20a1d45d6aee4451e} 
+\index{FormeGeometrique@{FormeGeometrique}!accepter@{accepter}}
+\index{accepter@{accepter}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{accepter()}{accepter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Forme\+Geometrique\+::accepter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}}]{F }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Accepte un visiteur de forme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F} & Visiteur de forme. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_aab0f3cbc4f2427324b2136d2c92acdbf}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_af8e6dd74fce37201d83b4316f78c90e1}{Croix}}, \mbox{\hyperlink{class_polygone_adbe3cd8ac0d08d705edd8da8b82f1492}{Polygone}}, and \mbox{\hyperlink{class_rond_a159b406465392ac63685eeb93e237cb3}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_aec38169c7a89661519c4a1036bf6cc6c}\label{class_forme_geometrique_aec38169c7a89661519c4a1036bf6cc6c} 
+\index{FormeGeometrique@{FormeGeometrique}!accepter@{accepter}}
+\index{accepter@{accepter}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{accepter()}{accepter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Forme\+Geometrique\+::accepter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}}]{S }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Accepte un visiteur de sauvegarde. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & Visiteur de sauvegarde. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_aeec5f4fec0c222187843c1d1eaa1b488}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_ac2d073937bb15fa1e69bd07c433e4cbc}{Croix}}, \mbox{\hyperlink{class_polygone_a473b222fee3aab01509e7deab0e8c5ae}{Polygone}}, and \mbox{\hyperlink{class_rond_a7742197d8b255ada420bdf4753c13cdf}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_af350c40a6d1e27694e2ce9016a272857}\label{class_forme_geometrique_af350c40a6d1e27694e2ce9016a272857} 
+\index{FormeGeometrique@{FormeGeometrique}!afficher@{afficher}}
+\index{afficher@{afficher}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily virtual void Forme\+Geometrique\+::afficher (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Affichage de la forme géométrique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_a21d32763f37f0ede51f56c16c6e8807c}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_ae535524247d82254bc12e43144548559}{Croix}}, \mbox{\hyperlink{class_polygone_af70779166f420a507de257e0820ddaf6}{Polygone}}, and \mbox{\hyperlink{class_rond_adde18c9dbae70235fc549b49c7a8cb0d}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_a0d3b663664b4cbe2d162578ab23080ef}\label{class_forme_geometrique_a0d3b663664b4cbe2d162578ab23080ef} 
+\index{FormeGeometrique@{FormeGeometrique}!algo@{algo}}
+\index{algo@{algo}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{algo()}{algo()}}
+{\footnotesize\ttfamily virtual string Forme\+Geometrique\+::algo (\begin{DoxyParamCaption}\item[{int}]{eps1,  }\item[{int}]{eps2,  }\item[{double}]{\+\_\+\+Lambda,  }\item[{int}]{\+\_\+a,  }\item[{int}]{\+\_\+b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_forme_a7729f3904fba595a3ae0ea1fd44a817f}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_polygone_a76696eba8f60bcffb1c6bdfec4fa7adf}{Polygone}}, \mbox{\hyperlink{class_croix_a4db1fcdf7c9ac3b66f5358efd459139f}{Croix}}, and \mbox{\hyperlink{class_rond_a6b30ed516fc622698b362fb87d350d78}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_a0bd130a23cba848754a76207334d7b0a}\label{class_forme_geometrique_a0bd130a23cba848754a76207334d7b0a} 
+\index{FormeGeometrique@{FormeGeometrique}!CalculAire@{CalculAire}}
+\index{CalculAire@{CalculAire}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{CalculAire()}{CalculAire()}}
+{\footnotesize\ttfamily virtual double Forme\+Geometrique\+::\+Calcul\+Aire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calcul de l\textquotesingle{}aire de la forme géométrique. 
+
+\begin{DoxyReturn}{Returns}
+Aire de la forme géométrique. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_ab1140cb163eb60b1d83191226a8841cf}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_a409bbf062d350d6d351ddbc22bea7877}{Croix}}, \mbox{\hyperlink{class_polygone_aba81c6a9306628f85f2f6cc2131e2a42}{Polygone}}, and \mbox{\hyperlink{class_rond_a8b922dbdea8853706051f8e0302b77cc}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_aa23ecaccd7263d1807b37c96099d4483}\label{class_forme_geometrique_aa23ecaccd7263d1807b37c96099d4483} 
+\index{FormeGeometrique@{FormeGeometrique}!clone@{clone}}
+\index{clone@{clone}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \texorpdfstring{$\ast$}{*} Forme\+Geometrique\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Clone la forme géométrique. 
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers la forme géométrique clonée. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_aa846673739124ed44293ceaf515f3fa8}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_a5d9eca963de3977cb3bbf58a9667efb2}{Croix}}, \mbox{\hyperlink{class_polygone_ab4f054c064da793bad593c8777a9c61c}{Polygone}}, and \mbox{\hyperlink{class_rond_aca451d1d0caa9f4fdcd6e99cecd1370e}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_a99ac122c3c15b0934b5a7fabe3d709db}\label{class_forme_geometrique_a99ac122c3c15b0934b5a7fabe3d709db} 
+\index{FormeGeometrique@{FormeGeometrique}!getMaxX@{getMaxX}}
+\index{getMaxX@{getMaxX}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{getMaxX()}{getMaxX()}}
+{\footnotesize\ttfamily virtual double Forme\+Geometrique\+::get\+MaxX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retourne la coordonnée X maximale de la forme géométrique. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée X maximale. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_afbb52fe0031ca3b06409a9ff7aa0e681}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_a060c728bce45b11884191bd0ee1f8615}{Croix}}, \mbox{\hyperlink{class_polygone_a997fcb587ce1bc300222dc50f0b03dc5}{Polygone}}, and \mbox{\hyperlink{class_rond_a615b16bcbd416f4fb01c5b97e71d1f96}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_a8560742419419c09764cc38c52f4d9f2}\label{class_forme_geometrique_a8560742419419c09764cc38c52f4d9f2} 
+\index{FormeGeometrique@{FormeGeometrique}!getMaxY@{getMaxY}}
+\index{getMaxY@{getMaxY}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{getMaxY()}{getMaxY()}}
+{\footnotesize\ttfamily virtual double Forme\+Geometrique\+::get\+MaxY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retourne la coordonnée Y maximale de la forme géométrique. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée Y maximale. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_a002bf2a68c1d04721401651372eda2c7}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_accd39913d110e03a7e5dbe214d621277}{Croix}}, \mbox{\hyperlink{class_polygone_a5097d27b11eaf995b8663301921d7396}{Polygone}}, and \mbox{\hyperlink{class_rond_af9a7f4f5785ef79d3ddcef1435acfbd2}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_acd3401362579d11bc151b3d83056a1c2}\label{class_forme_geometrique_acd3401362579d11bc151b3d83056a1c2} 
+\index{FormeGeometrique@{FormeGeometrique}!getMinX@{getMinX}}
+\index{getMinX@{getMinX}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{getMinX()}{getMinX()}}
+{\footnotesize\ttfamily virtual double Forme\+Geometrique\+::get\+MinX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retourne la coordonnée X minimale de la forme géométrique. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée X minimale. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_ae852d191fcfdad58e1fa5d4b3bb1fbc0}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_aafbf0f2b103ee2781320259436bd410f}{Croix}}, \mbox{\hyperlink{class_polygone_afd0c58fd3218ea1d1eb6073ea1ff261d}{Polygone}}, and \mbox{\hyperlink{class_rond_a3e44567cefdffaa8d418b63dd3a985d2}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_aa563f88322640bf49ab36b7315562e9c}\label{class_forme_geometrique_aa563f88322640bf49ab36b7315562e9c} 
+\index{FormeGeometrique@{FormeGeometrique}!getMinY@{getMinY}}
+\index{getMinY@{getMinY}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{getMinY()}{getMinY()}}
+{\footnotesize\ttfamily virtual double Forme\+Geometrique\+::get\+MinY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retourne la coordonnée Y minimale de la forme géométrique. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée Y minimale. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_a36d1a92894ef6406cdd4c4b734e6adf0}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_a9744197334b8abffbec1cc2a704f748e}{Croix}}, \mbox{\hyperlink{class_polygone_a92f25a6fb0870af0c00feaf2b59b9d36}{Polygone}}, and \mbox{\hyperlink{class_rond_afb99e3b80c050a60c84df264411af407}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_aa9c13cc292ae5b7c0ca6be6580dcfcd0}\label{class_forme_geometrique_aa9c13cc292ae5b7c0ca6be6580dcfcd0} 
+\index{FormeGeometrique@{FormeGeometrique}!getNbPoints@{getNbPoints}}
+\index{getNbPoints@{getNbPoints}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{getNbPoints()}{getNbPoints()}}
+{\footnotesize\ttfamily int Forme\+Geometrique\+::get\+Nb\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retourne le nombre de points de la forme géométrique. 
+
+\begin{DoxyReturn}{Returns}
+Nombre de points. 
+\end{DoxyReturn}
+\Hypertarget{class_forme_geometrique_aee8eb47f684d903b8beeb37135de4d38}\label{class_forme_geometrique_aee8eb47f684d903b8beeb37135de4d38} 
+\index{FormeGeometrique@{FormeGeometrique}!homothetie@{homothetie}}
+\index{homothetie@{homothetie}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{homothetie()}{homothetie()}}
+{\footnotesize\ttfamily virtual void Forme\+Geometrique\+::homothetie (\begin{DoxyParamCaption}\item[{double}]{rapport,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{point\+Invariant }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Homothétie de la forme géométrique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rapport} & Rapport d\textquotesingle{}homothétie. \\
+\hline
+{\em point\+Invariant} & Point invariant de l\textquotesingle{}homothétie. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_addb91a5b4c5c45e644d9a3f3464b72b7}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_a5282f26a261c22fe3268b4e311937744}{Croix}}, \mbox{\hyperlink{class_polygone_aba03cdc980e8b84c9f6461354c8845a9}{Polygone}}, and \mbox{\hyperlink{class_rond_a7ece876c90da8a794fa6bfd33cee8a92}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_a47a99e86eaef4f7e536ee7063b6e5d82}\label{class_forme_geometrique_a47a99e86eaef4f7e536ee7063b6e5d82} 
+\index{FormeGeometrique@{FormeGeometrique}!operator string@{operator string}}
+\index{operator string@{operator string}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily virtual Forme\+Geometrique\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Conversion de la forme géométrique en chaîne de caractères. 
+
+\begin{DoxyReturn}{Returns}
+Chaîne représentant la forme géométrique. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_a6ad05e3231b6753d2133ca5438e0feeb}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_aab710339c4d963f361d5153ebd870725}{Croix}}, \mbox{\hyperlink{class_polygone_a2247f0bbed3686e65e29735cc4632364}{Polygone}}, and \mbox{\hyperlink{class_rond_a6b9604f908fc5b3ea12d52f5fac83f3c}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_a72939d67cea4a5a6076a30c07e8a4959}\label{class_forme_geometrique_a72939d67cea4a5a6076a30c07e8a4959} 
+\index{FormeGeometrique@{FormeGeometrique}!operator+@{operator+}}
+\index{operator+@{operator+}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_groupe}{Groupe}} \& Forme\+Geometrique\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme}{Forme}} \&}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Opérateur d\textquotesingle{}ajout d\textquotesingle{}une forme au groupe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F} & \doxylink{class_forme}{Forme} à ajouter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence vers le groupe actuel. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_a2a0b46216a6a3f28197e85c300d1d09b}{Forme}}.
+
+\Hypertarget{class_forme_geometrique_a812e01ba9f9b169462ec08888ae9b8f1}\label{class_forme_geometrique_a812e01ba9f9b169462ec08888ae9b8f1} 
+\index{FormeGeometrique@{FormeGeometrique}!operator=@{operator=}}
+\index{operator=@{operator=}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \& Forme\+Geometrique\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \&}]{F }\end{DoxyParamCaption})}
+
+\Hypertarget{class_forme_geometrique_a0471c35e6c3879907fb66ffef55e75c9}\label{class_forme_geometrique_a0471c35e6c3879907fb66ffef55e75c9} 
+\index{FormeGeometrique@{FormeGeometrique}!recevoirGroupeParent@{recevoirGroupeParent}}
+\index{recevoirGroupeParent@{recevoirGroupeParent}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{recevoirGroupeParent()}{recevoirGroupeParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} Forme\+Geometrique\+::recevoir\+Groupe\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retourne le groupe parent de la forme géométrique. 
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers le groupe parent ou nullptr s\textquotesingle{}il n\textquotesingle{}y en a pas. 
+\end{DoxyReturn}
+\Hypertarget{class_forme_geometrique_a9eda2099d3a3b0270bce1481d5571950}\label{class_forme_geometrique_a9eda2099d3a3b0270bce1481d5571950} 
+\index{FormeGeometrique@{FormeGeometrique}!rotation@{rotation}}
+\index{rotation@{rotation}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily virtual void Forme\+Geometrique\+::rotation (\begin{DoxyParamCaption}\item[{double}]{angle,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{centre\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Rotation de la forme géométrique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Angle de rotation. \\
+\hline
+{\em centre\+Rotation} & Centre de rotation. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_a22a335ba47161007eb9a3b991542f288}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_a2d20b27724bb3415e63935e21e54d636}{Croix}}, \mbox{\hyperlink{class_polygone_a3588de03d6a32c1bde93d0bc5596b870}{Polygone}}, and \mbox{\hyperlink{class_rond_a1df066b40906bb2cfaa28c0f01c8da62}{Rond}}.
+
+\Hypertarget{class_forme_geometrique_a0bf5e5ca2d815c57f2c276598946e595}\label{class_forme_geometrique_a0bf5e5ca2d815c57f2c276598946e595} 
+\index{FormeGeometrique@{FormeGeometrique}!translation@{translation}}
+\index{translation@{translation}!FormeGeometrique@{FormeGeometrique}}
+\doxysubsubsection{\texorpdfstring{translation()}{translation()}}
+{\footnotesize\ttfamily virtual void Forme\+Geometrique\+::translation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Translation de la forme géométrique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vecteur de translation. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_afb57420bf6ad705b88f46129bb129660}{Forme}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_croix_ae6c4ebc36a5bfdc7105dc80b1efcb172}{Croix}}, \mbox{\hyperlink{class_polygone_ab1331dfc6794d70b41cc15760f90110a}{Polygone}}, and \mbox{\hyperlink{class_rond_a413f527e8f537f2d412712af81747d81}{Rond}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Forme/\mbox{\hyperlink{_forme_geometrique_8h}{Forme\+Geometrique.\+h}}\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Forme/\mbox{\hyperlink{_forme_geometrique_8cpp}{Forme\+Geometrique.\+cpp}}\end{DoxyCompactItemize}

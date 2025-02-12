@@ -1,0 +1,36 @@
+\doxysection{Couleur\+COR.\+h}
+\hypertarget{_couleur_c_o_r_8h_source}{}\label{_couleur_c_o_r_8h_source}\index{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/CouleurCOR/CouleurCOR.h@{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/CouleurCOR/CouleurCOR.h}}
+\mbox{\hyperlink{_couleur_c_o_r_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Ahmet\ on\ 05/03/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ APP2\_COULEURCOR\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ APP2\_COULEURCOR\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_forme_8h}{../Forme/Forme.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_couleur_c_o_r}{CouleurCOR}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_couleur_c_o_r}{CouleurCOR}}\ *\ \_suivant;\ \ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_couleur_c_o_r_a6bb3b57e1021388abdc5d6a869cafbb6}{CouleurCOR}}(\mbox{\hyperlink{class_couleur_c_o_r}{CouleurCOR}}\ *\ suivant):\ \_suivant(suivant)}
+\DoxyCodeLine{00026\ \ \ \ \ \{\}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ \mbox{\hyperlink{class_couleur_c_o_r_a3bd782784ecf173583de5cb9af1b953b}{choixCouleur}}(\textcolor{keywordtype}{string}\ ligne,\ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ *\&c)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_couleur_c_o_r_ada37e24fba200d2bebe591201e36c342}{choixCouleurSuivant}}(\textcolor{keywordtype}{string}\ ligne,\ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ *\&c\ )\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00042\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \_suivant-\/>\mbox{\hyperlink{class_couleur_c_o_r_a3bd782784ecf173583de5cb9af1b953b}{choixCouleur}}(ligne,c);}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//APP2\_COULEURCOR\_H}}
+
+\end{DoxyCode}

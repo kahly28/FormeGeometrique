@@ -1,0 +1,79 @@
+\doxysection{Rond.\+h}
+\hypertarget{_rond_8h_source}{}\label{_rond_8h_source}\index{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Forme/Rond.h@{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Forme/Rond.h}}
+\mbox{\hyperlink{_rond_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Ahmet\ on\ 27/12/2023.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ CLIENT\_ROND\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ CLIENT\_ROND\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_erreur_8h}{../Erreur.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_groupe_8h}{Groupe.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\#include\ "{}../Fenetre.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_forme_visitor}{FormeVisitor}};}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sauvegarde_visitor}{SauvegardeVisitor}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rond}{Rond}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_forme_geometrique}{FormeGeometrique}}\{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \_point;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{double}\ \_rayon;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ copier(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rond}{Rond}}\ \&\ R);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ detruire();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_rond_a41611c18b6000f44bf4f72946dded24d}{Rond}}(\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ couleur,\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ pt,\ \textcolor{keywordtype}{double}\ rayon);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_rond_a41611c18b6000f44bf4f72946dded24d}{Rond}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rond}{Rond}}\ \&\ R);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \mbox{\hyperlink{class_rond_ac8c1246052b983cacbfb01a91cf70afa}{getPoint}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_rond_aa3fce1635a236d591ffec403779df04e}{getRayon}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{class_rond}{Rond}}\ *\ \mbox{\hyperlink{class_rond_aca451d1d0caa9f4fdcd6e99cecd1370e}{clone}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{class_rond_a73e4c296cddc76248b69c6a61dd22708}{\string~Rond}}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_rond_a3e44567cefdffaa8d418b63dd3a985d2}{getMinX}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_rond_afb99e3b80c050a60c84df264411af407}{getMinY}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_rond_a615b16bcbd416f4fb01c5b97e71d1f96}{getMaxX}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_rond_af9a7f4f5785ef79d3ddcef1435acfbd2}{getMaxY}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_rond_a6b30ed516fc622698b362fb87d350d78}{algo}}(\textcolor{keywordtype}{int}\ eps1,\textcolor{keywordtype}{int}\ eps2,\textcolor{keywordtype}{double}\ \_Lambda,\textcolor{keywordtype}{int}\ \_a,\ \textcolor{keywordtype}{int}\ \_b)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_rond_a8b922dbdea8853706051f8e0302b77cc}{CalculAire}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rond_a413f527e8f537f2d412712af81747d81}{translation}}(\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\&\ v)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rond_a7ece876c90da8a794fa6bfd33cee8a92}{homothetie}}(\textcolor{keywordtype}{double}\ rapport,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \&V)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rond_a1df066b40906bb2cfaa28c0f01c8da62}{rotation}}(\textcolor{keywordtype}{double}\ angle,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\&\ centreRotation)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rond_adde18c9dbae70235fc549b49c7a8cb0d}{afficher}}(ostream\ \&os)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rond_a159b406465392ac63685eeb93e237cb3}{accepter}}(\mbox{\hyperlink{class_forme_visitor}{FormeVisitor}}\ *\ F)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rond_a159b406465392ac63685eeb93e237cb3}{accepter}}(\mbox{\hyperlink{class_sauvegarde_visitor}{SauvegardeVisitor}}\ *S)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keyword}{operator}\ string()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_rond}{Rond}}\ \&\ \mbox{\hyperlink{class_rond_a551b12534a508a5f9e85640a00069e6f}{operator\ =\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rond}{Rond}}\ \&R);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \};}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CLIENT\_ROND\_H}}
+
+\end{DoxyCode}

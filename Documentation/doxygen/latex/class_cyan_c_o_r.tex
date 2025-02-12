@@ -1,0 +1,84 @@
+\doxysection{Cyan\+COR Class Reference}
+\hypertarget{class_cyan_c_o_r}{}\label{class_cyan_c_o_r}\index{CyanCOR@{CyanCOR}}
+
+
+La classe \doxylink{class_cyan_c_o_r}{Cyan\+COR} gère la conversion du nom de couleur "{}cyan"{} vers l\textquotesingle{}énumération Couleur. Elle hérite de \doxylink{class_couleur_c_o_r}{Couleur\+COR} et utilise le modèle de chaîne de responsabilité.  
+
+
+
+
+{\ttfamily \#include $<$Cyan\+COR.\+h$>$}
+
+Inheritance diagram for Cyan\+COR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cyan_c_o_r}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cyan_c_o_r_a07269e3ad80b1478004ba96dd220caf9}{Cyan\+COR}} (\mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}} \texorpdfstring{$\ast$}{*}suivant)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_cyan_c_o_r}{Cyan\+COR}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \mbox{\hyperlink{class_cyan_c_o_r_aae10d6f63b77cc10c07043769051d874}{choix\+Couleur}} (string ligne, \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \texorpdfstring{$\ast$}{*}\&couleur) const override
+\begin{DoxyCompactList}\small\item\em Méthode pour choisir la couleur correspondante à partir du nom de couleur donné. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_couleur_c_o_r_a6bb3b57e1021388abdc5d6a869cafbb6}{Couleur\+COR}} (\mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}} \texorpdfstring{$\ast$}{*}suivant)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_couleur_c_o_r}{Couleur\+COR}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_couleur_c_o_r_ada37e24fba200d2bebe591201e36c342}{choix\+Couleur\+Suivant}} (string ligne, \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \texorpdfstring{$\ast$}{*}\&c) const
+\begin{DoxyCompactList}\small\item\em Méthode permettant de passer la demande de choix de couleur au maillon suivant dans la chaîne de responsabilité. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \doxylink{class_cyan_c_o_r}{Cyan\+COR} gère la conversion du nom de couleur "{}cyan"{} vers l\textquotesingle{}énumération Couleur. Elle hérite de \doxylink{class_couleur_c_o_r}{Couleur\+COR} et utilise le modèle de chaîne de responsabilité. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_cyan_c_o_r_a07269e3ad80b1478004ba96dd220caf9}\label{class_cyan_c_o_r_a07269e3ad80b1478004ba96dd220caf9} 
+\index{CyanCOR@{CyanCOR}!CyanCOR@{CyanCOR}}
+\index{CyanCOR@{CyanCOR}!CyanCOR@{CyanCOR}}
+\doxysubsubsection{\texorpdfstring{CyanCOR()}{CyanCOR()}}
+{\footnotesize\ttfamily Cyan\+COR\+::\+Cyan\+COR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}} \texorpdfstring{$\ast$}{*}}]{suivant }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de \doxylink{class_cyan_c_o_r}{Cyan\+COR}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suivant} & Pointeur vers le maillon suivant dans la chaîne de responsabilité. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cyan_c_o_r_aae10d6f63b77cc10c07043769051d874}\label{class_cyan_c_o_r_aae10d6f63b77cc10c07043769051d874} 
+\index{CyanCOR@{CyanCOR}!choixCouleur@{choixCouleur}}
+\index{choixCouleur@{choixCouleur}!CyanCOR@{CyanCOR}}
+\doxysubsubsection{\texorpdfstring{choixCouleur()}{choixCouleur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} Cyan\+COR\+::choix\+Couleur (\begin{DoxyParamCaption}\item[{string}]{ligne,  }\item[{\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \texorpdfstring{$\ast$}{*}\&}]{couleur }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Méthode pour choisir la couleur correspondante à partir du nom de couleur donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ligne} & Nom de la couleur à convertir. \\
+\hline
+{\em couleur} & Pointeur vers l\textquotesingle{}énumération Couleur à remplir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La couleur correspondante si elle est trouvée, sinon appelle la méthode du maillon suivant dans la chaîne. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_couleur_c_o_r_a3bd782784ecf173583de5cb9af1b953b}{Couleur\+COR}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Couleur\+COR/\mbox{\hyperlink{_cyan_c_o_r_8h}{Cyan\+COR.\+h}}\end{DoxyCompactItemize}

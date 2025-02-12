@@ -1,0 +1,53 @@
+\doxysection{Vecteur2\+D.\+h}
+\hypertarget{_vecteur2_d_8h_source}{}\label{_vecteur2_d_8h_source}\index{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Vecteur2D.h@{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Vecteur2D.h}}
+\mbox{\hyperlink{_vecteur2_d_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ Vecteur2D.hpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Project}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Ahmet\ on\ 06/12/2023.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ Vecteur2D\_hpp}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ Vecteur2D\_hpp}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_matrice2x2}{Matrice2x2}};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}};\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}};\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_vecteur2_d_ad9dee29de356e9bd4bee597dddf431b0}{Vecteur2D}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&x\ =\ 0,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&y\ =\ 0):\mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\_x}}(x),\mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\_y}}(y)\{\}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{operator}\ string\ ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \mbox{\hyperlink{class_vecteur2_d_a43b1f6d23d1c4de596a184399cabb5c1}{operator\ +\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \&V)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \mbox{\hyperlink{class_vecteur2_d_ae321cc9bf31e6af018bc5b1df47d8dc2}{operator\ -\/\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \&V)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \&\ \mbox{\hyperlink{class_vecteur2_d_ae310a3abc99b9b210c7d743dbf6dbfb8}{operator\ +=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \&V);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \mbox{\hyperlink{class_vecteur2_d_a6bd05da962f203d67a04042c0780023e}{operator\ *\ }}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&\ a)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{friend}\ ostream\ \&\ \mbox{\hyperlink{class_vecteur2_d_a946b6f0796de4a88d82e560041360534}{operator\ <<\ }}(ostream\ \&s,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \&V);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{inline}\ ostream\ \&\ \mbox{\hyperlink{_vecteur2_d_8h_a946b6f0796de4a88d82e560041360534}{operator\ <<\ }}(ostream\ \&s,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \&V)}
+\DoxyCodeLine{00089\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordflow}{return}\ s\ <<\ (string)V;}
+\DoxyCodeLine{00091\ \}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ Vecteur2D\_hpp\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

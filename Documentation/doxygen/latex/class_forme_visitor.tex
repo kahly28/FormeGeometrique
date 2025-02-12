@@ -1,0 +1,316 @@
+\doxysection{Forme\+Visitor Class Reference}
+\hypertarget{class_forme_visitor}{}\label{class_forme_visitor}\index{FormeVisitor@{FormeVisitor}}
+
+
+Représente un visiteur abstrait permettant d\textquotesingle{}établir une connexion avec un serveur graphique. Il définit des méthodes spécifiques pour chaque type de forme, adaptées à la bibliothèque cible.  
+
+
+
+
+{\ttfamily \#include $<$Forme\+Visitor.\+h$>$}
+
+Inheritance diagram for Forme\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_forme_visitor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_forme_visitor_ac63c6c499c75ed644ebc0fcc5e62a513}{Forme\+Visitor}} (string adr, int port, \mbox{\hyperlink{class_fenetre}{Fenetre}} \texorpdfstring{$\ast$}{*}f)
+\begin{DoxyCompactList}\small\item\em Constructeur pour \doxylink{class_forme_visitor}{Forme\+Visitor}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_forme_visitor_a416e8f96a574d16f68e4ba9e6e8e1c5e}{get\+Adresse}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour l\textquotesingle{}adresse IP du serveur graphique. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_forme_visitor_a45ca20c5495a42e61a499490dba9baf1}{get\+Port}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le port de connexion au serveur graphique. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_forme_visitor_a6f81fcffc2bf7b610dafd0c9cf0492f2}{get\+Eps1}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur Epsilon 1 de la fenêtre. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_forme_visitor_ab2456f022f1e43069acb8b2375f418da}{get\+Eps2}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur Epsilon 2 de la fenêtre. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}{get\+Lambda}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur Lambda de la fenêtre. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_forme_visitor_aa9d15253a094c338f142d837fac690a7}{a\+Get}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur \textquotesingle{}a\textquotesingle{} de la fenêtre. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_forme_visitor_a9ad146cfe59c5b223f8e9906cd3e5c3e}{b\+Get}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur \textquotesingle{}b\textquotesingle{} de la fenêtre. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_forme_visitor_a7ca020107fb3295051ea51191f1dc770}{get\+Liste\+Forme}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la liste des formes géométriques de la fenêtre. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_forme_visitor_a1c01ab56cadcb99b2547d88c7bf3b671}{visiter\+Groupe}} (const \mbox{\hyperlink{class_groupe}{Groupe}} \&G)=0
+\begin{DoxyCompactList}\small\item\em Visite un groupe de formes géométriques. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_visitor_a19ff85849f405d9ffdd516813230cb7b}{visiter\+Forme}} (\mbox{\hyperlink{class_forme}{Forme}} \&forme)
+\begin{DoxyCompactList}\small\item\em Visite une forme générique. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_forme_visitor_ad81261af29ef17742954a262932ea735}{visiter\+Rond}} (const \mbox{\hyperlink{class_rond}{Rond}} \&R)=0
+\begin{DoxyCompactList}\small\item\em Visite un cercle dans le contexte de la bibliothèque graphique cible. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_forme_visitor_a792379e1981460005c70b2cf94efcd73}{visiter\+Polygone}} (const \mbox{\hyperlink{class_polygone}{Polygone}} \&P)=0
+\begin{DoxyCompactList}\small\item\em Visite un polygone dans le contexte de la bibliothèque graphique cible. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_forme_visitor_a33737aa7c7e6806f9ff24fa822ecc6f4}{visiter\+Croix}} (const \mbox{\hyperlink{class_croix}{Croix}} \&C)=0
+\begin{DoxyCompactList}\small\item\em Visite une croix dans le contexte de la bibliothèque graphique cible. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_forme_visitor_a5f61ad763908dd55d67eeb953e076373}{\texorpdfstring{$\sim$}{\string~}\+Forme\+Visitor}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel pour \doxylink{class_forme_visitor}{Forme\+Visitor}, responsable de la fermeture de la connexion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_visitor_a97b5c3637b780d3157bbed08d1a1310a}{quitter}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_forme_visitor_a421589b89b2e8c39a64dea4e945f0f5c}{send\+Message}} (string message) const
+\begin{DoxyCompactList}\small\item\em Envoie un message au serveur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Représente un visiteur abstrait permettant d\textquotesingle{}établir une connexion avec un serveur graphique. Il définit des méthodes spécifiques pour chaque type de forme, adaptées à la bibliothèque cible. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_forme_visitor_ac63c6c499c75ed644ebc0fcc5e62a513}\label{class_forme_visitor_ac63c6c499c75ed644ebc0fcc5e62a513} 
+\index{FormeVisitor@{FormeVisitor}!FormeVisitor@{FormeVisitor}}
+\index{FormeVisitor@{FormeVisitor}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{FormeVisitor()}{FormeVisitor()}}
+{\footnotesize\ttfamily Forme\+Visitor\+::\+Forme\+Visitor (\begin{DoxyParamCaption}\item[{string}]{adr,  }\item[{int}]{port,  }\item[{\mbox{\hyperlink{class_fenetre}{Fenetre}} \texorpdfstring{$\ast$}{*}}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur pour \doxylink{class_forme_visitor}{Forme\+Visitor}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adr} & Adresse IP du serveur. \\
+\hline
+{\em port} & Port de connexion au serveur. \\
+\hline
+{\em f} & Pointeur vers la fenêtre à visiter. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_forme_visitor_a5f61ad763908dd55d67eeb953e076373}\label{class_forme_visitor_a5f61ad763908dd55d67eeb953e076373} 
+\index{FormeVisitor@{FormeVisitor}!````~FormeVisitor@{\texorpdfstring{$\sim$}{\string~}FormeVisitor}}
+\index{````~FormeVisitor@{\texorpdfstring{$\sim$}{\string~}FormeVisitor}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FormeVisitor()}{\string~FormeVisitor()}}
+{\footnotesize\ttfamily virtual Forme\+Visitor\+::\texorpdfstring{$\sim$}{\string~}\+Forme\+Visitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destructeur virtuel pour \doxylink{class_forme_visitor}{Forme\+Visitor}, responsable de la fermeture de la connexion. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_forme_visitor_aa9d15253a094c338f142d837fac690a7}\label{class_forme_visitor_aa9d15253a094c338f142d837fac690a7} 
+\index{FormeVisitor@{FormeVisitor}!aGet@{aGet}}
+\index{aGet@{aGet}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{aGet()}{aGet()}}
+{\footnotesize\ttfamily double Forme\+Visitor\+::a\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur pour la valeur \textquotesingle{}a\textquotesingle{} de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+Valeur \textquotesingle{}a\textquotesingle{} de la fenêtre. 
+\end{DoxyReturn}
+\Hypertarget{class_forme_visitor_a9ad146cfe59c5b223f8e9906cd3e5c3e}\label{class_forme_visitor_a9ad146cfe59c5b223f8e9906cd3e5c3e} 
+\index{FormeVisitor@{FormeVisitor}!bGet@{bGet}}
+\index{bGet@{bGet}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{bGet()}{bGet()}}
+{\footnotesize\ttfamily double Forme\+Visitor\+::b\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur pour la valeur \textquotesingle{}b\textquotesingle{} de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+Valeur \textquotesingle{}b\textquotesingle{} de la fenêtre. 
+\end{DoxyReturn}
+\Hypertarget{class_forme_visitor_a416e8f96a574d16f68e4ba9e6e8e1c5e}\label{class_forme_visitor_a416e8f96a574d16f68e4ba9e6e8e1c5e} 
+\index{FormeVisitor@{FormeVisitor}!getAdresse@{getAdresse}}
+\index{getAdresse@{getAdresse}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{getAdresse()}{getAdresse()}}
+{\footnotesize\ttfamily string Forme\+Visitor\+::get\+Adresse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur pour l\textquotesingle{}adresse IP du serveur graphique. 
+
+\begin{DoxyReturn}{Returns}
+Adresse IP du serveur graphique. 
+\end{DoxyReturn}
+\Hypertarget{class_forme_visitor_a6f81fcffc2bf7b610dafd0c9cf0492f2}\label{class_forme_visitor_a6f81fcffc2bf7b610dafd0c9cf0492f2} 
+\index{FormeVisitor@{FormeVisitor}!getEps1@{getEps1}}
+\index{getEps1@{getEps1}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{getEps1()}{getEps1()}}
+{\footnotesize\ttfamily int Forme\+Visitor\+::get\+Eps1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur pour la valeur Epsilon 1 de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+Valeur Epsilon 1 de la fenêtre. 
+\end{DoxyReturn}
+\Hypertarget{class_forme_visitor_ab2456f022f1e43069acb8b2375f418da}\label{class_forme_visitor_ab2456f022f1e43069acb8b2375f418da} 
+\index{FormeVisitor@{FormeVisitor}!getEps2@{getEps2}}
+\index{getEps2@{getEps2}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{getEps2()}{getEps2()}}
+{\footnotesize\ttfamily int Forme\+Visitor\+::get\+Eps2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur pour la valeur Epsilon 2 de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+Valeur Epsilon 2 de la fenêtre. 
+\end{DoxyReturn}
+\Hypertarget{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1}\label{class_forme_visitor_a0d95ef7b9cb3050dcf49c74fd4692bf1} 
+\index{FormeVisitor@{FormeVisitor}!getLambda@{getLambda}}
+\index{getLambda@{getLambda}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{getLambda()}{getLambda()}}
+{\footnotesize\ttfamily double Forme\+Visitor\+::get\+Lambda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur pour la valeur Lambda de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+Valeur Lambda de la fenêtre. 
+\end{DoxyReturn}
+\Hypertarget{class_forme_visitor_a7ca020107fb3295051ea51191f1dc770}\label{class_forme_visitor_a7ca020107fb3295051ea51191f1dc770} 
+\index{FormeVisitor@{FormeVisitor}!getListeForme@{getListeForme}}
+\index{getListeForme@{getListeForme}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{getListeForme()}{getListeForme()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} $>$ Forme\+Visitor\+::get\+Liste\+Forme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur pour la liste des formes géométriques de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+Liste des formes géométriques de la fenêtre. 
+\end{DoxyReturn}
+\Hypertarget{class_forme_visitor_a45ca20c5495a42e61a499490dba9baf1}\label{class_forme_visitor_a45ca20c5495a42e61a499490dba9baf1} 
+\index{FormeVisitor@{FormeVisitor}!getPort@{getPort}}
+\index{getPort@{getPort}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily int Forme\+Visitor\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur pour le port de connexion au serveur graphique. 
+
+\begin{DoxyReturn}{Returns}
+Port de connexion au serveur graphique. 
+\end{DoxyReturn}
+\Hypertarget{class_forme_visitor_a97b5c3637b780d3157bbed08d1a1310a}\label{class_forme_visitor_a97b5c3637b780d3157bbed08d1a1310a} 
+\index{FormeVisitor@{FormeVisitor}!quitter@{quitter}}
+\index{quitter@{quitter}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{quitter()}{quitter()}}
+{\footnotesize\ttfamily void Forme\+Visitor\+::quitter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_forme_visitor_a421589b89b2e8c39a64dea4e945f0f5c}\label{class_forme_visitor_a421589b89b2e8c39a64dea4e945f0f5c} 
+\index{FormeVisitor@{FormeVisitor}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily void Forme\+Visitor\+::send\+Message (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Envoie un message au serveur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message à envoyer. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_forme_visitor_a33737aa7c7e6806f9ff24fa822ecc6f4}\label{class_forme_visitor_a33737aa7c7e6806f9ff24fa822ecc6f4} 
+\index{FormeVisitor@{FormeVisitor}!visiterCroix@{visiterCroix}}
+\index{visiterCroix@{visiterCroix}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{visiterCroix()}{visiterCroix()}}
+{\footnotesize\ttfamily virtual void Forme\+Visitor\+::visiter\+Croix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_croix}{Croix}} \&}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Visite une croix dans le contexte de la bibliothèque graphique cible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & \doxylink{class_croix}{Croix} à visiter. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_java_library_visitor_aac9da558b379afddd392a5a4fc4254f3}{Java\+Library\+Visitor}}.
+
+\Hypertarget{class_forme_visitor_a19ff85849f405d9ffdd516813230cb7b}\label{class_forme_visitor_a19ff85849f405d9ffdd516813230cb7b} 
+\index{FormeVisitor@{FormeVisitor}!visiterForme@{visiterForme}}
+\index{visiterForme@{visiterForme}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{visiterForme()}{visiterForme()}}
+{\footnotesize\ttfamily void Forme\+Visitor\+::visiter\+Forme (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme}{Forme}} \&}]{forme }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Visite une forme générique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forme} & \doxylink{class_forme}{Forme} à visiter. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_forme_visitor_a1c01ab56cadcb99b2547d88c7bf3b671}\label{class_forme_visitor_a1c01ab56cadcb99b2547d88c7bf3b671} 
+\index{FormeVisitor@{FormeVisitor}!visiterGroupe@{visiterGroupe}}
+\index{visiterGroupe@{visiterGroupe}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{visiterGroupe()}{visiterGroupe()}}
+{\footnotesize\ttfamily virtual void Forme\+Visitor\+::visiter\+Groupe (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_groupe}{Groupe}} \&}]{G }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Visite un groupe de formes géométriques. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G} & \doxylink{class_groupe}{Groupe} de formes à visiter. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_java_library_visitor_a42f444d35a0b6411501bc23b20785e61}{Java\+Library\+Visitor}}.
+
+\Hypertarget{class_forme_visitor_a792379e1981460005c70b2cf94efcd73}\label{class_forme_visitor_a792379e1981460005c70b2cf94efcd73} 
+\index{FormeVisitor@{FormeVisitor}!visiterPolygone@{visiterPolygone}}
+\index{visiterPolygone@{visiterPolygone}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{visiterPolygone()}{visiterPolygone()}}
+{\footnotesize\ttfamily virtual void Forme\+Visitor\+::visiter\+Polygone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polygone}{Polygone}} \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Visite un polygone dans le contexte de la bibliothèque graphique cible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \doxylink{class_polygone}{Polygone} à visiter. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_java_library_visitor_a43a9817892d25c87b9cdda6c042595ce}{Java\+Library\+Visitor}}.
+
+\Hypertarget{class_forme_visitor_ad81261af29ef17742954a262932ea735}\label{class_forme_visitor_ad81261af29ef17742954a262932ea735} 
+\index{FormeVisitor@{FormeVisitor}!visiterRond@{visiterRond}}
+\index{visiterRond@{visiterRond}!FormeVisitor@{FormeVisitor}}
+\doxysubsubsection{\texorpdfstring{visiterRond()}{visiterRond()}}
+{\footnotesize\ttfamily virtual void Forme\+Visitor\+::visiter\+Rond (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rond}{Rond}} \&}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Visite un cercle dans le contexte de la bibliothèque graphique cible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & Cercle à visiter. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_java_library_visitor_acac35e22f33846f4305e3a1a53d0690b}{Java\+Library\+Visitor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Visitor/\mbox{\hyperlink{_forme_visitor_8h}{Forme\+Visitor.\+h}}\end{DoxyCompactItemize}

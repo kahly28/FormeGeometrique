@@ -1,0 +1,96 @@
+\doxysection{Groupe.\+h}
+\hypertarget{_groupe_8h_source}{}\label{_groupe_8h_source}\index{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Forme/Groupe.h@{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Forme/Groupe.h}}
+\mbox{\hyperlink{_groupe_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Ahmet\ on\ 22/02/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ APP2\_GROUPE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ APP2\_GROUPE\_H}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_forme_geometrique_8h}{FormeGeometrique.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_forme_visitor}{FormeVisitor}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sauvegarde_visitor}{SauvegardeVisitor}};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_groupe}{Groupe}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_forme}{Forme}}\ \{}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ vector<Forme*>\ \_ListeForme;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ copier(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_groupe}{Groupe}}\ \&G)}
+\DoxyCodeLine{00029\ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \_ListeForme\ =\ G.\mbox{\hyperlink{class_groupe_ae0eff2697ffd3fbe8c6d15fd784c3a5b}{getListeForme}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ detruire()}
+\DoxyCodeLine{00037\ \ \ \ \ \{}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \}}
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_groupe_adb2191a0bf07c68fd86f0ee36b4cec8d}{Groupe}}(\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ couleur);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_groupe_adb2191a0bf07c68fd86f0ee36b4cec8d}{Groupe}}(\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ couleur,vector<Forme*>Tab,\textcolor{keywordtype}{int}\ nb);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{class_groupe_adb2191a0bf07c68fd86f0ee36b4cec8d}{Groupe}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_groupe}{Groupe}}\ \&G);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ vector<Forme*>\ \mbox{\hyperlink{class_groupe_ae0eff2697ffd3fbe8c6d15fd784c3a5b}{getListeForme}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_groupe_a68690f47e1444ff7b3491731190905b9}{getNbForme}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{class_forme}{Forme}}\ *\ \mbox{\hyperlink{class_groupe_a51b03beafe099e043a58f62a9be435a4}{getForme}}(\textcolor{keywordtype}{int}\ i\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{class_groupe}{Groupe}}\ \&\ \mbox{\hyperlink{class_groupe_a72ebe36890324405ebdfad6a7c72c862}{ajouterFormeGeometrique}}(\mbox{\hyperlink{class_forme}{Forme}}\ \&\ forme);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{class_groupe}{Groupe}}\ *\ \mbox{\hyperlink{class_groupe_a9566c89a3f9e8307b74d758d542d5afd}{clone}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{class_groupe}{Groupe}}\ \&\ \mbox{\hyperlink{class_groupe_adc701a07104c2218d189e662fa892084}{retirerFormeGeometrique}}(\mbox{\hyperlink{class_forme}{Forme}}\ \&\ forme);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_groupe}{Groupe}}\ \&\ \mbox{\hyperlink{class_groupe_a802d13ead54b4136e79f7ea299590338}{operator\ =\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_groupe}{Groupe}}\ \&G);}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{class_groupe}{Groupe}}\ \&\ \mbox{\hyperlink{class_groupe_ad2d4a8bbb9f8bbf870969a6d2348a181}{operator\ +\ }}(\mbox{\hyperlink{class_forme}{Forme}}\ \&F)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00120\ \ \ \ \ \mbox{\hyperlink{class_groupe}{Groupe}}\ \&\ \mbox{\hyperlink{class_groupe_ac89765df722a73bc1e93d227ed4f3a50}{clear}}();}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_groupe_a5151066d8a93adc1be424d7414e01a7d}{getMinX}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_groupe_a55465ff62cae52210cd574410ff3cec7}{getMinY}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_groupe_a91b2d3c1b9c1c264c62ea3578e1a9657}{getMaxX}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_groupe_a9be185aec94fa75ef88cd545065b0f0c}{getMaxY}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_groupe_ad1506f8e03a2fa7bb4fd4de4419108fc}{CalculAire}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00155\ \ \ \ \ \mbox{\hyperlink{class_groupe_a99dd414922635dcc0585aabb2a330f63}{\string~Groupe}}();}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_groupe_a1b5da7e1deff77aaeb2accba0547234d}{algo}}(\textcolor{keywordtype}{int}\ eps1,\textcolor{keywordtype}{int}\ eps2,\textcolor{keywordtype}{double}\ \_Lambda,\textcolor{keywordtype}{int}\ \_a,\ \textcolor{keywordtype}{int}\ \_b)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_groupe_a9f046441e90e49d3a107d6b9573990eb}{translation}}(\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\&\ v)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_groupe_aaa8aabe064216a5e3ddda08accfeeb29}{homothetie}}(\textcolor{keywordtype}{double}\ rapport,\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \&\ V)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_groupe_a5a68be68273f72ae58ad2b7c1c29ab48}{rotation}}(\textcolor{keywordtype}{double}\ angle,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\&\ centreRotation);}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00184\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_groupe_ab3cf37c569823173ac4fe177e472da36}{afficher}}(ostream\ \&os)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_groupe_affb979552edd82a5b816ad8697e1e32e}{accepter}}(\mbox{\hyperlink{class_forme_visitor}{FormeVisitor}}\ *\ F)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00196\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_groupe_affb979552edd82a5b816ad8697e1e32e}{accepter}}(\mbox{\hyperlink{class_sauvegarde_visitor}{SauvegardeVisitor}}\ *S)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keyword}{operator}\ string()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \};}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//APP2\_GROUPE\_H}}
+
+\end{DoxyCode}

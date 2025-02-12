@@ -1,0 +1,656 @@
+\doxysection{Fenetre Class Reference}
+\hypertarget{class_fenetre}{}\label{class_fenetre}\index{Fenetre@{Fenetre}}
+
+
+Représente une fenêtre avec diverses formes géométriques.  
+
+
+
+
+{\ttfamily \#include $<$Fenetre.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fenetre_a14ed21d9e1d40c43c87c5d81fcd447ef}{Fenetre}} (int x, int y, int h, int l)
+\begin{DoxyCompactList}\small\item\em Constructeur pour la classe \doxylink{class_fenetre}{Fenetre}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_fenetre_aa001852c3546b5e2bc8092ae327f7308}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la coordonnée X de la fenêtre. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_fenetre_a31d4131077d0ad0bba51c9ccefc9639d}{getY}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la coordonnée Y de la fenêtre. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_fenetre_ad86e086feaf4e5ad3d0ec6f1eae18b2f}{get\+Tab\+Forme}} ()
+\begin{DoxyCompactList}\small\item\em Accesseur pour le vecteur de formes géométriques. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_fenetre_a5fce4907e61d888cb2f5a53f34548f35}{getH}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la hauteur de la fenêtre. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_fenetre_a36c467a1c50748287535f9f722835e54}{getL}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la largeur de la fenêtre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fenetre}{Fenetre}} \& \mbox{\hyperlink{class_fenetre_a563408ffb57075e3628a02db73af6e71}{ajouter\+Forme}} (\mbox{\hyperlink{class_forme}{Forme}} \&forme)
+\begin{DoxyCompactList}\small\item\em Ajoute une forme géométrique à la fenêtre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fenetre}{Fenetre}} \& \mbox{\hyperlink{class_fenetre_a1cd5dc6d15c4526fd383738e8a211470}{retirer\+Forme}} (\mbox{\hyperlink{class_forme}{Forme}} \&forme)
+\begin{DoxyCompactList}\small\item\em Retire une forme géométrique de la fenêtre. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fenetre_a986ebd24a7c8568d3881c2872568562c}{get\+Nb\+Forme}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le nombre de formes géométriques dans la fenêtre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_ab68c1c0433e5bfc2013e22c476e8aee4}{Calcul\+P1}} ()
+\begin{DoxyCompactList}\small\item\em Calcule le point P1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_adda92f2e9126df6d10ea38d9a5ade7b2}{Calcul\+P2}} ()
+\begin{DoxyCompactList}\small\item\em Calcule le point P2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_ac00090074a6abe4bb0c02fdc51c6869a}{Calcul\+P1\+Prime}} ()
+\begin{DoxyCompactList}\small\item\em Calcule le premier point P1\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_af0f0f26688039ecfa136ee0e91315afb}{Calcul\+P2\+Prime}} ()
+\begin{DoxyCompactList}\small\item\em Calcule le premier point P2\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_a4c618f72a7ab019af3a595cbf30c9feb}{Calcul\+Lambda}} ()
+\begin{DoxyCompactList}\small\item\em Calcule la valeur Lambda. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_fenetre_a2366ffd7985628cd0368dbabc209d345}{get\+P1\+Prime}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le point P1\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_fenetre_acbca087fb26d1f6f8347bb1b9dcb097e}{get\+P2\+Prime}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le point P2\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_fenetre_a81d48b4f00b4f85f21861d7468a20ae5}{get\+P1}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le point P1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_fenetre_ae703c55cce324213c0a487a367121277}{get\+P2}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le point P2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_ae373a63ba6210dbabc0d91b5ab3d14d2}{Calcul\+Eps1}} ()
+\begin{DoxyCompactList}\small\item\em Calcule la valeur Epsilon 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_aba2b328df8aee26c8eaf01082a9aaa0b}{Calcul\+Eps2}} ()
+\begin{DoxyCompactList}\small\item\em Calcule la valeur Epsilon 2. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_fenetre_a94692377af8557fe5f3579de3ed479a6}{get\+Lambda}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur Lambda. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_fenetre_a0aad4bf2c3e0a2c8db76a0fd7b7dc11f}{get\+Petit\+Lambda1}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur Petit Lambda 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_fenetre_a91a208956474f12873fdabf3e0b38abd}{get\+Petit\+Lambda2}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur Petit Lambda 2. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fenetre_a727986dc439238966b201e968108f67a}{get\+Eps1}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur Epsilon 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fenetre_a03cda2693fd46d83c9319eecba45a81a}{get\+Eps2}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur Epsilon 2. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fenetre_a48a241fe5cb73a7a445e7c4df449a058}{a\+Get}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur \textquotesingle{}a\textquotesingle{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fenetre_a2d7dd5c02d910f0c3f0c8ca88b1de168}{b\+Get}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la valeur \textquotesingle{}b\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_ac83157ca0cebf8efa472ec61c8028dfb}{CalculC}} ()
+\begin{DoxyCompactList}\small\item\em Calcule le centre C. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_a752d38ed1cb8e919d8d9afa8c26a5ef1}{Calcul\+CPrime}} ()
+\begin{DoxyCompactList}\small\item\em Calcule le centre C\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_a5edbb7ac474fe2a9aa3d7bdb7d6c1b2a}{Calcul\+Petit\+Lambda1}} ()
+\begin{DoxyCompactList}\small\item\em Calcule la valeur petit Lambda 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_a739a5e88a6c2ae092623fdb943e6bf39}{Calcul\+Petit\+Lambda2}} ()
+\begin{DoxyCompactList}\small\item\em Calcule la valeur petit Lambda 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_acd095b15534d760c0bbee697df23a1dd}{a\+Calcul}} ()
+\begin{DoxyCompactList}\small\item\em Calcule la valeur \textquotesingle{}a\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_ae2a89792387b5ce99f3efe47cca75b14}{b\+Calcul}} ()
+\begin{DoxyCompactList}\small\item\em Calcule la valeur \textquotesingle{}b\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_a1165b203d7ede65ba40b6a82e568acfc}{translation}} (\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} v)
+\begin{DoxyCompactList}\small\item\em Effectue une translation par le vecteur donné. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_a35995e02c51630d2f303d1c94cbaf782}{homothetie}} (double rapport, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&V)
+\begin{DoxyCompactList}\small\item\em Effectue une homothétie par rapport à un point donné. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_ad8fb0b01e4cedcaba38dc57e9058074f}{rotation}} (double angle, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&centre\+Rotation)
+\begin{DoxyCompactList}\small\item\em Effectue une rotation par rapport à un centre de rotation donné. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fenetre_afe3253d6ef379a3842e473a4f0aab71e}{is\+Calcul\+Effectue}} () const
+\begin{DoxyCompactList}\small\item\em Vérifie si les calculs sont effectués. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_a350a4ecd6e5d7921facb88d8584c4b4c}{set\+Calcul\+Effectue}} (bool b)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}état des calculs. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_fenetre_a19e0136682f9a3aed6fdbdfdbe24d48f}{get\+Liste\+Forme}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la liste des formes géométriques. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_a73b1c0dd67bfd94c238b3db673ca14c1}{dessiner}} (\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}F)
+\begin{DoxyCompactList}\small\item\em Dessine les formes géométriques en utilisant le visiteur donné. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_aa1e09be5650813febc440ea2bbd3780b}{sauvegarder}} (\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}S) const
+\begin{DoxyCompactList}\small\item\em Sauvegarde les formes géométriques en utilisant le visiteur donné. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_ad27cd0175a82139dc1ba78e69ff3ee4e}{charger}} (string nom\+Fichier)
+\begin{DoxyCompactList}\small\item\em Charge les formes géométriques à partir d\textquotesingle{}un fichier spécifié. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Représente une fenêtre avec diverses formes géométriques. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fenetre_a14ed21d9e1d40c43c87c5d81fcd447ef}\label{class_fenetre_a14ed21d9e1d40c43c87c5d81fcd447ef} 
+\index{Fenetre@{Fenetre}!Fenetre@{Fenetre}}
+\index{Fenetre@{Fenetre}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{Fenetre()}{Fenetre()}}
+{\footnotesize\ttfamily Fenetre\+::\+Fenetre (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{h,  }\item[{int}]{l }\end{DoxyParamCaption})}
+
+
+
+Constructeur pour la classe \doxylink{class_fenetre}{Fenetre}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordonnée X de la fenêtre. \\
+\hline
+{\em y} & Coordonnée Y de la fenêtre. \\
+\hline
+{\em h} & Hauteur de la fenêtre. \\
+\hline
+{\em l} & Largeur de la fenêtre. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fenetre_acd095b15534d760c0bbee697df23a1dd}\label{class_fenetre_acd095b15534d760c0bbee697df23a1dd} 
+\index{Fenetre@{Fenetre}!aCalcul@{aCalcul}}
+\index{aCalcul@{aCalcul}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{aCalcul()}{aCalcul()}}
+{\footnotesize\ttfamily void Fenetre\+::a\+Calcul (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule la valeur \textquotesingle{}a\textquotesingle{}. 
+
+\Hypertarget{class_fenetre_a48a241fe5cb73a7a445e7c4df449a058}\label{class_fenetre_a48a241fe5cb73a7a445e7c4df449a058} 
+\index{Fenetre@{Fenetre}!aGet@{aGet}}
+\index{aGet@{aGet}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{aGet()}{aGet()}}
+{\footnotesize\ttfamily int Fenetre\+::a\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la valeur \textquotesingle{}a\textquotesingle{}. 
+
+\begin{DoxyReturn}{Returns}
+Valeur \textquotesingle{}a\textquotesingle{}. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a563408ffb57075e3628a02db73af6e71}\label{class_fenetre_a563408ffb57075e3628a02db73af6e71} 
+\index{Fenetre@{Fenetre}!ajouterForme@{ajouterForme}}
+\index{ajouterForme@{ajouterForme}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{ajouterForme()}{ajouterForme()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fenetre}{Fenetre}} \& Fenetre\+::ajouter\+Forme (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme}{Forme}} \&}]{forme }\end{DoxyParamCaption})}
+
+
+
+Ajoute une forme géométrique à la fenêtre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forme} & Référence à la forme géométrique à ajouter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence à l\textquotesingle{}objet \doxylink{class_fenetre}{Fenetre} mis à jour. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_ae2a89792387b5ce99f3efe47cca75b14}\label{class_fenetre_ae2a89792387b5ce99f3efe47cca75b14} 
+\index{Fenetre@{Fenetre}!bCalcul@{bCalcul}}
+\index{bCalcul@{bCalcul}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{bCalcul()}{bCalcul()}}
+{\footnotesize\ttfamily void Fenetre\+::b\+Calcul (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule la valeur \textquotesingle{}b\textquotesingle{}. 
+
+\Hypertarget{class_fenetre_a2d7dd5c02d910f0c3f0c8ca88b1de168}\label{class_fenetre_a2d7dd5c02d910f0c3f0c8ca88b1de168} 
+\index{Fenetre@{Fenetre}!bGet@{bGet}}
+\index{bGet@{bGet}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{bGet()}{bGet()}}
+{\footnotesize\ttfamily int Fenetre\+::b\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la valeur \textquotesingle{}b\textquotesingle{}. 
+
+\begin{DoxyReturn}{Returns}
+Valeur \textquotesingle{}b\textquotesingle{}. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_ac83157ca0cebf8efa472ec61c8028dfb}\label{class_fenetre_ac83157ca0cebf8efa472ec61c8028dfb} 
+\index{Fenetre@{Fenetre}!CalculC@{CalculC}}
+\index{CalculC@{CalculC}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{CalculC()}{CalculC()}}
+{\footnotesize\ttfamily void Fenetre\+::\+CalculC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule le centre C. 
+
+\Hypertarget{class_fenetre_a752d38ed1cb8e919d8d9afa8c26a5ef1}\label{class_fenetre_a752d38ed1cb8e919d8d9afa8c26a5ef1} 
+\index{Fenetre@{Fenetre}!CalculCPrime@{CalculCPrime}}
+\index{CalculCPrime@{CalculCPrime}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{CalculCPrime()}{CalculCPrime()}}
+{\footnotesize\ttfamily void Fenetre\+::\+Calcul\+CPrime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule le centre C\textquotesingle{}. 
+
+\Hypertarget{class_fenetre_ae373a63ba6210dbabc0d91b5ab3d14d2}\label{class_fenetre_ae373a63ba6210dbabc0d91b5ab3d14d2} 
+\index{Fenetre@{Fenetre}!CalculEps1@{CalculEps1}}
+\index{CalculEps1@{CalculEps1}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{CalculEps1()}{CalculEps1()}}
+{\footnotesize\ttfamily void Fenetre\+::\+Calcul\+Eps1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule la valeur Epsilon 1. 
+
+\Hypertarget{class_fenetre_aba2b328df8aee26c8eaf01082a9aaa0b}\label{class_fenetre_aba2b328df8aee26c8eaf01082a9aaa0b} 
+\index{Fenetre@{Fenetre}!CalculEps2@{CalculEps2}}
+\index{CalculEps2@{CalculEps2}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{CalculEps2()}{CalculEps2()}}
+{\footnotesize\ttfamily void Fenetre\+::\+Calcul\+Eps2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule la valeur Epsilon 2. 
+
+\Hypertarget{class_fenetre_a4c618f72a7ab019af3a595cbf30c9feb}\label{class_fenetre_a4c618f72a7ab019af3a595cbf30c9feb} 
+\index{Fenetre@{Fenetre}!CalculLambda@{CalculLambda}}
+\index{CalculLambda@{CalculLambda}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{CalculLambda()}{CalculLambda()}}
+{\footnotesize\ttfamily void Fenetre\+::\+Calcul\+Lambda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule la valeur Lambda. 
+
+\Hypertarget{class_fenetre_ab68c1c0433e5bfc2013e22c476e8aee4}\label{class_fenetre_ab68c1c0433e5bfc2013e22c476e8aee4} 
+\index{Fenetre@{Fenetre}!CalculP1@{CalculP1}}
+\index{CalculP1@{CalculP1}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{CalculP1()}{CalculP1()}}
+{\footnotesize\ttfamily void Fenetre\+::\+Calcul\+P1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule le point P1. 
+
+\Hypertarget{class_fenetre_ac00090074a6abe4bb0c02fdc51c6869a}\label{class_fenetre_ac00090074a6abe4bb0c02fdc51c6869a} 
+\index{Fenetre@{Fenetre}!CalculP1Prime@{CalculP1Prime}}
+\index{CalculP1Prime@{CalculP1Prime}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{CalculP1Prime()}{CalculP1Prime()}}
+{\footnotesize\ttfamily void Fenetre\+::\+Calcul\+P1\+Prime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule le premier point P1\textquotesingle{}. 
+
+\Hypertarget{class_fenetre_adda92f2e9126df6d10ea38d9a5ade7b2}\label{class_fenetre_adda92f2e9126df6d10ea38d9a5ade7b2} 
+\index{Fenetre@{Fenetre}!CalculP2@{CalculP2}}
+\index{CalculP2@{CalculP2}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{CalculP2()}{CalculP2()}}
+{\footnotesize\ttfamily void Fenetre\+::\+Calcul\+P2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule le point P2. 
+
+\Hypertarget{class_fenetre_af0f0f26688039ecfa136ee0e91315afb}\label{class_fenetre_af0f0f26688039ecfa136ee0e91315afb} 
+\index{Fenetre@{Fenetre}!CalculP2Prime@{CalculP2Prime}}
+\index{CalculP2Prime@{CalculP2Prime}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{CalculP2Prime()}{CalculP2Prime()}}
+{\footnotesize\ttfamily void Fenetre\+::\+Calcul\+P2\+Prime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule le premier point P2\textquotesingle{}. 
+
+\Hypertarget{class_fenetre_a5edbb7ac474fe2a9aa3d7bdb7d6c1b2a}\label{class_fenetre_a5edbb7ac474fe2a9aa3d7bdb7d6c1b2a} 
+\index{Fenetre@{Fenetre}!CalculPetitLambda1@{CalculPetitLambda1}}
+\index{CalculPetitLambda1@{CalculPetitLambda1}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{CalculPetitLambda1()}{CalculPetitLambda1()}}
+{\footnotesize\ttfamily void Fenetre\+::\+Calcul\+Petit\+Lambda1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule la valeur petit Lambda 1. 
+
+\Hypertarget{class_fenetre_a739a5e88a6c2ae092623fdb943e6bf39}\label{class_fenetre_a739a5e88a6c2ae092623fdb943e6bf39} 
+\index{Fenetre@{Fenetre}!CalculPetitLambda2@{CalculPetitLambda2}}
+\index{CalculPetitLambda2@{CalculPetitLambda2}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{CalculPetitLambda2()}{CalculPetitLambda2()}}
+{\footnotesize\ttfamily void Fenetre\+::\+Calcul\+Petit\+Lambda2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule la valeur petit Lambda 2. 
+
+\Hypertarget{class_fenetre_ad27cd0175a82139dc1ba78e69ff3ee4e}\label{class_fenetre_ad27cd0175a82139dc1ba78e69ff3ee4e} 
+\index{Fenetre@{Fenetre}!charger@{charger}}
+\index{charger@{charger}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{charger()}{charger()}}
+{\footnotesize\ttfamily void Fenetre\+::charger (\begin{DoxyParamCaption}\item[{string}]{nom\+Fichier }\end{DoxyParamCaption})}
+
+
+
+Charge les formes géométriques à partir d\textquotesingle{}un fichier spécifié. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+Fichier} & Nom du fichier de chargement. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fenetre_a73b1c0dd67bfd94c238b3db673ca14c1}\label{class_fenetre_a73b1c0dd67bfd94c238b3db673ca14c1} 
+\index{Fenetre@{Fenetre}!dessiner@{dessiner}}
+\index{dessiner@{dessiner}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{dessiner()}{dessiner()}}
+{\footnotesize\ttfamily void Fenetre\+::dessiner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}}]{F }\end{DoxyParamCaption})}
+
+
+
+Dessine les formes géométriques en utilisant le visiteur donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F} & Pointeur vers le visiteur de formes. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fenetre_a727986dc439238966b201e968108f67a}\label{class_fenetre_a727986dc439238966b201e968108f67a} 
+\index{Fenetre@{Fenetre}!getEps1@{getEps1}}
+\index{getEps1@{getEps1}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getEps1()}{getEps1()}}
+{\footnotesize\ttfamily int Fenetre\+::get\+Eps1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la valeur Epsilon 1. 
+
+\begin{DoxyReturn}{Returns}
+Valeur Epsilon 1. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a03cda2693fd46d83c9319eecba45a81a}\label{class_fenetre_a03cda2693fd46d83c9319eecba45a81a} 
+\index{Fenetre@{Fenetre}!getEps2@{getEps2}}
+\index{getEps2@{getEps2}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getEps2()}{getEps2()}}
+{\footnotesize\ttfamily int Fenetre\+::get\+Eps2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la valeur Epsilon 2. 
+
+\begin{DoxyReturn}{Returns}
+Valeur Epsilon 2. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a5fce4907e61d888cb2f5a53f34548f35}\label{class_fenetre_a5fce4907e61d888cb2f5a53f34548f35} 
+\index{Fenetre@{Fenetre}!getH@{getH}}
+\index{getH@{getH}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getH()}{getH()}}
+{\footnotesize\ttfamily double Fenetre\+::getH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la hauteur de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+Hauteur de la fenêtre. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a36c467a1c50748287535f9f722835e54}\label{class_fenetre_a36c467a1c50748287535f9f722835e54} 
+\index{Fenetre@{Fenetre}!getL@{getL}}
+\index{getL@{getL}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getL()}{getL()}}
+{\footnotesize\ttfamily double Fenetre\+::getL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la largeur de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+Largeur de la fenêtre. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a94692377af8557fe5f3579de3ed479a6}\label{class_fenetre_a94692377af8557fe5f3579de3ed479a6} 
+\index{Fenetre@{Fenetre}!getLambda@{getLambda}}
+\index{getLambda@{getLambda}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getLambda()}{getLambda()}}
+{\footnotesize\ttfamily double Fenetre\+::get\+Lambda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la valeur Lambda. 
+
+\begin{DoxyReturn}{Returns}
+Valeur Lambda. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a19e0136682f9a3aed6fdbdfdbe24d48f}\label{class_fenetre_a19e0136682f9a3aed6fdbdfdbe24d48f} 
+\index{Fenetre@{Fenetre}!getListeForme@{getListeForme}}
+\index{getListeForme@{getListeForme}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getListeForme()}{getListeForme()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} $>$ Fenetre\+::get\+Liste\+Forme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la liste des formes géométriques. 
+
+\begin{DoxyReturn}{Returns}
+Liste des formes géométriques. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a986ebd24a7c8568d3881c2872568562c}\label{class_fenetre_a986ebd24a7c8568d3881c2872568562c} 
+\index{Fenetre@{Fenetre}!getNbForme@{getNbForme}}
+\index{getNbForme@{getNbForme}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getNbForme()}{getNbForme()}}
+{\footnotesize\ttfamily int Fenetre\+::get\+Nb\+Forme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le nombre de formes géométriques dans la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+Nombre de formes géométriques dans la fenêtre. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a81d48b4f00b4f85f21861d7468a20ae5}\label{class_fenetre_a81d48b4f00b4f85f21861d7468a20ae5} 
+\index{Fenetre@{Fenetre}!getP1@{getP1}}
+\index{getP1@{getP1}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getP1()}{getP1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Fenetre\+::get\+P1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le point P1. 
+
+\begin{DoxyReturn}{Returns}
+point P1. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a2366ffd7985628cd0368dbabc209d345}\label{class_fenetre_a2366ffd7985628cd0368dbabc209d345} 
+\index{Fenetre@{Fenetre}!getP1Prime@{getP1Prime}}
+\index{getP1Prime@{getP1Prime}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getP1Prime()}{getP1Prime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Fenetre\+::get\+P1\+Prime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le point P1\textquotesingle{}. 
+
+\begin{DoxyReturn}{Returns}
+point P1\textquotesingle{}. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_ae703c55cce324213c0a487a367121277}\label{class_fenetre_ae703c55cce324213c0a487a367121277} 
+\index{Fenetre@{Fenetre}!getP2@{getP2}}
+\index{getP2@{getP2}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getP2()}{getP2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Fenetre\+::get\+P2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le point P2. 
+
+\begin{DoxyReturn}{Returns}
+point P2. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_acbca087fb26d1f6f8347bb1b9dcb097e}\label{class_fenetre_acbca087fb26d1f6f8347bb1b9dcb097e} 
+\index{Fenetre@{Fenetre}!getP2Prime@{getP2Prime}}
+\index{getP2Prime@{getP2Prime}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getP2Prime()}{getP2Prime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Fenetre\+::get\+P2\+Prime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le point P2\textquotesingle{}. 
+
+\begin{DoxyReturn}{Returns}
+point P2\textquotesingle{}. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a0aad4bf2c3e0a2c8db76a0fd7b7dc11f}\label{class_fenetre_a0aad4bf2c3e0a2c8db76a0fd7b7dc11f} 
+\index{Fenetre@{Fenetre}!getPetitLambda1@{getPetitLambda1}}
+\index{getPetitLambda1@{getPetitLambda1}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getPetitLambda1()}{getPetitLambda1()}}
+{\footnotesize\ttfamily double Fenetre\+::get\+Petit\+Lambda1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la valeur Petit Lambda 1. 
+
+\begin{DoxyReturn}{Returns}
+Petit Lambda 1. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a91a208956474f12873fdabf3e0b38abd}\label{class_fenetre_a91a208956474f12873fdabf3e0b38abd} 
+\index{Fenetre@{Fenetre}!getPetitLambda2@{getPetitLambda2}}
+\index{getPetitLambda2@{getPetitLambda2}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getPetitLambda2()}{getPetitLambda2()}}
+{\footnotesize\ttfamily double Fenetre\+::get\+Petit\+Lambda2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la valeur Petit Lambda 2. 
+
+\begin{DoxyReturn}{Returns}
+Petit Lambda 2. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_ad86e086feaf4e5ad3d0ec6f1eae18b2f}\label{class_fenetre_ad86e086feaf4e5ad3d0ec6f1eae18b2f} 
+\index{Fenetre@{Fenetre}!getTabForme@{getTabForme}}
+\index{getTabForme@{getTabForme}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getTabForme()}{getTabForme()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} $>$ Fenetre\+::get\+Tab\+Forme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accesseur pour le vecteur de formes géométriques. 
+
+\begin{DoxyReturn}{Returns}
+Vecteur de formes géométriques. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_aa001852c3546b5e2bc8092ae327f7308}\label{class_fenetre_aa001852c3546b5e2bc8092ae327f7308} 
+\index{Fenetre@{Fenetre}!getX@{getX}}
+\index{getX@{getX}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily double Fenetre\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la coordonnée X de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée X de la fenêtre. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a31d4131077d0ad0bba51c9ccefc9639d}\label{class_fenetre_a31d4131077d0ad0bba51c9ccefc9639d} 
+\index{Fenetre@{Fenetre}!getY@{getY}}
+\index{getY@{getY}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily double Fenetre\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la coordonnée Y de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée Y de la fenêtre. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a35995e02c51630d2f303d1c94cbaf782}\label{class_fenetre_a35995e02c51630d2f303d1c94cbaf782} 
+\index{Fenetre@{Fenetre}!homothetie@{homothetie}}
+\index{homothetie@{homothetie}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{homothetie()}{homothetie()}}
+{\footnotesize\ttfamily void Fenetre\+::homothetie (\begin{DoxyParamCaption}\item[{double}]{rapport,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{V }\end{DoxyParamCaption})}
+
+
+
+Effectue une homothétie par rapport à un point donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rapport} & Rapport d\textquotesingle{}homothétie. \\
+\hline
+{\em V} & Vecteur représentant le point de référence. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fenetre_afe3253d6ef379a3842e473a4f0aab71e}\label{class_fenetre_afe3253d6ef379a3842e473a4f0aab71e} 
+\index{Fenetre@{Fenetre}!isCalculEffectue@{isCalculEffectue}}
+\index{isCalculEffectue@{isCalculEffectue}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{isCalculEffectue()}{isCalculEffectue()}}
+{\footnotesize\ttfamily bool Fenetre\+::is\+Calcul\+Effectue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Vérifie si les calculs sont effectués. 
+
+\begin{DoxyReturn}{Returns}
+True si les calculs sont effectués, sinon False. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_a1cd5dc6d15c4526fd383738e8a211470}\label{class_fenetre_a1cd5dc6d15c4526fd383738e8a211470} 
+\index{Fenetre@{Fenetre}!retirerForme@{retirerForme}}
+\index{retirerForme@{retirerForme}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{retirerForme()}{retirerForme()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fenetre}{Fenetre}} \& Fenetre\+::retirer\+Forme (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme}{Forme}} \&}]{forme }\end{DoxyParamCaption})}
+
+
+
+Retire une forme géométrique de la fenêtre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forme} & Référence à la forme géométrique à retirer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence à l\textquotesingle{}objet \doxylink{class_fenetre}{Fenetre} mis à jour. 
+\end{DoxyReturn}
+\Hypertarget{class_fenetre_ad8fb0b01e4cedcaba38dc57e9058074f}\label{class_fenetre_ad8fb0b01e4cedcaba38dc57e9058074f} 
+\index{Fenetre@{Fenetre}!rotation@{rotation}}
+\index{rotation@{rotation}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily void Fenetre\+::rotation (\begin{DoxyParamCaption}\item[{double}]{angle,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{centre\+Rotation }\end{DoxyParamCaption})}
+
+
+
+Effectue une rotation par rapport à un centre de rotation donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Angle de rotation en degrés. \\
+\hline
+{\em centre\+Rotation} & Vecteur représentant le centre de rotation. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fenetre_aa1e09be5650813febc440ea2bbd3780b}\label{class_fenetre_aa1e09be5650813febc440ea2bbd3780b} 
+\index{Fenetre@{Fenetre}!sauvegarder@{sauvegarder}}
+\index{sauvegarder@{sauvegarder}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{sauvegarder()}{sauvegarder()}}
+{\footnotesize\ttfamily void Fenetre\+::sauvegarder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}}]{S }\end{DoxyParamCaption}) const}
+
+
+
+Sauvegarde les formes géométriques en utilisant le visiteur donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & Pointeur vers le visiteur de sauvegarde. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fenetre_a350a4ecd6e5d7921facb88d8584c4b4c}\label{class_fenetre_a350a4ecd6e5d7921facb88d8584c4b4c} 
+\index{Fenetre@{Fenetre}!setCalculEffectue@{setCalculEffectue}}
+\index{setCalculEffectue@{setCalculEffectue}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{setCalculEffectue()}{setCalculEffectue()}}
+{\footnotesize\ttfamily void Fenetre\+::set\+Calcul\+Effectue (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Modifie l\textquotesingle{}état des calculs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Nouvelle valeur d\textquotesingle{}état des calculs. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fenetre_a1165b203d7ede65ba40b6a82e568acfc}\label{class_fenetre_a1165b203d7ede65ba40b6a82e568acfc} 
+\index{Fenetre@{Fenetre}!translation@{translation}}
+\index{translation@{translation}!Fenetre@{Fenetre}}
+\doxysubsubsection{\texorpdfstring{translation()}{translation()}}
+{\footnotesize\ttfamily void Fenetre\+::translation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}}]{v }\end{DoxyParamCaption})}
+
+
+
+Effectue une translation par le vecteur donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vecteur de translation. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\mbox{\hyperlink{_fenetre_8h}{Fenetre.\+h}}\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\mbox{\hyperlink{_fenetre_8cpp}{Fenetre.\+cpp}}\end{DoxyCompactItemize}

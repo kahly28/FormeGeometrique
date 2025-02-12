@@ -1,0 +1,201 @@
+\doxysection{Vecteur2D Class Reference}
+\hypertarget{class_vecteur2_d}{}\label{class_vecteur2_d}\index{Vecteur2D@{Vecteur2D}}
+
+
+Représente un vecteur 2D avec des composantes x et y.  
+
+
+
+
+{\ttfamily \#include $<$Vecteur2\+D.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vecteur2_d_ad9dee29de356e9bd4bee597dddf431b0}{Vecteur2D}} (const double \&x=0, const double \&y=0)
+\begin{DoxyCompactList}\small\item\em Constructeur explicite pour \doxylink{class_vecteur2_d}{Vecteur2D}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d_a10c83f5b0aaa60cc01912b33e3c76fc5}{operator string}} () const
+\begin{DoxyCompactList}\small\item\em Opérateur de conversion en chaîne de caractères. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_vecteur2_d_a43b1f6d23d1c4de596a184399cabb5c1}{operator+}} (const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&V) const
+\begin{DoxyCompactList}\small\item\em Addition de deux vecteurs 2D. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_vecteur2_d_ae321cc9bf31e6af018bc5b1df47d8dc2}{operator-\/}} (const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&V) const
+\begin{DoxyCompactList}\small\item\em Soustraction de deux vecteurs 2D. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \& \mbox{\hyperlink{class_vecteur2_d_ae310a3abc99b9b210c7d743dbf6dbfb8}{operator+=}} (const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&V)
+\begin{DoxyCompactList}\small\item\em Affectation par addition d\textquotesingle{}un autre vecteur 2D. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_vecteur2_d_a6bd05da962f203d67a04042c0780023e}{operator\texorpdfstring{$\ast$}{*}}} (const double \&a) const
+\begin{DoxyCompactList}\small\item\em Multiplication scalaire du vecteur 2D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}{\+\_\+x}}
+\begin{DoxyCompactList}\small\item\em Composante x du vecteur 2D. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}{\+\_\+y}}
+\begin{DoxyCompactList}\small\item\em Composante y du vecteur 2D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_vecteur2_d_a946b6f0796de4a88d82e560041360534}{operator$<$$<$}} (ostream \&s, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&V)
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}insertion de flux surchargé pour afficher le vecteur 2D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Représente un vecteur 2D avec des composantes x et y. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_vecteur2_d_ad9dee29de356e9bd4bee597dddf431b0}\label{class_vecteur2_d_ad9dee29de356e9bd4bee597dddf431b0} 
+\index{Vecteur2D@{Vecteur2D}!Vecteur2D@{Vecteur2D}}
+\index{Vecteur2D@{Vecteur2D}!Vecteur2D@{Vecteur2D}}
+\doxysubsubsection{\texorpdfstring{Vecteur2D()}{Vecteur2D()}}
+{\footnotesize\ttfamily Vecteur2\+D\+::\+Vecteur2D (\begin{DoxyParamCaption}\item[{const double \&}]{x = {\ttfamily 0},  }\item[{const double \&}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructeur explicite pour \doxylink{class_vecteur2_d}{Vecteur2D}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Valeur initiale pour la composante x (par défaut, 0). \\
+\hline
+{\em y} & Valeur initiale pour la composante y (par défaut, 0). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vecteur2_d_a10c83f5b0aaa60cc01912b33e3c76fc5}\label{class_vecteur2_d_a10c83f5b0aaa60cc01912b33e3c76fc5} 
+\index{Vecteur2D@{Vecteur2D}!operator string@{operator string}}
+\index{operator string@{operator string}!Vecteur2D@{Vecteur2D}}
+\doxysubsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily Vecteur2\+D\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Opérateur de conversion en chaîne de caractères. 
+
+\begin{DoxyReturn}{Returns}
+Représentation en chaîne de caractères du vecteur 2D. 
+\end{DoxyReturn}
+\Hypertarget{class_vecteur2_d_a6bd05da962f203d67a04042c0780023e}\label{class_vecteur2_d_a6bd05da962f203d67a04042c0780023e} 
+\index{Vecteur2D@{Vecteur2D}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Vecteur2D@{Vecteur2D}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Vecteur2\+D\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const double \&}]{a }\end{DoxyParamCaption}) const}
+
+
+
+Multiplication scalaire du vecteur 2D. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Valeur scalaire pour la multiplication. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vecteur 2D résultant après la multiplication scalaire. 
+\end{DoxyReturn}
+\Hypertarget{class_vecteur2_d_a43b1f6d23d1c4de596a184399cabb5c1}\label{class_vecteur2_d_a43b1f6d23d1c4de596a184399cabb5c1} 
+\index{Vecteur2D@{Vecteur2D}!operator+@{operator+}}
+\index{operator+@{operator+}!Vecteur2D@{Vecteur2D}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Vecteur2\+D\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{V }\end{DoxyParamCaption}) const}
+
+
+
+Addition de deux vecteurs 2D. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & Deuxième vecteur 2D à ajouter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vecteur 2D résultant après l\textquotesingle{}addition. 
+\end{DoxyReturn}
+\Hypertarget{class_vecteur2_d_ae310a3abc99b9b210c7d743dbf6dbfb8}\label{class_vecteur2_d_ae310a3abc99b9b210c7d743dbf6dbfb8} 
+\index{Vecteur2D@{Vecteur2D}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vecteur2D@{Vecteur2D}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \& Vecteur2\+D\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{V }\end{DoxyParamCaption})}
+
+
+
+Affectation par addition d\textquotesingle{}un autre vecteur 2D. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & Deuxième vecteur 2D à ajouter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence au vecteur 2D mis à jour. 
+\end{DoxyReturn}
+\Hypertarget{class_vecteur2_d_ae321cc9bf31e6af018bc5b1df47d8dc2}\label{class_vecteur2_d_ae321cc9bf31e6af018bc5b1df47d8dc2} 
+\index{Vecteur2D@{Vecteur2D}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vecteur2D@{Vecteur2D}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Vecteur2\+D\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{V }\end{DoxyParamCaption}) const}
+
+
+
+Soustraction de deux vecteurs 2D. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & Deuxième vecteur 2D à soustraire. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vecteur 2D résultant après la soustraction. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_vecteur2_d_a946b6f0796de4a88d82e560041360534}\label{class_vecteur2_d_a946b6f0796de4a88d82e560041360534} 
+\index{Vecteur2D@{Vecteur2D}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Vecteur2D@{Vecteur2D}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{s,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{V }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Opérateur d\textquotesingle{}insertion de flux surchargé pour afficher le vecteur 2D. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Flux de sortie. \\
+\hline
+{\em V} & Vecteur 2D à afficher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Flux de sortie. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7}\label{class_vecteur2_d_a7198a1a8d14f452a0e7052a679f147e7} 
+\index{Vecteur2D@{Vecteur2D}!\_x@{\_x}}
+\index{\_x@{\_x}!Vecteur2D@{Vecteur2D}}
+\doxysubsubsection{\texorpdfstring{\_x}{\_x}}
+{\footnotesize\ttfamily double Vecteur2\+D\+::\+\_\+x}
+
+
+
+Composante x du vecteur 2D. 
+
+\Hypertarget{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2}\label{class_vecteur2_d_a797c4e61d7c0693842ec7effea315ce2} 
+\index{Vecteur2D@{Vecteur2D}!\_y@{\_y}}
+\index{\_y@{\_y}!Vecteur2D@{Vecteur2D}}
+\doxysubsubsection{\texorpdfstring{\_y}{\_y}}
+{\footnotesize\ttfamily double Vecteur2\+D\+::\+\_\+y}
+
+
+
+Composante y du vecteur 2D. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\mbox{\hyperlink{_vecteur2_d_8h}{Vecteur2\+D.\+h}}\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\mbox{\hyperlink{_vecteur2_d_8cpp}{Vecteur2\+D.\+cpp}}\end{DoxyCompactItemize}

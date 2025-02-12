@@ -1,0 +1,107 @@
+\doxysection{Chargement\+COR Class Reference}
+\hypertarget{class_chargement_c_o_r}{}\label{class_chargement_c_o_r}\index{ChargementCOR@{ChargementCOR}}
+
+
+La classe \doxylink{class_chargement_c_o_r}{Chargement\+COR} représente un maillon de la chaîne de responsabilité pour le chargement des couleurs. Elle définit une interface commune pour les classes concrètes de la chaîne.  
+
+
+
+
+{\ttfamily \#include $<$Chargement\+COR.\+h$>$}
+
+Inheritance diagram for Chargement\+COR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_chargement_c_o_r}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_chargement_c_o_r_aaf538591a9b8e37d197744fe127e7c02}{Chargement\+COR}} (\mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}} \texorpdfstring{$\ast$}{*}suivant)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_chargement_c_o_r}{Chargement\+COR}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_chargement_c_o_r_af3cad1913655e7e2124fde2f54e01518}{charger}} (string ligne, \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*}\&p\+Forme)=0
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle pure chargée de traiter la ligne de chargement pour créer une forme avec la couleur appropriée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chargement_c_o_r_a6c931e529a7376556c29eb0fdf8413d3}{charger\+Suivant}} (string ligne, \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*}\&p\+Forme)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de passer la ligne au maillon suivant dans la chaîne de responsabilité. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_chargement_c_o_r_a87a9d6f96f8ab3bce0a6f4208537903c}{\+\_\+\+Coul\+COR}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \doxylink{class_chargement_c_o_r}{Chargement\+COR} représente un maillon de la chaîne de responsabilité pour le chargement des couleurs. Elle définit une interface commune pour les classes concrètes de la chaîne. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_chargement_c_o_r_aaf538591a9b8e37d197744fe127e7c02}\label{class_chargement_c_o_r_aaf538591a9b8e37d197744fe127e7c02} 
+\index{ChargementCOR@{ChargementCOR}!ChargementCOR@{ChargementCOR}}
+\index{ChargementCOR@{ChargementCOR}!ChargementCOR@{ChargementCOR}}
+\doxysubsubsection{\texorpdfstring{ChargementCOR()}{ChargementCOR()}}
+{\footnotesize\ttfamily Chargement\+COR\+::\+Chargement\+COR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_chargement_c_o_r}{Chargement\+COR}} \texorpdfstring{$\ast$}{*}}]{suivant }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de \doxylink{class_chargement_c_o_r}{Chargement\+COR}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suivant} & Pointeur vers le maillon suivant dans la chaîne. Initialise la chaîne de responsabilité avec une séquence prédéfinie de responsabilités pour le traitement des couleurs. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_chargement_c_o_r_af3cad1913655e7e2124fde2f54e01518}\label{class_chargement_c_o_r_af3cad1913655e7e2124fde2f54e01518} 
+\index{ChargementCOR@{ChargementCOR}!charger@{charger}}
+\index{charger@{charger}!ChargementCOR@{ChargementCOR}}
+\doxysubsubsection{\texorpdfstring{charger()}{charger()}}
+{\footnotesize\ttfamily virtual void Chargement\+COR\+::charger (\begin{DoxyParamCaption}\item[{string}]{ligne,  }\item[{\mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*}\&}]{p\+Forme }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Méthode virtuelle pure chargée de traiter la ligne de chargement pour créer une forme avec la couleur appropriée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ligne} & Ligne de chargement. \\
+\hline
+{\em p\+Forme} & Pointeur vers la forme à créer et charger. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_charger_croix_a96f1f52c11b71dd489185683e89a489c}{Charger\+Croix}}, \mbox{\hyperlink{class_charger_groupe_aadb78a3acace1ef68d7565e569e84f32}{Charger\+Groupe}}, \mbox{\hyperlink{class_charger_polygone_a8fb8f5da17854e976d85c6917bd268bc}{Charger\+Polygone}}, and \mbox{\hyperlink{class_charger_rond_a082e8ca44c6698fd7e700f273cd07664}{Charger\+Rond}}.
+
+\Hypertarget{class_chargement_c_o_r_a6c931e529a7376556c29eb0fdf8413d3}\label{class_chargement_c_o_r_a6c931e529a7376556c29eb0fdf8413d3} 
+\index{ChargementCOR@{ChargementCOR}!chargerSuivant@{chargerSuivant}}
+\index{chargerSuivant@{chargerSuivant}!ChargementCOR@{ChargementCOR}}
+\doxysubsubsection{\texorpdfstring{chargerSuivant()}{chargerSuivant()}}
+{\footnotesize\ttfamily void Chargement\+COR\+::charger\+Suivant (\begin{DoxyParamCaption}\item[{string}]{ligne,  }\item[{\mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*}\&}]{p\+Forme }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Méthode permettant de passer la ligne au maillon suivant dans la chaîne de responsabilité. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ligne} & Ligne de chargement. \\
+\hline
+{\em p\+Forme} & Pointeur vers la forme à créer et charger. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_chargement_c_o_r_a87a9d6f96f8ab3bce0a6f4208537903c}\label{class_chargement_c_o_r_a87a9d6f96f8ab3bce0a6f4208537903c} 
+\index{ChargementCOR@{ChargementCOR}!\_CoulCOR@{\_CoulCOR}}
+\index{\_CoulCOR@{\_CoulCOR}!ChargementCOR@{ChargementCOR}}
+\doxysubsubsection{\texorpdfstring{\_CoulCOR}{\_CoulCOR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}}\texorpdfstring{$\ast$}{*} Chargement\+COR\+::\+\_\+\+Coul\+COR\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pointeur vers l\textquotesingle{}objet responsable du traitement de la couleur. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Chargement\+COR/\mbox{\hyperlink{_chargement_c_o_r_8h}{Chargement\+COR.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,501 @@
+\doxysection{Croix Class Reference}
+\hypertarget{class_croix}{}\label{class_croix}\index{Croix@{Croix}}
+
+
+Représente une croix dans le plan.  
+
+
+
+
+{\ttfamily \#include $<$Croix.\+h$>$}
+
+Inheritance diagram for Croix\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_croix}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_croix_a4b5fc5a8e4bf1e41c92660a6497bc838}{Croix}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur, \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&haut\+Gauche, \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&bas\+Droite)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \doxylink{class_croix}{Croix}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_croix_a38b2a32e7657441b279374bd28d0b50e}{Croix}} (const \mbox{\hyperlink{class_croix}{Croix}} \&C)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie de la classe \doxylink{class_croix}{Croix}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_croix_accdd15dbc09828045c79d20043acf9e2}{get\+Haut\+Gauche}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la position du coin supérieur gauche de la croix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_croix_ad95c972eeaa40644d4b12dd04d797b53}{get\+Bas\+Droite}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la position du coin inférieur droit de la croix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_croix_a63db6017aae744e72f2a2ee09c3f9728}{get\+Haut\+Droite}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la position du coin supérieur droit de la croix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_croix_a24e4cb655c1aec13ba27ff4014b806c2}{get\+Bas\+Gauche}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la position du coin inférieur gauche de la croix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_croix_ac79d05fd449fbaf8a14fd56f04b0ad37}{\texorpdfstring{$\sim$}{\string~}\+Croix}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \doxylink{class_croix}{Croix}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_croix}{Croix}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_croix_a5d9eca963de3977cb3bbf58a9667efb2}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Crée une copie de la croix. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_croix_aafbf0f2b103ee2781320259436bd410f}{get\+MinX}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la coordonnée minimale en x de la croix. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_croix_a9744197334b8abffbec1cc2a704f748e}{get\+MinY}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la coordonnée minimale en y de la croix. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_croix_a060c728bce45b11884191bd0ee1f8615}{get\+MaxX}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la coordonnée maximale en x de la croix. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_croix_accd39913d110e03a7e5dbe214d621277}{get\+MaxY}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la coordonnée maximale en y de la croix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_croix_ae535524247d82254bc12e43144548559}{afficher}} (ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em Affiche la croix sur le flux de sortie donné. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_croix_a409bbf062d350d6d351ddbc22bea7877}{Calcul\+Aire}} () const
+\begin{DoxyCompactList}\small\item\em Calcule l\textquotesingle{}aire de la croix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_croix_ae6c4ebc36a5bfdc7105dc80b1efcb172}{translation}} (\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&v) override
+\begin{DoxyCompactList}\small\item\em Effectue une translation de la croix. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_croix_a4db1fcdf7c9ac3b66f5358efd459139f}{algo}} (int eps1, int eps2, double \+\_\+\+Lambda, int \+\_\+a, int \+\_\+b) const override
+\begin{DoxyCompactList}\small\item\em Génère une représentation algorithmique de la croix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_croix_a5282f26a261c22fe3268b4e311937744}{homothetie}} (double rapport, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&point\+Invariant) override
+\begin{DoxyCompactList}\small\item\em Effectue une homothétie de la croix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_croix_a2d20b27724bb3415e63935e21e54d636}{rotation}} (double angle, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&centre\+Rotation) override
+\begin{DoxyCompactList}\small\item\em Effectue une rotation de la croix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_croix_af8e6dd74fce37201d83b4316f78c90e1}{accepter}} (\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}F) const override
+\begin{DoxyCompactList}\small\item\em Accepte un visiteur de forme pour la croix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_croix_ac2d073937bb15fa1e69bd07c433e4cbc}{accepter}} (\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}S) const override
+\begin{DoxyCompactList}\small\item\em Accepte un visiteur de sauvegarde pour la croix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_croix_aab710339c4d963f361d5153ebd870725}{operator string}} () const override
+\begin{DoxyCompactList}\small\item\em Convertit la croix en une chaîne de caractères. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_croix}{Croix}} \& \mbox{\hyperlink{class_croix_a2e8f6c14e701e263d02c3a146d9e4f9a}{operator=}} (const \mbox{\hyperlink{class_croix}{Croix}} \&C)
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}assignation d\textquotesingle{}une croix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_forme_geometrique_ae274d5e4cf4eba85b27087cb16c77b2b}{Forme\+Geometrique}} (\mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \&F)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie d\textquotesingle{}une forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_forme_geometrique_a02e20bc5f01271da3ee1a4e123329bb5}{Forme\+Geometrique}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur, int nb\+Points)
+\begin{DoxyCompactList}\small\item\em Constructeur d\textquotesingle{}une forme géométrique avec couleur et nombre de points. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_forme_geometrique_aa9c13cc292ae5b7c0ca6be6580dcfcd0}{get\+Nb\+Points}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de points de la forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_forme_geometrique_a0471c35e6c3879907fb66ffef55e75c9}{recevoir\+Groupe\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le groupe parent de la forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \& \mbox{\hyperlink{class_forme_geometrique_a72939d67cea4a5a6076a30c07e8a4959}{operator+}} (\mbox{\hyperlink{class_forme}{Forme}} \&F) override
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}ajout d\textquotesingle{}une forme au groupe. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_forme_geometrique_a43845058df14a48ad3700eef4a207618}{\texorpdfstring{$\sim$}{\string~}\+Forme\+Geometrique}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la forme géométrique. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \& \mbox{\hyperlink{class_forme_geometrique_a812e01ba9f9b169462ec08888ae9b8f1}{operator=}} (const \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \&F)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_forme}{Forme}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_forme_a6c8d18b565986c69ede4789d0430d9ed}{Forme}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_forme_a75f2948beec045d69eaa0cd841b552e0}{Forme}} (const \mbox{\hyperlink{class_forme}{Forme}} \&F)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_a6de3808a0a11ee7259d60e4e8ee3f346}{set\+Groupe\+Parent}} (\mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*}nouveau\+Groupe\+Parent)
+\begin{DoxyCompactList}\small\item\em Définit le groupe parent de la forme. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_forme_a33990ce1db54541f081106026dfd7e86}{get\+Groupe\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le groupe parent de la forme. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_a065ea58a29610722f1aa58147493b87a}{set\+Couleur}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Définit la couleur de la forme. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \mbox{\hyperlink{class_forme_a4fb5ac9b55ecb4af4ceeb05aeb618873}{get\+Couleur}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la couleur de la forme. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_forme_af6ad0735f86713459453c9d775f44aca}{\texorpdfstring{$\sim$}{\string~}\+Forme}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_forme_af7b13a32b3b169d30e4efc288cbbc06e}{enum\+To\+String}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} c) const
+\begin{DoxyCompactList}\small\item\em Convertit une valeur de l\textquotesingle{}énumération Couleur en une chaîne de caractères. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_forme_ac9055cf244bef40ffae7606a9c3eff8c}{rotation\+Point}} (const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&point, double angle, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&centre\+Rotation) const
+\begin{DoxyCompactList}\small\item\em Effectue la rotation d\textquotesingle{}un point autour d\textquotesingle{}un centre donné. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Représente une croix dans le plan. 
+
+La croix est définie par deux points, Haut\+Gauche et Bas\+Droite, formant les coins opposés du rectangle englobant de la croix. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_croix_a4b5fc5a8e4bf1e41c92660a6497bc838}\label{class_croix_a4b5fc5a8e4bf1e41c92660a6497bc838} 
+\index{Croix@{Croix}!Croix@{Croix}}
+\index{Croix@{Croix}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{Croix()}{Croix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Croix\+::\+Croix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}]{couleur,  }\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{haut\+Gauche,  }\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{bas\+Droite }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \doxylink{class_croix}{Croix}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em couleur} & Couleur de la croix. \\
+\hline
+{\em haut\+Gauche} & Position du coin supérieur gauche. \\
+\hline
+{\em bas\+Droite} & Position du coin inférieur droit. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_croix_a38b2a32e7657441b279374bd28d0b50e}\label{class_croix_a38b2a32e7657441b279374bd28d0b50e} 
+\index{Croix@{Croix}!Croix@{Croix}}
+\index{Croix@{Croix}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{Croix()}{Croix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Croix\+::\+Croix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_croix}{Croix}} \&}]{C }\end{DoxyParamCaption})}
+
+
+
+Constructeur de copie de la classe \doxylink{class_croix}{Croix}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & \doxylink{class_croix}{Croix} à copier. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_croix_ac79d05fd449fbaf8a14fd56f04b0ad37}\label{class_croix_ac79d05fd449fbaf8a14fd56f04b0ad37} 
+\index{Croix@{Croix}!````~Croix@{\texorpdfstring{$\sim$}{\string~}Croix}}
+\index{````~Croix@{\texorpdfstring{$\sim$}{\string~}Croix}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Croix()}{\string~Croix()}}
+{\footnotesize\ttfamily Croix\+::\texorpdfstring{$\sim$}{\string~}\+Croix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la classe \doxylink{class_croix}{Croix}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_croix_af8e6dd74fce37201d83b4316f78c90e1}\label{class_croix_af8e6dd74fce37201d83b4316f78c90e1} 
+\index{Croix@{Croix}!accepter@{accepter}}
+\index{accepter@{accepter}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{accepter()}{accepter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Croix\+::accepter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}}]{F }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accepte un visiteur de forme pour la croix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F} & Visiteur de forme. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a15f8c9bbeb8db0a20a1d45d6aee4451e}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_ac2d073937bb15fa1e69bd07c433e4cbc}\label{class_croix_ac2d073937bb15fa1e69bd07c433e4cbc} 
+\index{Croix@{Croix}!accepter@{accepter}}
+\index{accepter@{accepter}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{accepter()}{accepter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Croix\+::accepter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}}]{S }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accepte un visiteur de sauvegarde pour la croix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & Visiteur de sauvegarde. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aec38169c7a89661519c4a1036bf6cc6c}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_ae535524247d82254bc12e43144548559}\label{class_croix_ae535524247d82254bc12e43144548559} 
+\index{Croix@{Croix}!afficher@{afficher}}
+\index{afficher@{afficher}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void Croix\+::afficher (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Affiche la croix sur le flux de sortie donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_af350c40a6d1e27694e2ce9016a272857}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_a4db1fcdf7c9ac3b66f5358efd459139f}\label{class_croix_a4db1fcdf7c9ac3b66f5358efd459139f} 
+\index{Croix@{Croix}!algo@{algo}}
+\index{algo@{algo}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{algo()}{algo()}}
+{\footnotesize\ttfamily string Croix\+::algo (\begin{DoxyParamCaption}\item[{int}]{eps1,  }\item[{int}]{eps2,  }\item[{double}]{\+\_\+\+Lambda,  }\item[{int}]{\+\_\+a,  }\item[{int}]{\+\_\+b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Génère une représentation algorithmique de la croix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em eps1} & Paramètre epsilon 1. \\
+\hline
+{\em eps2} & Paramètre epsilon 2. \\
+\hline
+{\em \+\_\+\+Lambda} & Paramètre lambda. \\
+\hline
+{\em \+\_\+a} & Paramètre a. \\
+\hline
+{\em \+\_\+b} & Paramètre b. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Chaîne de caractères représentant l\textquotesingle{}algorithme. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a0d3b663664b4cbe2d162578ab23080ef}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_a409bbf062d350d6d351ddbc22bea7877}\label{class_croix_a409bbf062d350d6d351ddbc22bea7877} 
+\index{Croix@{Croix}!CalculAire@{CalculAire}}
+\index{CalculAire@{CalculAire}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{CalculAire()}{CalculAire()}}
+{\footnotesize\ttfamily double Croix\+::\+Calcul\+Aire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calcule l\textquotesingle{}aire de la croix. 
+
+\begin{DoxyReturn}{Returns}
+Aire de la croix. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a0bd130a23cba848754a76207334d7b0a}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_a5d9eca963de3977cb3bbf58a9667efb2}\label{class_croix_a5d9eca963de3977cb3bbf58a9667efb2} 
+\index{Croix@{Croix}!clone@{clone}}
+\index{clone@{clone}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_croix}{Croix}} \texorpdfstring{$\ast$}{*} Croix\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Crée une copie de la croix. 
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers la nouvelle croix. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aa23ecaccd7263d1807b37c96099d4483}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_ad95c972eeaa40644d4b12dd04d797b53}\label{class_croix_ad95c972eeaa40644d4b12dd04d797b53} 
+\index{Croix@{Croix}!getBasDroite@{getBasDroite}}
+\index{getBasDroite@{getBasDroite}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{getBasDroite()}{getBasDroite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Croix\+::get\+Bas\+Droite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la position du coin inférieur droit de la croix. 
+
+\begin{DoxyReturn}{Returns}
+Position du coin inférieur droit. 
+\end{DoxyReturn}
+\Hypertarget{class_croix_a24e4cb655c1aec13ba27ff4014b806c2}\label{class_croix_a24e4cb655c1aec13ba27ff4014b806c2} 
+\index{Croix@{Croix}!getBasGauche@{getBasGauche}}
+\index{getBasGauche@{getBasGauche}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{getBasGauche()}{getBasGauche()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Croix\+::get\+Bas\+Gauche (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la position du coin inférieur gauche de la croix. 
+
+\begin{DoxyReturn}{Returns}
+Position du coin inférieur gauche. 
+\end{DoxyReturn}
+\Hypertarget{class_croix_a63db6017aae744e72f2a2ee09c3f9728}\label{class_croix_a63db6017aae744e72f2a2ee09c3f9728} 
+\index{Croix@{Croix}!getHautDroite@{getHautDroite}}
+\index{getHautDroite@{getHautDroite}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{getHautDroite()}{getHautDroite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Croix\+::get\+Haut\+Droite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la position du coin supérieur droit de la croix. 
+
+\begin{DoxyReturn}{Returns}
+Position du coin supérieur droit. 
+\end{DoxyReturn}
+\Hypertarget{class_croix_accdd15dbc09828045c79d20043acf9e2}\label{class_croix_accdd15dbc09828045c79d20043acf9e2} 
+\index{Croix@{Croix}!getHautGauche@{getHautGauche}}
+\index{getHautGauche@{getHautGauche}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{getHautGauche()}{getHautGauche()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Croix\+::get\+Haut\+Gauche (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la position du coin supérieur gauche de la croix. 
+
+\begin{DoxyReturn}{Returns}
+Position du coin supérieur gauche. 
+\end{DoxyReturn}
+\Hypertarget{class_croix_a060c728bce45b11884191bd0ee1f8615}\label{class_croix_a060c728bce45b11884191bd0ee1f8615} 
+\index{Croix@{Croix}!getMaxX@{getMaxX}}
+\index{getMaxX@{getMaxX}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{getMaxX()}{getMaxX()}}
+{\footnotesize\ttfamily double Croix\+::get\+MaxX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la coordonnée maximale en x de la croix. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée maximale en x. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a99ac122c3c15b0934b5a7fabe3d709db}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_accd39913d110e03a7e5dbe214d621277}\label{class_croix_accd39913d110e03a7e5dbe214d621277} 
+\index{Croix@{Croix}!getMaxY@{getMaxY}}
+\index{getMaxY@{getMaxY}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{getMaxY()}{getMaxY()}}
+{\footnotesize\ttfamily double Croix\+::get\+MaxY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la coordonnée maximale en y de la croix. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée maximale en y. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a8560742419419c09764cc38c52f4d9f2}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_aafbf0f2b103ee2781320259436bd410f}\label{class_croix_aafbf0f2b103ee2781320259436bd410f} 
+\index{Croix@{Croix}!getMinX@{getMinX}}
+\index{getMinX@{getMinX}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{getMinX()}{getMinX()}}
+{\footnotesize\ttfamily double Croix\+::get\+MinX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la coordonnée minimale en x de la croix. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée minimale en x. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_acd3401362579d11bc151b3d83056a1c2}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_a9744197334b8abffbec1cc2a704f748e}\label{class_croix_a9744197334b8abffbec1cc2a704f748e} 
+\index{Croix@{Croix}!getMinY@{getMinY}}
+\index{getMinY@{getMinY}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{getMinY()}{getMinY()}}
+{\footnotesize\ttfamily double Croix\+::get\+MinY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la coordonnée minimale en y de la croix. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée minimale en y. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aa563f88322640bf49ab36b7315562e9c}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_a5282f26a261c22fe3268b4e311937744}\label{class_croix_a5282f26a261c22fe3268b4e311937744} 
+\index{Croix@{Croix}!homothetie@{homothetie}}
+\index{homothetie@{homothetie}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{homothetie()}{homothetie()}}
+{\footnotesize\ttfamily void Croix\+::homothetie (\begin{DoxyParamCaption}\item[{double}]{rapport,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{point\+Invariant }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Effectue une homothétie de la croix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rapport} & Facteur d\textquotesingle{}échelle. \\
+\hline
+{\em point\+Invariant} & Point invariant de l\textquotesingle{}homothétie. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aee8eb47f684d903b8beeb37135de4d38}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_aab710339c4d963f361d5153ebd870725}\label{class_croix_aab710339c4d963f361d5153ebd870725} 
+\index{Croix@{Croix}!operator string@{operator string}}
+\index{operator string@{operator string}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily Croix\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Convertit la croix en une chaîne de caractères. 
+
+\begin{DoxyReturn}{Returns}
+Chaîne de caractères représentant la croix. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a47a99e86eaef4f7e536ee7063b6e5d82}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_a2e8f6c14e701e263d02c3a146d9e4f9a}\label{class_croix_a2e8f6c14e701e263d02c3a146d9e4f9a} 
+\index{Croix@{Croix}!operator=@{operator=}}
+\index{operator=@{operator=}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_croix}{Croix}} \& Croix\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_croix}{Croix}} \&}]{C }\end{DoxyParamCaption})}
+
+
+
+Opérateur d\textquotesingle{}assignation d\textquotesingle{}une croix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G} & croix à assigner. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence vers la croix actuel. 
+\end{DoxyReturn}
+\Hypertarget{class_croix_a2d20b27724bb3415e63935e21e54d636}\label{class_croix_a2d20b27724bb3415e63935e21e54d636} 
+\index{Croix@{Croix}!rotation@{rotation}}
+\index{rotation@{rotation}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily void Croix\+::rotation (\begin{DoxyParamCaption}\item[{double}]{angle,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{centre\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Effectue une rotation de la croix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Angle de rotation en degrés. \\
+\hline
+{\em centre\+Rotation} & Centre de rotation. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a9eda2099d3a3b0270bce1481d5571950}{Forme\+Geometrique}}.
+
+\Hypertarget{class_croix_ae6c4ebc36a5bfdc7105dc80b1efcb172}\label{class_croix_ae6c4ebc36a5bfdc7105dc80b1efcb172} 
+\index{Croix@{Croix}!translation@{translation}}
+\index{translation@{translation}!Croix@{Croix}}
+\doxysubsubsection{\texorpdfstring{translation()}{translation()}}
+{\footnotesize\ttfamily void Croix\+::translation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Effectue une translation de la croix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vecteur de translation. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a0bf5e5ca2d815c57f2c276598946e595}{Forme\+Geometrique}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Forme/\mbox{\hyperlink{_croix_8h}{Croix.\+h}}\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Forme/\mbox{\hyperlink{_croix_8cpp}{Croix.\+cpp}}\end{DoxyCompactItemize}

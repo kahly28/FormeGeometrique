@@ -1,0 +1,532 @@
+\doxysection{Polygone Class Reference}
+\hypertarget{class_polygone}{}\label{class_polygone}\index{Polygone@{Polygone}}
+
+
+Représente un polygone dans le plan. \+\_\+ Le polygone est défini par une liste de points dans le plan.  
+
+
+
+
+{\ttfamily \#include $<$Polygone.\+h$>$}
+
+Inheritance diagram for Polygone\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_polygone}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_polygone_a9ffc29137036806e38aa03638836eeba}{Polygone}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur, vector$<$ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*} $>$ points)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \doxylink{class_polygone}{Polygone}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polygone_aa52c0b9336a90a046117d3e7695debe6}{Polygone}} (const \mbox{\hyperlink{class_polygone}{Polygone}} \&P)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie de la classe \doxylink{class_polygone}{Polygone}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_polygone_af155b11b22a09472022f9d07150ddb80}{get\+Tab\+Points}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la liste des points du polygone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polygone}{Polygone}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_polygone_ab4f054c064da793bad593c8777a9c61c}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Crée une copie du polygone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polygone_ae293043ea9d180259771515a6496cd8c}{\texorpdfstring{$\sim$}{\string~}\+Polygone}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \doxylink{class_polygone}{Polygone}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_polygone_af70779166f420a507de257e0820ddaf6}{afficher}} (ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em Affiche le polygone sur le flux de sortie donné. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_polygone_afd0c58fd3218ea1d1eb6073ea1ff261d}{get\+MinX}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la coordonnée minimale en x du polygone. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_polygone_a92f25a6fb0870af0c00feaf2b59b9d36}{get\+MinY}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la coordonnée minimale en y du polygone. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_polygone_a997fcb587ce1bc300222dc50f0b03dc5}{get\+MaxX}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la coordonnée maximale en x du polygone. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_polygone_a5097d27b11eaf995b8663301921d7396}{get\+MaxY}} () const override
+\begin{DoxyCompactList}\small\item\em Obtient la coordonnée maximale en y du polygone. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_polygone_aba81c6a9306628f85f2f6cc2131e2a42}{Calcul\+Aire}} () const
+\begin{DoxyCompactList}\small\item\em Calcule l\textquotesingle{}aire du polygone. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_polygone_abf4e5d3dc70d4de3f5df94d7f19e6a6c}{determinant}} (const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&v1, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&v2) const
+\begin{DoxyCompactList}\small\item\em Calcule le déterminant de deux vecteurs. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_polygone_a76696eba8f60bcffb1c6bdfec4fa7adf}{algo}} (int eps1, int eps2, double \+\_\+\+Lambda, int \+\_\+a, int \+\_\+b) const
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*} $>$ $>$ \mbox{\hyperlink{class_polygone_aa51bfeecf81753ed6313c01def84d6ef}{trianguler}} () const
+\begin{DoxyCompactList}\small\item\em Triangule le polygone en triangles convexes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_polygone_a9cc5594271b663fa3696e8890e8a3058}{est\+Oreille}} (const std\+::vector$<$ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*} $>$ \&polygon, int i) const
+\begin{DoxyCompactList}\small\item\em Vérifie si un point est une oreille du polygone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_polygone_ab1331dfc6794d70b41cc15760f90110a}{translation}} (\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&v) override
+\begin{DoxyCompactList}\small\item\em Effectue une translation du polygone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_polygone_aba03cdc980e8b84c9f6461354c8845a9}{homothetie}} (double rapport, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&point\+Invariant) override
+\begin{DoxyCompactList}\small\item\em Effectue une homothétie du polygone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_polygone_a3588de03d6a32c1bde93d0bc5596b870}{rotation}} (double angle, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&centre\+Rotation) override
+\begin{DoxyCompactList}\small\item\em Effectue une rotation du polygone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_polygone_aeb52422f36291136a29b8465ea16965b}{calculer\+Centre}} () const
+\begin{DoxyCompactList}\small\item\em Calcule le centre du polygone. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_polygone_afeaf7f1d70b073341ab3740801f52517}{est\+Interieur\+Du\+Triangle}} (\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*}a, \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*}b, \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*}c, \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*}p) const
+\begin{DoxyCompactList}\small\item\em Vérifie si un point est à l\textquotesingle{}intérieur d\textquotesingle{}un triangle défini par trois points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_polygone_adbe3cd8ac0d08d705edd8da8b82f1492}{accepter}} (\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}F) const override
+\begin{DoxyCompactList}\small\item\em Accepte un visiteur de formes pour appliquer des actions spécifiques. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_polygone_a473b222fee3aab01509e7deab0e8c5ae}{accepter}} (\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}S) const override
+\begin{DoxyCompactList}\small\item\em Accepte un visiteur de sauvegarde pour sauvegarder la forme. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polygone_a2247f0bbed3686e65e29735cc4632364}{operator string}} () const override
+\begin{DoxyCompactList}\small\item\em Opérateur de conversion en chaîne de caractères. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_polygone}{Polygone}} \& \mbox{\hyperlink{class_polygone_a068dc5f16f32630c49a06a01a3adab66}{operator=}} (const \mbox{\hyperlink{class_polygone}{Polygone}} \&P)
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}assignation d\textquotesingle{}un polygone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_forme_geometrique_ae274d5e4cf4eba85b27087cb16c77b2b}{Forme\+Geometrique}} (\mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \&F)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie d\textquotesingle{}une forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_forme_geometrique_a02e20bc5f01271da3ee1a4e123329bb5}{Forme\+Geometrique}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur, int nb\+Points)
+\begin{DoxyCompactList}\small\item\em Constructeur d\textquotesingle{}une forme géométrique avec couleur et nombre de points. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_forme_geometrique_aa9c13cc292ae5b7c0ca6be6580dcfcd0}{get\+Nb\+Points}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de points de la forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_forme_geometrique_a0471c35e6c3879907fb66ffef55e75c9}{recevoir\+Groupe\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le groupe parent de la forme géométrique. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \& \mbox{\hyperlink{class_forme_geometrique_a72939d67cea4a5a6076a30c07e8a4959}{operator+}} (\mbox{\hyperlink{class_forme}{Forme}} \&F) override
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}ajout d\textquotesingle{}une forme au groupe. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_forme_geometrique_a43845058df14a48ad3700eef4a207618}{\texorpdfstring{$\sim$}{\string~}\+Forme\+Geometrique}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la forme géométrique. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \& \mbox{\hyperlink{class_forme_geometrique_a812e01ba9f9b169462ec08888ae9b8f1}{operator=}} (const \mbox{\hyperlink{class_forme_geometrique}{Forme\+Geometrique}} \&F)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_forme}{Forme}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_forme_a6c8d18b565986c69ede4789d0430d9ed}{Forme}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_forme_a75f2948beec045d69eaa0cd841b552e0}{Forme}} (const \mbox{\hyperlink{class_forme}{Forme}} \&F)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_a6de3808a0a11ee7259d60e4e8ee3f346}{set\+Groupe\+Parent}} (\mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*}nouveau\+Groupe\+Parent)
+\begin{DoxyCompactList}\small\item\em Définit le groupe parent de la forme. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_forme_a33990ce1db54541f081106026dfd7e86}{get\+Groupe\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le groupe parent de la forme. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_a065ea58a29610722f1aa58147493b87a}{set\+Couleur}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Définit la couleur de la forme. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \mbox{\hyperlink{class_forme_a4fb5ac9b55ecb4af4ceeb05aeb618873}{get\+Couleur}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la couleur de la forme. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_forme_af6ad0735f86713459453c9d775f44aca}{\texorpdfstring{$\sim$}{\string~}\+Forme}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_forme_af7b13a32b3b169d30e4efc288cbbc06e}{enum\+To\+String}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} c) const
+\begin{DoxyCompactList}\small\item\em Convertit une valeur de l\textquotesingle{}énumération Couleur en une chaîne de caractères. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_forme_ac9055cf244bef40ffae7606a9c3eff8c}{rotation\+Point}} (const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&point, double angle, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&centre\+Rotation) const
+\begin{DoxyCompactList}\small\item\em Effectue la rotation d\textquotesingle{}un point autour d\textquotesingle{}un centre donné. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Représente un polygone dans le plan. \+\_\+ Le polygone est défini par une liste de points dans le plan. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_polygone_a9ffc29137036806e38aa03638836eeba}\label{class_polygone_a9ffc29137036806e38aa03638836eeba} 
+\index{Polygone@{Polygone}!Polygone@{Polygone}}
+\index{Polygone@{Polygone}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{Polygone()}{Polygone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Polygone\+::\+Polygone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}]{couleur,  }\item[{vector$<$ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*} $>$}]{points }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \doxylink{class_polygone}{Polygone}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em couleur} & Couleur du polygone. \\
+\hline
+{\em points} & Liste des points du polygone. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_polygone_aa52c0b9336a90a046117d3e7695debe6}\label{class_polygone_aa52c0b9336a90a046117d3e7695debe6} 
+\index{Polygone@{Polygone}!Polygone@{Polygone}}
+\index{Polygone@{Polygone}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{Polygone()}{Polygone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Polygone\+::\+Polygone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polygone}{Polygone}} \&}]{P }\end{DoxyParamCaption})}
+
+
+
+Constructeur de copie de la classe \doxylink{class_polygone}{Polygone}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \doxylink{class_polygone}{Polygone} à copier. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_polygone_ae293043ea9d180259771515a6496cd8c}\label{class_polygone_ae293043ea9d180259771515a6496cd8c} 
+\index{Polygone@{Polygone}!````~Polygone@{\texorpdfstring{$\sim$}{\string~}Polygone}}
+\index{````~Polygone@{\texorpdfstring{$\sim$}{\string~}Polygone}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Polygone()}{\string~Polygone()}}
+{\footnotesize\ttfamily Polygone\+::\texorpdfstring{$\sim$}{\string~}\+Polygone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la classe \doxylink{class_polygone}{Polygone}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_polygone_adbe3cd8ac0d08d705edd8da8b82f1492}\label{class_polygone_adbe3cd8ac0d08d705edd8da8b82f1492} 
+\index{Polygone@{Polygone}!accepter@{accepter}}
+\index{accepter@{accepter}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{accepter()}{accepter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Polygone\+::accepter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}}]{F }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accepte un visiteur de formes pour appliquer des actions spécifiques. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F} & Visiteur de formes. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a15f8c9bbeb8db0a20a1d45d6aee4451e}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_a473b222fee3aab01509e7deab0e8c5ae}\label{class_polygone_a473b222fee3aab01509e7deab0e8c5ae} 
+\index{Polygone@{Polygone}!accepter@{accepter}}
+\index{accepter@{accepter}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{accepter()}{accepter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Polygone\+::accepter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}}]{S }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accepte un visiteur de sauvegarde pour sauvegarder la forme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & Visiteur de sauvegarde. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aec38169c7a89661519c4a1036bf6cc6c}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_af70779166f420a507de257e0820ddaf6}\label{class_polygone_af70779166f420a507de257e0820ddaf6} 
+\index{Polygone@{Polygone}!afficher@{afficher}}
+\index{afficher@{afficher}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void Polygone\+::afficher (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Affiche le polygone sur le flux de sortie donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_af350c40a6d1e27694e2ce9016a272857}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_a76696eba8f60bcffb1c6bdfec4fa7adf}\label{class_polygone_a76696eba8f60bcffb1c6bdfec4fa7adf} 
+\index{Polygone@{Polygone}!algo@{algo}}
+\index{algo@{algo}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{algo()}{algo()}}
+{\footnotesize\ttfamily string Polygone\+::algo (\begin{DoxyParamCaption}\item[{int}]{eps1,  }\item[{int}]{eps2,  }\item[{double}]{\+\_\+\+Lambda,  }\item[{int}]{\+\_\+a,  }\item[{int}]{\+\_\+b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a0d3b663664b4cbe2d162578ab23080ef}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_aba81c6a9306628f85f2f6cc2131e2a42}\label{class_polygone_aba81c6a9306628f85f2f6cc2131e2a42} 
+\index{Polygone@{Polygone}!CalculAire@{CalculAire}}
+\index{CalculAire@{CalculAire}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{CalculAire()}{CalculAire()}}
+{\footnotesize\ttfamily double Polygone\+::\+Calcul\+Aire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calcule l\textquotesingle{}aire du polygone. 
+
+\begin{DoxyReturn}{Returns}
+Aire du polygone. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a0bd130a23cba848754a76207334d7b0a}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_aeb52422f36291136a29b8465ea16965b}\label{class_polygone_aeb52422f36291136a29b8465ea16965b} 
+\index{Polygone@{Polygone}!calculerCentre@{calculerCentre}}
+\index{calculerCentre@{calculerCentre}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{calculerCentre()}{calculerCentre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} Polygone\+::calculer\+Centre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Calcule le centre du polygone. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_vecteur2_d}{Vecteur2D} représentant le centre du polygone. 
+\end{DoxyReturn}
+\Hypertarget{class_polygone_ab4f054c064da793bad593c8777a9c61c}\label{class_polygone_ab4f054c064da793bad593c8777a9c61c} 
+\index{Polygone@{Polygone}!clone@{clone}}
+\index{clone@{clone}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polygone}{Polygone}} \texorpdfstring{$\ast$}{*} Polygone\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Crée une copie du polygone. 
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers le nouveau polygone. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aa23ecaccd7263d1807b37c96099d4483}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_abf4e5d3dc70d4de3f5df94d7f19e6a6c}\label{class_polygone_abf4e5d3dc70d4de3f5df94d7f19e6a6c} 
+\index{Polygone@{Polygone}!determinant@{determinant}}
+\index{determinant@{determinant}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{determinant()}{determinant()}}
+{\footnotesize\ttfamily double Polygone\+::determinant (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{v1,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{v2 }\end{DoxyParamCaption}) const}
+
+
+
+Calcule le déterminant de deux vecteurs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Premier vecteur. \\
+\hline
+{\em v2} & Deuxième vecteur. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valeur du déterminant. 
+\end{DoxyReturn}
+\Hypertarget{class_polygone_afeaf7f1d70b073341ab3740801f52517}\label{class_polygone_afeaf7f1d70b073341ab3740801f52517} 
+\index{Polygone@{Polygone}!estInterieurDuTriangle@{estInterieurDuTriangle}}
+\index{estInterieurDuTriangle@{estInterieurDuTriangle}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{estInterieurDuTriangle()}{estInterieurDuTriangle()}}
+{\footnotesize\ttfamily bool Polygone\+::est\+Interieur\+Du\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*}}]{a,  }\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*}}]{b,  }\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*}}]{c,  }\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Vérifie si un point est à l\textquotesingle{}intérieur d\textquotesingle{}un triangle défini par trois points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Premier sommet du triangle. \\
+\hline
+{\em b} & Deuxième sommet du triangle. \\
+\hline
+{\em c} & Troisième sommet du triangle. \\
+\hline
+{\em p} & Point à vérifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si le point est à l\textquotesingle{}intérieur, false sinon. 
+\end{DoxyReturn}
+\Hypertarget{class_polygone_a9cc5594271b663fa3696e8890e8a3058}\label{class_polygone_a9cc5594271b663fa3696e8890e8a3058} 
+\index{Polygone@{Polygone}!estOreille@{estOreille}}
+\index{estOreille@{estOreille}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{estOreille()}{estOreille()}}
+{\footnotesize\ttfamily bool Polygone\+::est\+Oreille (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*} $>$ \&}]{polygon,  }\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Vérifie si un point est une oreille du polygone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em polygon} & Liste des points du polygone. \\
+\hline
+{\em i} & Indice du point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si le point est une oreille, sinon faux. 
+\end{DoxyReturn}
+\Hypertarget{class_polygone_a997fcb587ce1bc300222dc50f0b03dc5}\label{class_polygone_a997fcb587ce1bc300222dc50f0b03dc5} 
+\index{Polygone@{Polygone}!getMaxX@{getMaxX}}
+\index{getMaxX@{getMaxX}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{getMaxX()}{getMaxX()}}
+{\footnotesize\ttfamily double Polygone\+::get\+MaxX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la coordonnée maximale en x du polygone. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée maximale en x. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a99ac122c3c15b0934b5a7fabe3d709db}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_a5097d27b11eaf995b8663301921d7396}\label{class_polygone_a5097d27b11eaf995b8663301921d7396} 
+\index{Polygone@{Polygone}!getMaxY@{getMaxY}}
+\index{getMaxY@{getMaxY}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{getMaxY()}{getMaxY()}}
+{\footnotesize\ttfamily double Polygone\+::get\+MaxY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la coordonnée maximale en y du polygone. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée maximale en y. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a8560742419419c09764cc38c52f4d9f2}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_afd0c58fd3218ea1d1eb6073ea1ff261d}\label{class_polygone_afd0c58fd3218ea1d1eb6073ea1ff261d} 
+\index{Polygone@{Polygone}!getMinX@{getMinX}}
+\index{getMinX@{getMinX}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{getMinX()}{getMinX()}}
+{\footnotesize\ttfamily double Polygone\+::get\+MinX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la coordonnée minimale en x du polygone. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée minimale en x. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_acd3401362579d11bc151b3d83056a1c2}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_a92f25a6fb0870af0c00feaf2b59b9d36}\label{class_polygone_a92f25a6fb0870af0c00feaf2b59b9d36} 
+\index{Polygone@{Polygone}!getMinY@{getMinY}}
+\index{getMinY@{getMinY}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{getMinY()}{getMinY()}}
+{\footnotesize\ttfamily double Polygone\+::get\+MinY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtient la coordonnée minimale en y du polygone. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée minimale en y. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aa563f88322640bf49ab36b7315562e9c}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_af155b11b22a09472022f9d07150ddb80}\label{class_polygone_af155b11b22a09472022f9d07150ddb80} 
+\index{Polygone@{Polygone}!getTabPoints@{getTabPoints}}
+\index{getTabPoints@{getTabPoints}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{getTabPoints()}{getTabPoints()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*} $>$ Polygone\+::get\+Tab\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la liste des points du polygone. 
+
+\begin{DoxyReturn}{Returns}
+Liste des points du polygone. 
+\end{DoxyReturn}
+\Hypertarget{class_polygone_aba03cdc980e8b84c9f6461354c8845a9}\label{class_polygone_aba03cdc980e8b84c9f6461354c8845a9} 
+\index{Polygone@{Polygone}!homothetie@{homothetie}}
+\index{homothetie@{homothetie}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{homothetie()}{homothetie()}}
+{\footnotesize\ttfamily void Polygone\+::homothetie (\begin{DoxyParamCaption}\item[{double}]{rapport,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{point\+Invariant }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Effectue une homothétie du polygone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rapport} & Facteur d\textquotesingle{}échelle. \\
+\hline
+{\em point\+Invariant} & Point invariant de l\textquotesingle{}homothétie. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_aee8eb47f684d903b8beeb37135de4d38}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_a2247f0bbed3686e65e29735cc4632364}\label{class_polygone_a2247f0bbed3686e65e29735cc4632364} 
+\index{Polygone@{Polygone}!operator string@{operator string}}
+\index{operator string@{operator string}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily Polygone\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Opérateur de conversion en chaîne de caractères. 
+
+\begin{DoxyReturn}{Returns}
+Chaîne de caractères représentant la forme. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a47a99e86eaef4f7e536ee7063b6e5d82}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_a068dc5f16f32630c49a06a01a3adab66}\label{class_polygone_a068dc5f16f32630c49a06a01a3adab66} 
+\index{Polygone@{Polygone}!operator=@{operator=}}
+\index{operator=@{operator=}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_polygone}{Polygone}} \& Polygone\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polygone}{Polygone}} \&}]{P }\end{DoxyParamCaption})}
+
+
+
+Opérateur d\textquotesingle{}assignation d\textquotesingle{}un polygone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G} & polygone à assigner. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence vers le polygone actuel. 
+\end{DoxyReturn}
+\Hypertarget{class_polygone_a3588de03d6a32c1bde93d0bc5596b870}\label{class_polygone_a3588de03d6a32c1bde93d0bc5596b870} 
+\index{Polygone@{Polygone}!rotation@{rotation}}
+\index{rotation@{rotation}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily void Polygone\+::rotation (\begin{DoxyParamCaption}\item[{double}]{angle,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{centre\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Effectue une rotation du polygone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Angle de rotation en degrés. \\
+\hline
+{\em centre\+Rotation} & Centre de rotation. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a9eda2099d3a3b0270bce1481d5571950}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_ab1331dfc6794d70b41cc15760f90110a}\label{class_polygone_ab1331dfc6794d70b41cc15760f90110a} 
+\index{Polygone@{Polygone}!translation@{translation}}
+\index{translation@{translation}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{translation()}{translation()}}
+{\footnotesize\ttfamily void Polygone\+::translation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Effectue une translation du polygone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vecteur de translation. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_geometrique_a0bf5e5ca2d815c57f2c276598946e595}{Forme\+Geometrique}}.
+
+\Hypertarget{class_polygone_aa51bfeecf81753ed6313c01def84d6ef}\label{class_polygone_aa51bfeecf81753ed6313c01def84d6ef} 
+\index{Polygone@{Polygone}!trianguler@{trianguler}}
+\index{trianguler@{trianguler}!Polygone@{Polygone}}
+\doxysubsubsection{\texorpdfstring{trianguler()}{trianguler()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \texorpdfstring{$\ast$}{*} $>$ $>$ Polygone\+::trianguler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Triangule le polygone en triangles convexes. 
+
+\begin{DoxyReturn}{Returns}
+Liste des triangles formant la triangulation. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Forme/\mbox{\hyperlink{_polygone_8h}{Polygone.\+h}}\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Forme/\mbox{\hyperlink{_polygone_8cpp}{Polygone.\+cpp}}\end{DoxyCompactItemize}

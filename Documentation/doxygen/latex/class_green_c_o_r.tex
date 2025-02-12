@@ -1,0 +1,76 @@
+\doxysection{Green\+COR Class Reference}
+\hypertarget{class_green_c_o_r}{}\label{class_green_c_o_r}\index{GreenCOR@{GreenCOR}}
+
+
+{\ttfamily \#include $<$Green\+COR.\+h$>$}
+
+Inheritance diagram for Green\+COR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_green_c_o_r}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_green_c_o_r_ab14470ca5dea9555be203d96b953da50}{Green\+COR}} (\mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}} \texorpdfstring{$\ast$}{*}suivant)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_green_c_o_r}{Green\+COR}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \mbox{\hyperlink{class_green_c_o_r_a96f49bb162440519209247da0d6cba76}{choix\+Couleur}} (string ligne, \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \texorpdfstring{$\ast$}{*}\&couleur) const override
+\begin{DoxyCompactList}\small\item\em Méthode pour choisir la couleur correspondante à partir du nom de couleur donné. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_couleur_c_o_r_a6bb3b57e1021388abdc5d6a869cafbb6}{Couleur\+COR}} (\mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}} \texorpdfstring{$\ast$}{*}suivant)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_couleur_c_o_r}{Couleur\+COR}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_couleur_c_o_r_ada37e24fba200d2bebe591201e36c342}{choix\+Couleur\+Suivant}} (string ligne, \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \texorpdfstring{$\ast$}{*}\&c) const
+\begin{DoxyCompactList}\small\item\em Méthode permettant de passer la demande de choix de couleur au maillon suivant dans la chaîne de responsabilité. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_green_c_o_r_ab14470ca5dea9555be203d96b953da50}\label{class_green_c_o_r_ab14470ca5dea9555be203d96b953da50} 
+\index{GreenCOR@{GreenCOR}!GreenCOR@{GreenCOR}}
+\index{GreenCOR@{GreenCOR}!GreenCOR@{GreenCOR}}
+\doxysubsubsection{\texorpdfstring{GreenCOR()}{GreenCOR()}}
+{\footnotesize\ttfamily Green\+COR\+::\+Green\+COR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}} \texorpdfstring{$\ast$}{*}}]{suivant }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de \doxylink{class_green_c_o_r}{Green\+COR}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suivant} & Pointeur vers le maillon suivant dans la chaîne de responsabilité. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_green_c_o_r_a96f49bb162440519209247da0d6cba76}\label{class_green_c_o_r_a96f49bb162440519209247da0d6cba76} 
+\index{GreenCOR@{GreenCOR}!choixCouleur@{choixCouleur}}
+\index{choixCouleur@{choixCouleur}!GreenCOR@{GreenCOR}}
+\doxysubsubsection{\texorpdfstring{choixCouleur()}{choixCouleur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} Green\+COR\+::choix\+Couleur (\begin{DoxyParamCaption}\item[{string}]{ligne,  }\item[{\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \texorpdfstring{$\ast$}{*}\&}]{couleur }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Méthode pour choisir la couleur correspondante à partir du nom de couleur donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ligne} & Nom de la couleur à convertir. \\
+\hline
+{\em couleur} & Pointeur vers l\textquotesingle{}énumération Couleur à remplir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La couleur correspondante si elle est trouvée, sinon appelle la méthode du maillon suivant dans la chaîne. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_couleur_c_o_r_a3bd782784ecf173583de5cb9af1b953b}{Couleur\+COR}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Couleur\+COR/\mbox{\hyperlink{_green_c_o_r_8h}{Green\+COR.\+h}}\end{DoxyCompactItemize}

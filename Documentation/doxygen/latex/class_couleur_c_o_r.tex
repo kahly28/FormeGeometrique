@@ -1,0 +1,93 @@
+\doxysection{Couleur\+COR Class Reference}
+\hypertarget{class_couleur_c_o_r}{}\label{class_couleur_c_o_r}\index{CouleurCOR@{CouleurCOR}}
+
+
+La classe \doxylink{class_couleur_c_o_r}{Couleur\+COR} est une classe abstraite de la chaîne de responsabilité qui gère le choix de la couleur.  
+
+
+
+
+{\ttfamily \#include $<$Couleur\+COR.\+h$>$}
+
+Inheritance diagram for Couleur\+COR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_couleur_c_o_r}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_couleur_c_o_r_a6bb3b57e1021388abdc5d6a869cafbb6}{Couleur\+COR}} (\mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}} \texorpdfstring{$\ast$}{*}suivant)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_couleur_c_o_r}{Couleur\+COR}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \mbox{\hyperlink{class_couleur_c_o_r_a3bd782784ecf173583de5cb9af1b953b}{choix\+Couleur}} (string ligne, \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \texorpdfstring{$\ast$}{*}\&c) const =0
+\begin{DoxyCompactList}\small\item\em Méthode abstraite chargée de choisir la couleur à partir de la ligne de chargement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_couleur_c_o_r_ada37e24fba200d2bebe591201e36c342}{choix\+Couleur\+Suivant}} (string ligne, \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \texorpdfstring{$\ast$}{*}\&c) const
+\begin{DoxyCompactList}\small\item\em Méthode permettant de passer la demande de choix de couleur au maillon suivant dans la chaîne de responsabilité. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \doxylink{class_couleur_c_o_r}{Couleur\+COR} est une classe abstraite de la chaîne de responsabilité qui gère le choix de la couleur. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_couleur_c_o_r_a6bb3b57e1021388abdc5d6a869cafbb6}\label{class_couleur_c_o_r_a6bb3b57e1021388abdc5d6a869cafbb6} 
+\index{CouleurCOR@{CouleurCOR}!CouleurCOR@{CouleurCOR}}
+\index{CouleurCOR@{CouleurCOR}!CouleurCOR@{CouleurCOR}}
+\doxysubsubsection{\texorpdfstring{CouleurCOR()}{CouleurCOR()}}
+{\footnotesize\ttfamily Couleur\+COR\+::\+Couleur\+COR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_couleur_c_o_r}{Couleur\+COR}} \texorpdfstring{$\ast$}{*}}]{suivant }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de \doxylink{class_couleur_c_o_r}{Couleur\+COR}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suivant} & Pointeur vers le maillon suivant dans la chaîne de responsabilité. Initialise le maillon avec le suivant de la chaîne. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_couleur_c_o_r_a3bd782784ecf173583de5cb9af1b953b}\label{class_couleur_c_o_r_a3bd782784ecf173583de5cb9af1b953b} 
+\index{CouleurCOR@{CouleurCOR}!choixCouleur@{choixCouleur}}
+\index{choixCouleur@{choixCouleur}!CouleurCOR@{CouleurCOR}}
+\doxysubsubsection{\texorpdfstring{choixCouleur()}{choixCouleur()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} Couleur\+COR\+::choix\+Couleur (\begin{DoxyParamCaption}\item[{string}]{ligne,  }\item[{\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \texorpdfstring{$\ast$}{*}\&}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Méthode abstraite chargée de choisir la couleur à partir de la ligne de chargement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ligne} & Ligne de chargement. \\
+\hline
+{\em c} & Pointeur vers la couleur à mettre à jour. Méthode pure virtuelle qui doit être implémentée par les sous-\/classes. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_black_c_o_r_a04ee9e388ad94dd490cd9f2e11aa036f}{Black\+COR}}, \mbox{\hyperlink{class_blue_c_o_r_a526508fe0743bb2a0ec9faa09897a1dd}{Blue\+COR}}, \mbox{\hyperlink{class_cyan_c_o_r_aae10d6f63b77cc10c07043769051d874}{Cyan\+COR}}, \mbox{\hyperlink{class_green_c_o_r_a96f49bb162440519209247da0d6cba76}{Green\+COR}}, \mbox{\hyperlink{class_red_c_o_r_a08fccf1f21de821b26ff7c2a0818fa57}{Red\+COR}}, and \mbox{\hyperlink{class_yellow_c_o_r_a3600b4b4b711aa453e71edfe8213dda5}{Yellow\+COR}}.
+
+\Hypertarget{class_couleur_c_o_r_ada37e24fba200d2bebe591201e36c342}\label{class_couleur_c_o_r_ada37e24fba200d2bebe591201e36c342} 
+\index{CouleurCOR@{CouleurCOR}!choixCouleurSuivant@{choixCouleurSuivant}}
+\index{choixCouleurSuivant@{choixCouleurSuivant}!CouleurCOR@{CouleurCOR}}
+\doxysubsubsection{\texorpdfstring{choixCouleurSuivant()}{choixCouleurSuivant()}}
+{\footnotesize\ttfamily void Couleur\+COR\+::choix\+Couleur\+Suivant (\begin{DoxyParamCaption}\item[{string}]{ligne,  }\item[{\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \texorpdfstring{$\ast$}{*}\&}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Méthode permettant de passer la demande de choix de couleur au maillon suivant dans la chaîne de responsabilité. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ligne} & Ligne de chargement. \\
+\hline
+{\em c} & Pointeur vers la couleur à mettre à jour. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Couleur\+COR/\mbox{\hyperlink{_couleur_c_o_r_8h}{Couleur\+COR.\+h}}\end{DoxyCompactItemize}

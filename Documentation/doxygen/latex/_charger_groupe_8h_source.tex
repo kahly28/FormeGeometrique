@@ -1,0 +1,93 @@
+\doxysection{Charger\+Groupe.\+h}
+\hypertarget{_charger_groupe_8h_source}{}\label{_charger_groupe_8h_source}\index{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/ChargementCOR/ChargerGroupe.h@{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/ChargementCOR/ChargerGroupe.h}}
+\mbox{\hyperlink{_charger_groupe_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Ahmet\ on\ 04/03/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ APP2\_CHARGERGROUPE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ APP2\_CHARGERGROUPE\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_charger_croix_8h}{ChargerCroix.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_charger_polygone_8h}{ChargerPolygone.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_charger_rond_8h}{ChargerRond.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_charger_groupe}{ChargerGroupe}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_chargement_c_o_r}{ChargementCOR}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_charger_groupe_ad69c1f5a5c4edaedf42a934165299b9b}{ChargerGroupe}}(\mbox{\hyperlink{class_chargement_c_o_r}{ChargementCOR}}\ *\ suivant):\ \mbox{\hyperlink{class_chargement_c_o_r}{ChargementCOR}}(suivant)}
+\DoxyCodeLine{00028\ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_charger_groupe_aadb78a3acace1ef68d7565e569e84f32}{charger}}(\textcolor{keywordtype}{string}\ ligne,\mbox{\hyperlink{class_forme}{Forme}}\ *\ \&pForme)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00040\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_chargement_c_o_r}{ChargementCOR}}\ *\ cor;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_charger_croix}{ChargerCroix}}\ *\ croix\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_charger_croix}{ChargerCroix}}(cor);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_charger_polygone}{ChargerPolygone}}\ *\ polygone\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_charger_polygone}{ChargerPolygone}}(croix);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_charger_rond}{ChargerRond}}\ *\ rond\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_charger_rond}{ChargerRond}}(polygone);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_charger_groupe}{ChargerGroupe}}\ *\ groupe\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_charger_groupe_ad69c1f5a5c4edaedf42a934165299b9b}{ChargerGroupe}}(rond);}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ cor\ =\ groupe;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ prefixe\ =\ \textcolor{stringliteral}{"{}groupe-\/"{}};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ligne.find(prefixe)\ ==\ 0)}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}La\ chaine\ commence\ par\ \(\backslash\)"{}"{}}\ <<\ prefixe\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)"{}"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ vector<std::string>\ elements;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ ligne.erase(0,\ 7);\ \textcolor{comment}{//\ 7\ est\ la\ longueur\ de\ "{}groupe:"{}}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ deuxPoints\ =\ ligne.find(\textcolor{stringliteral}{"{}:"{}});}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Extraire\ la\ sous-\/chaîne\ entre\ le\ début\ et\ les\ deux-\/points}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ couleur\ =\ ligne.substr(0,\ deuxPoints);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ ligne.erase(0,\ deuxPoints\ +\ 1);\ \textcolor{comment}{//\ +1\ pour\ inclure\ les\ deux-\/points}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}couleur\ "{}}\ <<\ couleur\ <<\ endl;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}*\ c\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}();}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_chargement_c_o_r_a87a9d6f96f8ab3bce0a6f4208537903c}{\_CoulCOR}}-\/>\mbox{\hyperlink{class_couleur_c_o_r_a3bd782784ecf173583de5cb9af1b953b}{choixCouleur}}(couleur,c);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}COULEUR\ :\ "{}}\ <<\ c\ <<\ endl;}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}*\ cstr\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[ligne.length()\ +\ 1];}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ std::strcpy(cstr,\ ligne.c\_str());}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}*\ token\ =\ std::strtok(cstr,\ \textcolor{stringliteral}{"{}|"{}});}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::string>\ result;}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (token\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ result.push\_back(token);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ token\ =\ std::strtok(\textcolor{keyword}{nullptr},\ \textcolor{stringliteral}{"{}|"{}});}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}boucle\ pour\ groupe\ "{}}\ <<\ endl;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;i<result.size();i++)}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ result[i]\ <<\ endl;}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_groupe}{Groupe}}\ *groupe\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_groupe}{Groupe}}(*c);}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0\ ;i<\ result.size();i++)}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cor-\/>\mbox{\hyperlink{class_chargement_c_o_r_af3cad1913655e7e2124fde2f54e01518}{charger}}(result[i],pForme);}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}ici<"{}}\ <<\ *pForme\ <<\ endl;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *groupe\ +\ *pForme;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ pForme\ =\ groupe;}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}La\ chaine\ ne\ commence\ pas\ par\ \(\backslash\)"{}"{}}\ <<\ prefixe\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)"{}"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\mbox{\hyperlink{class_chargement_c_o_r_a6c931e529a7376556c29eb0fdf8413d3}{chargerSuivant}}(ligne,pForme);}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//APP2\_CHARGERGROUPE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,184 @@
+\doxysection{Sauvegarde\+Visitor Class Reference}
+\hypertarget{class_sauvegarde_visitor}{}\label{class_sauvegarde_visitor}\index{SauvegardeVisitor@{SauvegardeVisitor}}
+
+
+Représente un visiteur abstrait pour la sauvegarde de la fenêtre et ses formes dans un fichier.  
+
+
+
+
+{\ttfamily \#include $<$Sauvegarde\+Visitor.\+h$>$}
+
+Inheritance diagram for Sauvegarde\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sauvegarde_visitor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sauvegarde_visitor_a5219bbd03d7fac969c420f40f1d7ecad}{Sauvegarde\+Visitor}} (string nom\+Fichier, \mbox{\hyperlink{class_fenetre}{Fenetre}} \texorpdfstring{$\ast$}{*}f)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_sauvegarde_visitor_ae9b85b795a392b69182e220920b2fe93}{get\+Nom\+Fichier}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le nom du fichier de sauvegarde. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fenetre}{Fenetre}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_sauvegarde_visitor_a1dde9194cdc9281fd3bb0cfa956570f1}{get\+Fenetre}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le pointeur vers la fenêtre à sauvegarder. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sauvegarde_visitor_a55b688de48fdb1d5fc4442c81a678668}{visiter\+Groupe}} (const \mbox{\hyperlink{class_groupe}{Groupe}} \&G)=0
+\begin{DoxyCompactList}\small\item\em Visite un groupe de formes pour la sauvegarde. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sauvegarde_visitor_a97f31205bd91dd043cb1d3a0ef195609}{visiter\+Forme}} (\mbox{\hyperlink{class_forme}{Forme}} \&forme)
+\begin{DoxyCompactList}\small\item\em Visite les formes pour la sauvegarde. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sauvegarde_visitor_a67ac9140999f41ea6f624d0da1e486bf}{visiter\+Rond}} (const \mbox{\hyperlink{class_rond}{Rond}} \&R)=0
+\begin{DoxyCompactList}\small\item\em Visite un cercle pour la sauvegarde. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sauvegarde_visitor_a074c970d0159d9f937218d2966e27f4b}{visiter\+Polygone}} (const \mbox{\hyperlink{class_polygone}{Polygone}} \&P)=0
+\begin{DoxyCompactList}\small\item\em Visite un polygone pour la sauvegarde. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sauvegarde_visitor_aa9a94f0150ad91ff3a4c82d900df3c11}{visiter\+Croix}} (const \mbox{\hyperlink{class_croix}{Croix}} \&C)=0
+\begin{DoxyCompactList}\small\item\em Visite une croix pour la sauvegarde. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Représente un visiteur abstrait pour la sauvegarde de la fenêtre et ses formes dans un fichier. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sauvegarde_visitor_a5219bbd03d7fac969c420f40f1d7ecad}\label{class_sauvegarde_visitor_a5219bbd03d7fac969c420f40f1d7ecad} 
+\index{SauvegardeVisitor@{SauvegardeVisitor}!SauvegardeVisitor@{SauvegardeVisitor}}
+\index{SauvegardeVisitor@{SauvegardeVisitor}!SauvegardeVisitor@{SauvegardeVisitor}}
+\doxysubsubsection{\texorpdfstring{SauvegardeVisitor()}{SauvegardeVisitor()}}
+{\footnotesize\ttfamily Sauvegarde\+Visitor\+::\+Sauvegarde\+Visitor (\begin{DoxyParamCaption}\item[{string}]{nom\+Fichier,  }\item[{\mbox{\hyperlink{class_fenetre}{Fenetre}} \texorpdfstring{$\ast$}{*}}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de \doxylink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+Fichier} & Nom du fichier de sauvegarde. \\
+\hline
+{\em f} & Pointeur vers la fenêtre à sauvegarder. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sauvegarde_visitor_a1dde9194cdc9281fd3bb0cfa956570f1}\label{class_sauvegarde_visitor_a1dde9194cdc9281fd3bb0cfa956570f1} 
+\index{SauvegardeVisitor@{SauvegardeVisitor}!getFenetre@{getFenetre}}
+\index{getFenetre@{getFenetre}!SauvegardeVisitor@{SauvegardeVisitor}}
+\doxysubsubsection{\texorpdfstring{getFenetre()}{getFenetre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fenetre}{Fenetre}} \texorpdfstring{$\ast$}{*} Sauvegarde\+Visitor\+::get\+Fenetre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtient le pointeur vers la fenêtre à sauvegarder. 
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers la fenêtre à sauvegarder. 
+\end{DoxyReturn}
+\Hypertarget{class_sauvegarde_visitor_ae9b85b795a392b69182e220920b2fe93}\label{class_sauvegarde_visitor_ae9b85b795a392b69182e220920b2fe93} 
+\index{SauvegardeVisitor@{SauvegardeVisitor}!getNomFichier@{getNomFichier}}
+\index{getNomFichier@{getNomFichier}!SauvegardeVisitor@{SauvegardeVisitor}}
+\doxysubsubsection{\texorpdfstring{getNomFichier()}{getNomFichier()}}
+{\footnotesize\ttfamily string Sauvegarde\+Visitor\+::get\+Nom\+Fichier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtient le nom du fichier de sauvegarde. 
+
+\begin{DoxyReturn}{Returns}
+Nom du fichier de sauvegarde. 
+\end{DoxyReturn}
+\Hypertarget{class_sauvegarde_visitor_aa9a94f0150ad91ff3a4c82d900df3c11}\label{class_sauvegarde_visitor_aa9a94f0150ad91ff3a4c82d900df3c11} 
+\index{SauvegardeVisitor@{SauvegardeVisitor}!visiterCroix@{visiterCroix}}
+\index{visiterCroix@{visiterCroix}!SauvegardeVisitor@{SauvegardeVisitor}}
+\doxysubsubsection{\texorpdfstring{visiterCroix()}{visiterCroix()}}
+{\footnotesize\ttfamily virtual void Sauvegarde\+Visitor\+::visiter\+Croix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_croix}{Croix}} \&}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Visite une croix pour la sauvegarde. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & \doxylink{class_croix}{Croix} à sauvegarder. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_txt_visitor_af2ee0fce38821d968d4243bfad70b44b}{Txt\+Visitor}}.
+
+\Hypertarget{class_sauvegarde_visitor_a97f31205bd91dd043cb1d3a0ef195609}\label{class_sauvegarde_visitor_a97f31205bd91dd043cb1d3a0ef195609} 
+\index{SauvegardeVisitor@{SauvegardeVisitor}!visiterForme@{visiterForme}}
+\index{visiterForme@{visiterForme}!SauvegardeVisitor@{SauvegardeVisitor}}
+\doxysubsubsection{\texorpdfstring{visiterForme()}{visiterForme()}}
+{\footnotesize\ttfamily virtual void Sauvegarde\+Visitor\+::visiter\+Forme (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme}{Forme}} \&}]{forme }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Visite les formes pour la sauvegarde. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forme} & \doxylink{class_forme}{Forme} à sauvegarder. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sauvegarde_visitor_a55b688de48fdb1d5fc4442c81a678668}\label{class_sauvegarde_visitor_a55b688de48fdb1d5fc4442c81a678668} 
+\index{SauvegardeVisitor@{SauvegardeVisitor}!visiterGroupe@{visiterGroupe}}
+\index{visiterGroupe@{visiterGroupe}!SauvegardeVisitor@{SauvegardeVisitor}}
+\doxysubsubsection{\texorpdfstring{visiterGroupe()}{visiterGroupe()}}
+{\footnotesize\ttfamily virtual void Sauvegarde\+Visitor\+::visiter\+Groupe (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_groupe}{Groupe}} \&}]{G }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Visite un groupe de formes pour la sauvegarde. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G} & \doxylink{class_groupe}{Groupe} de formes à sauvegarder. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_txt_visitor_a81cf54e4702769e16257eb4f0a09ee92}{Txt\+Visitor}}.
+
+\Hypertarget{class_sauvegarde_visitor_a074c970d0159d9f937218d2966e27f4b}\label{class_sauvegarde_visitor_a074c970d0159d9f937218d2966e27f4b} 
+\index{SauvegardeVisitor@{SauvegardeVisitor}!visiterPolygone@{visiterPolygone}}
+\index{visiterPolygone@{visiterPolygone}!SauvegardeVisitor@{SauvegardeVisitor}}
+\doxysubsubsection{\texorpdfstring{visiterPolygone()}{visiterPolygone()}}
+{\footnotesize\ttfamily virtual void Sauvegarde\+Visitor\+::visiter\+Polygone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_polygone}{Polygone}} \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Visite un polygone pour la sauvegarde. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \doxylink{class_polygone}{Polygone} à sauvegarder. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_txt_visitor_a5b717726b4caa0b86315191a3c183e66}{Txt\+Visitor}}.
+
+\Hypertarget{class_sauvegarde_visitor_a67ac9140999f41ea6f624d0da1e486bf}\label{class_sauvegarde_visitor_a67ac9140999f41ea6f624d0da1e486bf} 
+\index{SauvegardeVisitor@{SauvegardeVisitor}!visiterRond@{visiterRond}}
+\index{visiterRond@{visiterRond}!SauvegardeVisitor@{SauvegardeVisitor}}
+\doxysubsubsection{\texorpdfstring{visiterRond()}{visiterRond()}}
+{\footnotesize\ttfamily virtual void Sauvegarde\+Visitor\+::visiter\+Rond (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rond}{Rond}} \&}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Visite un cercle pour la sauvegarde. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & Cercle à sauvegarder. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_txt_visitor_a66eabbae5eaf0d6df1bb885542ebb42a}{Txt\+Visitor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Sauvegarde\+Visitor/\mbox{\hyperlink{_sauvegarde_visitor_8h}{Sauvegarde\+Visitor.\+h}}\end{DoxyCompactItemize}

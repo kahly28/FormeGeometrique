@@ -1,0 +1,78 @@
+\doxysection{Polygone.\+h}
+\hypertarget{_polygone_8h_source}{}\label{_polygone_8h_source}\index{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Forme/Polygone.h@{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Forme/Polygone.h}}
+\mbox{\hyperlink{_polygone_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Ahmet\ on\ 23/02/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ APP2\_POLYGONE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ APP2\_POLYGONE\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_groupe_8h}{Groupe.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_vecteur2_d_8h}{../Vecteur2D.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_forme_visitor}{FormeVisitor}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_polygone}{Polygone}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_forme_geometrique}{FormeGeometrique}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ vector<Vecteur2D*>\ \_TabPoints;\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ copier(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_polygone}{Polygone}}\ \&\ P);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ detruire()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_polygone_a9ffc29137036806e38aa03638836eeba}{Polygone}}(\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ couleur,vector<Vecteur2D*>\ points);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_polygone_a9ffc29137036806e38aa03638836eeba}{Polygone}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_polygone}{Polygone}}\ \&\ P);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \ \ vector<Vecteur2D*>\ \mbox{\hyperlink{class_polygone_af155b11b22a09472022f9d07150ddb80}{getTabPoints}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_polygone}{Polygone}}\ *\ \mbox{\hyperlink{class_polygone_ab4f054c064da793bad593c8777a9c61c}{clone}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_polygone_ae293043ea9d180259771515a6496cd8c}{\string~Polygone}}();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygone_af70779166f420a507de257e0820ddaf6}{afficher}}(ostream\&\ os)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_polygone_afd0c58fd3218ea1d1eb6073ea1ff261d}{getMinX}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_polygone_a92f25a6fb0870af0c00feaf2b59b9d36}{getMinY}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_polygone_a997fcb587ce1bc300222dc50f0b03dc5}{getMaxX}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_polygone_a5097d27b11eaf995b8663301921d7396}{getMaxY}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_polygone_aba81c6a9306628f85f2f6cc2131e2a42}{CalculAire}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_polygone_abf4e5d3dc70d4de3f5df94d7f19e6a6c}{determinant}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\&\ v1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\&\ v2)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_polygone_a76696eba8f60bcffb1c6bdfec4fa7adf}{algo}}(\textcolor{keywordtype}{int}\ eps1,\textcolor{keywordtype}{int}\ eps2,\textcolor{keywordtype}{double}\ \_Lambda,\textcolor{keywordtype}{int}\ \_a,\ \textcolor{keywordtype}{int}\ \_b)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \ \ \ \ vector<vector<Vecteur2D*>>\ \mbox{\hyperlink{class_polygone_aa51bfeecf81753ed6313c01def84d6ef}{trianguler}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_polygone_a9cc5594271b663fa3696e8890e8a3058}{estOreille}}(\textcolor{keyword}{const}\ std::vector<Vecteur2D*>\&\ polygon,\ \textcolor{keywordtype}{int}\ i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygone_ab1331dfc6794d70b41cc15760f90110a}{translation}}(\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\&\ v)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygone_aba03cdc980e8b84c9f6461354c8845a9}{homothetie}}(\textcolor{keywordtype}{double}\ rapport,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \&\ pointInvariant)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygone_a3588de03d6a32c1bde93d0bc5596b870}{rotation}}(\textcolor{keywordtype}{double}\ angle,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\&\ centreRotation)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00148\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \mbox{\hyperlink{class_polygone_aeb52422f36291136a29b8465ea16965b}{calculerCentre}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_polygone_afeaf7f1d70b073341ab3740801f52517}{estInterieurDuTriangle}}(\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}*\ a,\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}*\ b,\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}*\ c,\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}*\ p)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygone_adbe3cd8ac0d08d705edd8da8b82f1492}{accepter}}(\mbox{\hyperlink{class_forme_visitor}{FormeVisitor}}\ *F)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygone_adbe3cd8ac0d08d705edd8da8b82f1492}{accepter}}(\mbox{\hyperlink{class_sauvegarde_visitor}{SauvegardeVisitor}}\ *S)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keyword}{operator}\ string()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_polygone}{Polygone}}\ \&\ \mbox{\hyperlink{class_polygone_a068dc5f16f32630c49a06a01a3adab66}{operator\ =\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_polygone}{Polygone}}\ \&P);}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \};}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//APP2\_POLYGONE\_H}}
+
+\end{DoxyCode}

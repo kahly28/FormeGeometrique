@@ -1,0 +1,67 @@
+\doxysection{Txt\+Visitor.\+h}
+\hypertarget{_txt_visitor_8h_source}{}\label{_txt_visitor_8h_source}\index{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/SauvegardeVisitor/TxtVisitor.h@{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/SauvegardeVisitor/TxtVisitor.h}}
+\mbox{\hyperlink{_txt_visitor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Ahmet\ on\ 03/03/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ APP2\_TXTVISITOR\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ APP2\_TXTVISITOR\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sauvegarde_visitor_8h}{SauvegardeVisitor.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\#include\ "{}../Fenetre.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_txt_visitor}{TxtVisitor}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_sauvegarde_visitor}{SauvegardeVisitor}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ ofstream\ *\ \_file;\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_txt_visitor_a88dca1be8f146c9f39adcdfbd3e02b50}{TxtVisitor}}(\textcolor{keywordtype}{string}\ nomFichier,\mbox{\hyperlink{class_fenetre}{Fenetre}}\ *\ f):\ \mbox{\hyperlink{class_sauvegarde_visitor}{SauvegardeVisitor}}(nomFichier,f)}
+\DoxyCodeLine{00028\ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ ofstream\ *\ outfile\ =\ \textcolor{keyword}{new}\ ofstream\ ();}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \_file\ =\ outfile;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \_file-\/>open(\textcolor{stringliteral}{"{}../sauvegarde/"{}}+\mbox{\hyperlink{class_sauvegarde_visitor_ae9b85b795a392b69182e220920b2fe93}{getNomFichier}}()+\textcolor{stringliteral}{"{}.txt"{}});}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_txt_visitor_a81cf54e4702769e16257eb4f0a09ee92}{visiterGroupe}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_groupe}{Groupe}}\ \&\ G)}
+\DoxyCodeLine{00040\ \ \ \ \ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ msg\ =\ G.operator\ string()+\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Dans\ visiter\ Groupe\ :\ "{}}\ <<\ msg\ <<\ endl;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ *\_file\ <<\ msg;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \_file-\/>flush();}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_txt_visitor_a66eabbae5eaf0d6df1bb885542ebb42a}{visiterRond}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rond}{Rond}}\ \&\ R)}
+\DoxyCodeLine{00052\ \ \ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ msg\ =\ R.operator\ string()\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Dans\ visiter\ Rond\ "{}}\ <<\ msg\ <<\ endl;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ *\_file\ <<\ msg;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \_file-\/>flush();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_txt_visitor_a5b717726b4caa0b86315191a3c183e66}{visiterPolygone}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_polygone}{Polygone}}\ \&\ P)}
+\DoxyCodeLine{00065\ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ msg\ =\ P.operator\ string()\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Dans\ visiter\ Polygone\ "{}}\ <<\ msg\ <<\ endl;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ *\_file\ <<\ msg;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \_file-\/>flush();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_txt_visitor_af2ee0fce38821d968d4243bfad70b44b}{visiterCroix}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_croix}{Croix}}\ \&\ C)}
+\DoxyCodeLine{00078\ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ msg\ =\ C.operator\ string()\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Dans\ visiter\ croix\ :\ "{}}\ <<\ msg\ <<\ endl;}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ *\_file\ <<\ msg;}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \_file-\/>flush();}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//APP2\_TXTVISITOR\_H}}
+
+\end{DoxyCode}

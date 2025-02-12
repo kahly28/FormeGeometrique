@@ -1,0 +1,147 @@
+\doxysection{Fenetre.\+h}
+\hypertarget{_fenetre_8h_source}{}\label{_fenetre_8h_source}\index{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Fenetre.h@{/Users/ahmet/Documents/Licence/L3/Sem2/ProjetSynthese/App2/Client/Fenetre.h}}
+\mbox{\hyperlink{_fenetre_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Ahmet\ on\ 08/01/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ APP2\_FENETRE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ APP2\_FENETRE\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_erreur_8h}{Erreur.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_forme_8h}{Forme/Forme.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_vecteur2_d_8h}{Vecteur2D.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_forme_8h}{Forme/Forme.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_charger_croix_8h}{ChargementCOR/ChargerCroix.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_charger_groupe_8h}{ChargementCOR/ChargerGroupe.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_charger_polygone_8h}{ChargementCOR/ChargerPolygone.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_charger_rond_8h}{ChargementCOR/ChargerRond.h}}"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fenetre}{Fenetre}}\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \_x;\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \_y;\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \_h;\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \_l;\ }
+\DoxyCodeLine{00034\ \ \ \ \ vector<Forme*>\ \_TabForme;\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \_P1;\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \_P2;\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \_P1Prime;\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \_P2Prime;\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{double}\ \_Lambda;\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{double}\ \_petitLambda1;\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{double}\ \_petitLambda2;\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \_eps1;\ \ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ \_eps2;\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \_C;\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \_CPrime;\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ \_a;\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{int}\ \_b;\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ calculsEffectues;\ }
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_chargement_c_o_r}{ChargementCOR}}\ *\ \_COR;\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_fenetre_a14ed21d9e1d40c43c87c5d81fcd447ef}{Fenetre}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ h,\textcolor{keywordtype}{int}\ l);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_fenetre_aa001852c3546b5e2bc8092ae327f7308}{getX}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_fenetre_a31d4131077d0ad0bba51c9ccefc9639d}{getY}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ \ \ vector<Forme*>\ \mbox{\hyperlink{class_fenetre_ad86e086feaf4e5ad3d0ec6f1eae18b2f}{getTabForme}}();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_fenetre_a5fce4907e61d888cb2f5a53f34548f35}{getH}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_fenetre_a36c467a1c50748287535f9f722835e54}{getL}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{class_fenetre}{Fenetre}}\ \&\ \mbox{\hyperlink{class_fenetre_a563408ffb57075e3628a02db73af6e71}{ajouterForme}}(\mbox{\hyperlink{class_forme}{Forme}}\ \&\ forme);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{class_fenetre}{Fenetre}}\ \&\ \mbox{\hyperlink{class_fenetre_a1cd5dc6d15c4526fd383738e8a211470}{retirerForme}}(\mbox{\hyperlink{class_forme}{Forme}}\ \&\ forme);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fenetre_a986ebd24a7c8568d3881c2872568562c}{getNbForme}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_ab68c1c0433e5bfc2013e22c476e8aee4}{CalculP1}}();}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_adda92f2e9126df6d10ea38d9a5ade7b2}{CalculP2}}();}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_ac00090074a6abe4bb0c02fdc51c6869a}{CalculP1Prime}}();}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_af0f0f26688039ecfa136ee0e91315afb}{CalculP2Prime}}();}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_a4c618f72a7ab019af3a595cbf30c9feb}{CalculLambda}}();}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00143\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \mbox{\hyperlink{class_fenetre_a2366ffd7985628cd0368dbabc209d345}{getP1Prime}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00149\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \mbox{\hyperlink{class_fenetre_acbca087fb26d1f6f8347bb1b9dcb097e}{getP2Prime}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00155\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \mbox{\hyperlink{class_fenetre_a81d48b4f00b4f85f21861d7468a20ae5}{getP1}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00161\ \ \ \ \ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \mbox{\hyperlink{class_fenetre_ae703c55cce324213c0a487a367121277}{getP2}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_ae373a63ba6210dbabc0d91b5ab3d14d2}{CalculEps1}}();}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_aba2b328df8aee26c8eaf01082a9aaa0b}{CalculEps2}}();}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_fenetre_a94692377af8557fe5f3579de3ed479a6}{getLambda}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_fenetre_a0aad4bf2c3e0a2c8db76a0fd7b7dc11f}{getPetitLambda1}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_fenetre_a91a208956474f12873fdabf3e0b38abd}{getPetitLambda2}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00195\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fenetre_a727986dc439238966b201e968108f67a}{getEps1}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00201\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fenetre_a03cda2693fd46d83c9319eecba45a81a}{getEps2}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00207\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fenetre_a48a241fe5cb73a7a445e7c4df449a058}{aGet}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fenetre_a2d7dd5c02d910f0c3f0c8ca88b1de168}{bGet}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00218\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_ac83157ca0cebf8efa472ec61c8028dfb}{CalculC}}();}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_a752d38ed1cb8e919d8d9afa8c26a5ef1}{CalculCPrime}}();}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00228\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_a5edbb7ac474fe2a9aa3d7bdb7d6c1b2a}{CalculPetitLambda1}}();}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00233\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_a739a5e88a6c2ae092623fdb943e6bf39}{CalculPetitLambda2}}();}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00238\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_acd095b15534d760c0bbee697df23a1dd}{aCalcul}}();}
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00243\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_ae2a89792387b5ce99f3efe47cca75b14}{bCalcul}}();}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00249\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_a1165b203d7ede65ba40b6a82e568acfc}{translation}}(\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ v);}
+\DoxyCodeLine{00250\ }
+\DoxyCodeLine{00256\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_a35995e02c51630d2f303d1c94cbaf782}{homothetie}}(\textcolor{keywordtype}{double}\ rapport,\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\ \&V);}
+\DoxyCodeLine{00257\ }
+\DoxyCodeLine{00263\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_ad8fb0b01e4cedcaba38dc57e9058074f}{rotation}}(\textcolor{keywordtype}{double}\ angle,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}}\&\ centreRotation);}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00269\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fenetre_afe3253d6ef379a3842e473a4f0aab71e}{isCalculEffectue}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00270\ }
+\DoxyCodeLine{00275\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_a350a4ecd6e5d7921facb88d8584c4b4c}{setCalculEffectue}}(\textcolor{keywordtype}{bool}\ b);}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00281\ \ \ \ \ vector<Forme*>\ \mbox{\hyperlink{class_fenetre_a19e0136682f9a3aed6fdbdfdbe24d48f}{getListeForme}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00287\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_a73b1c0dd67bfd94c238b3db673ca14c1}{dessiner}}(\mbox{\hyperlink{class_forme_visitor}{FormeVisitor}}*\ F);}
+\DoxyCodeLine{00288\ }
+\DoxyCodeLine{00293\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_aa1e09be5650813febc440ea2bbd3780b}{sauvegarder}}(\mbox{\hyperlink{class_sauvegarde_visitor}{SauvegardeVisitor}}\ *\ S)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00294\ }
+\DoxyCodeLine{00299\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fenetre_ad27cd0175a82139dc1ba78e69ff3ee4e}{charger}}(\textcolor{keywordtype}{string}\ nomFichier);}
+\DoxyCodeLine{00300\ }
+\DoxyCodeLine{00301\ }
+\DoxyCodeLine{00302\ }
+\DoxyCodeLine{00303\ }
+\DoxyCodeLine{00304\ \};}
+\DoxyCodeLine{00305\ }
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00307\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//APP2\_FENETRE\_H}}
+
+\end{DoxyCode}

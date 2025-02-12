@@ -1,0 +1,540 @@
+\doxysection{Groupe Class Reference}
+\hypertarget{class_groupe}{}\label{class_groupe}\index{Groupe@{Groupe}}
+
+
+{\ttfamily \#include $<$Groupe.\+h$>$}
+
+Inheritance diagram for Groupe\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_groupe}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_groupe_adb2191a0bf07c68fd86f0ee36b4cec8d}{Groupe}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Constructeur d\textquotesingle{}un groupe avec une couleur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe_a5cb3384d8cf7a10bcdf4142c31ebde61}{Groupe}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur, vector$<$ \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} $>$Tab, int nb)
+\begin{DoxyCompactList}\small\item\em Constructeur d\textquotesingle{}un groupe avec une couleur et une liste de formes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe_aed2c2b9a1fdd64dd0a1c1d66d4547a87}{Groupe}} (const \mbox{\hyperlink{class_groupe}{Groupe}} \&G)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie d\textquotesingle{}un groupe. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_groupe_ae0eff2697ffd3fbe8c6d15fd784c3a5b}{get\+Liste\+Forme}} () const
+\begin{DoxyCompactList}\small\item\em Retourne la liste des formes contenues dans le groupe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_groupe_a68690f47e1444ff7b3491731190905b9}{get\+Nb\+Forme}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de formes dans le groupe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_groupe_a51b03beafe099e043a58f62a9be435a4}{get\+Forme}} (int i) const
+\begin{DoxyCompactList}\small\item\em Retourne une forme spécifique du groupe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \& \mbox{\hyperlink{class_groupe_a72ebe36890324405ebdfad6a7c72c862}{ajouter\+Forme\+Geometrique}} (\mbox{\hyperlink{class_forme}{Forme}} \&forme)
+\begin{DoxyCompactList}\small\item\em Ajoute une forme géométrique au groupe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_groupe_a9566c89a3f9e8307b74d758d542d5afd}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Clone le groupe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \& \mbox{\hyperlink{class_groupe_adc701a07104c2218d189e662fa892084}{retirer\+Forme\+Geometrique}} (\mbox{\hyperlink{class_forme}{Forme}} \&forme)
+\begin{DoxyCompactList}\small\item\em Retire une forme géométrique du groupe. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_groupe}{Groupe}} \& \mbox{\hyperlink{class_groupe_a802d13ead54b4136e79f7ea299590338}{operator=}} (const \mbox{\hyperlink{class_groupe}{Groupe}} \&G)
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}assignation d\textquotesingle{}un groupe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \& \mbox{\hyperlink{class_groupe_ad2d4a8bbb9f8bbf870969a6d2348a181}{operator+}} (\mbox{\hyperlink{class_forme}{Forme}} \&F) override
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}ajout d\textquotesingle{}une forme géométrique au groupe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe}{Groupe}} \& \mbox{\hyperlink{class_groupe_ac89765df722a73bc1e93d227ed4f3a50}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Vide le groupe de ses formes géométriques. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_groupe_a5151066d8a93adc1be424d7414e01a7d}{get\+MinX}} () const override
+\begin{DoxyCompactList}\small\item\em Retourne la coordonnée X minimale du groupe. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_groupe_a55465ff62cae52210cd574410ff3cec7}{get\+MinY}} () const override
+\begin{DoxyCompactList}\small\item\em Retourne la coordonnée Y minimale du groupe. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_groupe_a91b2d3c1b9c1c264c62ea3578e1a9657}{get\+MaxX}} () const override
+\begin{DoxyCompactList}\small\item\em Retourne la coordonnée X maximale du groupe. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_groupe_a9be185aec94fa75ef88cd545065b0f0c}{get\+MaxY}} () const override
+\begin{DoxyCompactList}\small\item\em Retourne la coordonnée Y maximale du groupe. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_groupe_ad1506f8e03a2fa7bb4fd4de4419108fc}{Calcul\+Aire}} () const
+\begin{DoxyCompactList}\small\item\em Calcul de l\textquotesingle{}aire du groupe (somme des aires de ses formes). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe_a99dd414922635dcc0585aabb2a330f63}{\texorpdfstring{$\sim$}{\string~}\+Groupe}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur du groupe. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_groupe_a1b5da7e1deff77aaeb2accba0547234d}{algo}} (int eps1, int eps2, double \+\_\+\+Lambda, int \+\_\+a, int \+\_\+b) const override
+\item 
+void \mbox{\hyperlink{class_groupe_a9f046441e90e49d3a107d6b9573990eb}{translation}} (\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&v) override
+\begin{DoxyCompactList}\small\item\em Translation du groupe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_groupe_aaa8aabe064216a5e3ddda08accfeeb29}{homothetie}} (double rapport, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&V) override
+\begin{DoxyCompactList}\small\item\em Homothétie du groupe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_groupe_a5a68be68273f72ae58ad2b7c1c29ab48}{rotation}} (double angle, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&centre\+Rotation)
+\begin{DoxyCompactList}\small\item\em Rotation du groupe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_groupe_ab3cf37c569823173ac4fe177e472da36}{afficher}} (ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em Affichage du groupe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_groupe_affb979552edd82a5b816ad8697e1e32e}{accepter}} (\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}F) const override
+\begin{DoxyCompactList}\small\item\em Accepte un visiteur de forme. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_groupe_a209665f1662f882b036712854370ce9a}{accepter}} (\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}S) const override
+\begin{DoxyCompactList}\small\item\em Accepte un visiteur de sauvegarde. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_groupe_acf2a4575d5ce85eb5ce857189f48edc7}{operator string}} () const override
+\begin{DoxyCompactList}\small\item\em Conversion du groupe en chaîne de caractères. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_forme}{Forme}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_forme_a6c8d18b565986c69ede4789d0430d9ed}{Forme}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_forme_a75f2948beec045d69eaa0cd841b552e0}{Forme}} (const \mbox{\hyperlink{class_forme}{Forme}} \&F)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_a6de3808a0a11ee7259d60e4e8ee3f346}{set\+Groupe\+Parent}} (\mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*}nouveau\+Groupe\+Parent)
+\begin{DoxyCompactList}\small\item\em Définit le groupe parent de la forme. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_forme_a33990ce1db54541f081106026dfd7e86}{get\+Groupe\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le groupe parent de la forme. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forme_a065ea58a29610722f1aa58147493b87a}{set\+Couleur}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Définit la couleur de la forme. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \mbox{\hyperlink{class_forme_a4fb5ac9b55ecb4af4ceeb05aeb618873}{get\+Couleur}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la couleur de la forme. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_forme_af6ad0735f86713459453c9d775f44aca}{\texorpdfstring{$\sim$}{\string~}\+Forme}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel de \doxylink{class_forme}{Forme}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_forme_af7b13a32b3b169d30e4efc288cbbc06e}{enum\+To\+String}} (\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} c) const
+\begin{DoxyCompactList}\small\item\em Convertit une valeur de l\textquotesingle{}énumération Couleur en une chaîne de caractères. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \mbox{\hyperlink{class_forme_ac9055cf244bef40ffae7606a9c3eff8c}{rotation\+Point}} (const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&point, double angle, const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&centre\+Rotation) const
+\begin{DoxyCompactList}\small\item\em Effectue la rotation d\textquotesingle{}un point autour d\textquotesingle{}un centre donné. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_groupe_adb2191a0bf07c68fd86f0ee36b4cec8d}\label{class_groupe_adb2191a0bf07c68fd86f0ee36b4cec8d} 
+\index{Groupe@{Groupe}!Groupe@{Groupe}}
+\index{Groupe@{Groupe}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{Groupe()}{Groupe()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Groupe\+::\+Groupe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}]{couleur }\end{DoxyParamCaption})}
+
+
+
+Constructeur d\textquotesingle{}un groupe avec une couleur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em couleur} & Couleur du groupe. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_groupe_a5cb3384d8cf7a10bcdf4142c31ebde61}\label{class_groupe_a5cb3384d8cf7a10bcdf4142c31ebde61} 
+\index{Groupe@{Groupe}!Groupe@{Groupe}}
+\index{Groupe@{Groupe}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{Groupe()}{Groupe()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Groupe\+::\+Groupe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_forme_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}]{couleur,  }\item[{vector$<$ \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} $>$}]{Tab,  }\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+Constructeur d\textquotesingle{}un groupe avec une couleur et une liste de formes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em couleur} & Couleur du groupe. \\
+\hline
+{\em Tab} & Liste des formes à ajouter au groupe. \\
+\hline
+{\em nb} & Nombre de formes dans la liste. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_groupe_aed2c2b9a1fdd64dd0a1c1d66d4547a87}\label{class_groupe_aed2c2b9a1fdd64dd0a1c1d66d4547a87} 
+\index{Groupe@{Groupe}!Groupe@{Groupe}}
+\index{Groupe@{Groupe}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{Groupe()}{Groupe()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Groupe\+::\+Groupe (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_groupe}{Groupe}} \&}]{G }\end{DoxyParamCaption})}
+
+
+
+Constructeur de copie d\textquotesingle{}un groupe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G} & \doxylink{class_groupe}{Groupe} à copier. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_groupe_a99dd414922635dcc0585aabb2a330f63}\label{class_groupe_a99dd414922635dcc0585aabb2a330f63} 
+\index{Groupe@{Groupe}!````~Groupe@{\texorpdfstring{$\sim$}{\string~}Groupe}}
+\index{````~Groupe@{\texorpdfstring{$\sim$}{\string~}Groupe}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Groupe()}{\string~Groupe()}}
+{\footnotesize\ttfamily Groupe\+::\texorpdfstring{$\sim$}{\string~}\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur du groupe. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_groupe_affb979552edd82a5b816ad8697e1e32e}\label{class_groupe_affb979552edd82a5b816ad8697e1e32e} 
+\index{Groupe@{Groupe}!accepter@{accepter}}
+\index{accepter@{accepter}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{accepter()}{accepter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Groupe\+::accepter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme_visitor}{Forme\+Visitor}} \texorpdfstring{$\ast$}{*}}]{F }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accepte un visiteur de forme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F} & Visiteur de forme. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_aab0f3cbc4f2427324b2136d2c92acdbf}{Forme}}.
+
+\Hypertarget{class_groupe_a209665f1662f882b036712854370ce9a}\label{class_groupe_a209665f1662f882b036712854370ce9a} 
+\index{Groupe@{Groupe}!accepter@{accepter}}
+\index{accepter@{accepter}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{accepter()}{accepter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Groupe\+::accepter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sauvegarde_visitor}{Sauvegarde\+Visitor}} \texorpdfstring{$\ast$}{*}}]{S }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accepte un visiteur de sauvegarde. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & Visiteur de sauvegarde. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_aeec5f4fec0c222187843c1d1eaa1b488}{Forme}}.
+
+\Hypertarget{class_groupe_ab3cf37c569823173ac4fe177e472da36}\label{class_groupe_ab3cf37c569823173ac4fe177e472da36} 
+\index{Groupe@{Groupe}!afficher@{afficher}}
+\index{afficher@{afficher}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void Groupe\+::afficher (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Affichage du groupe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_a21d32763f37f0ede51f56c16c6e8807c}{Forme}}.
+
+\Hypertarget{class_groupe_a72ebe36890324405ebdfad6a7c72c862}\label{class_groupe_a72ebe36890324405ebdfad6a7c72c862} 
+\index{Groupe@{Groupe}!ajouterFormeGeometrique@{ajouterFormeGeometrique}}
+\index{ajouterFormeGeometrique@{ajouterFormeGeometrique}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{ajouterFormeGeometrique()}{ajouterFormeGeometrique()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_groupe}{Groupe}} \& Groupe\+::ajouter\+Forme\+Geometrique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme}{Forme}} \&}]{forme }\end{DoxyParamCaption})}
+
+
+
+Ajoute une forme géométrique au groupe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forme} & \doxylink{class_forme}{Forme} géométrique à ajouter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence vers le groupe actuel. 
+\end{DoxyReturn}
+\Hypertarget{class_groupe_a1b5da7e1deff77aaeb2accba0547234d}\label{class_groupe_a1b5da7e1deff77aaeb2accba0547234d} 
+\index{Groupe@{Groupe}!algo@{algo}}
+\index{algo@{algo}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{algo()}{algo()}}
+{\footnotesize\ttfamily string Groupe\+::algo (\begin{DoxyParamCaption}\item[{int}]{eps1,  }\item[{int}]{eps2,  }\item[{double}]{\+\_\+\+Lambda,  }\item[{int}]{\+\_\+a,  }\item[{int}]{\+\_\+b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_forme_a7729f3904fba595a3ae0ea1fd44a817f}{Forme}}.
+
+\Hypertarget{class_groupe_ad1506f8e03a2fa7bb4fd4de4419108fc}\label{class_groupe_ad1506f8e03a2fa7bb4fd4de4419108fc} 
+\index{Groupe@{Groupe}!CalculAire@{CalculAire}}
+\index{CalculAire@{CalculAire}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{CalculAire()}{CalculAire()}}
+{\footnotesize\ttfamily double Groupe\+::\+Calcul\+Aire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calcul de l\textquotesingle{}aire du groupe (somme des aires de ses formes). 
+
+\begin{DoxyReturn}{Returns}
+Aire du groupe. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_ab1140cb163eb60b1d83191226a8841cf}{Forme}}.
+
+\Hypertarget{class_groupe_ac89765df722a73bc1e93d227ed4f3a50}\label{class_groupe_ac89765df722a73bc1e93d227ed4f3a50} 
+\index{Groupe@{Groupe}!clear@{clear}}
+\index{clear@{clear}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_groupe}{Groupe}} \& Groupe\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Vide le groupe de ses formes géométriques. 
+
+\begin{DoxyReturn}{Returns}
+Référence vers le groupe actuel. 
+\end{DoxyReturn}
+\Hypertarget{class_groupe_a9566c89a3f9e8307b74d758d542d5afd}\label{class_groupe_a9566c89a3f9e8307b74d758d542d5afd} 
+\index{Groupe@{Groupe}!clone@{clone}}
+\index{clone@{clone}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_groupe}{Groupe}} \texorpdfstring{$\ast$}{*} Groupe\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clone le groupe. 
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers le groupe cloné. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_aa846673739124ed44293ceaf515f3fa8}{Forme}}.
+
+\Hypertarget{class_groupe_a51b03beafe099e043a58f62a9be435a4}\label{class_groupe_a51b03beafe099e043a58f62a9be435a4} 
+\index{Groupe@{Groupe}!getForme@{getForme}}
+\index{getForme@{getForme}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{getForme()}{getForme()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} Groupe\+::get\+Forme (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Retourne une forme spécifique du groupe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Indice de la forme dans la liste. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur vers la forme géométrique. 
+\end{DoxyReturn}
+\Hypertarget{class_groupe_ae0eff2697ffd3fbe8c6d15fd784c3a5b}\label{class_groupe_ae0eff2697ffd3fbe8c6d15fd784c3a5b} 
+\index{Groupe@{Groupe}!getListeForme@{getListeForme}}
+\index{getListeForme@{getListeForme}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{getListeForme()}{getListeForme()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_forme}{Forme}} \texorpdfstring{$\ast$}{*} $>$ Groupe\+::get\+Liste\+Forme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retourne la liste des formes contenues dans le groupe. 
+
+\begin{DoxyReturn}{Returns}
+Vector de formes géométriques. 
+\end{DoxyReturn}
+\Hypertarget{class_groupe_a91b2d3c1b9c1c264c62ea3578e1a9657}\label{class_groupe_a91b2d3c1b9c1c264c62ea3578e1a9657} 
+\index{Groupe@{Groupe}!getMaxX@{getMaxX}}
+\index{getMaxX@{getMaxX}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{getMaxX()}{getMaxX()}}
+{\footnotesize\ttfamily double Groupe\+::get\+MaxX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retourne la coordonnée X maximale du groupe. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée X maximale. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_afbb52fe0031ca3b06409a9ff7aa0e681}{Forme}}.
+
+\Hypertarget{class_groupe_a9be185aec94fa75ef88cd545065b0f0c}\label{class_groupe_a9be185aec94fa75ef88cd545065b0f0c} 
+\index{Groupe@{Groupe}!getMaxY@{getMaxY}}
+\index{getMaxY@{getMaxY}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{getMaxY()}{getMaxY()}}
+{\footnotesize\ttfamily double Groupe\+::get\+MaxY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retourne la coordonnée Y maximale du groupe. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée Y maximale. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_a002bf2a68c1d04721401651372eda2c7}{Forme}}.
+
+\Hypertarget{class_groupe_a5151066d8a93adc1be424d7414e01a7d}\label{class_groupe_a5151066d8a93adc1be424d7414e01a7d} 
+\index{Groupe@{Groupe}!getMinX@{getMinX}}
+\index{getMinX@{getMinX}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{getMinX()}{getMinX()}}
+{\footnotesize\ttfamily double Groupe\+::get\+MinX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retourne la coordonnée X minimale du groupe. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée X minimale. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_ae852d191fcfdad58e1fa5d4b3bb1fbc0}{Forme}}.
+
+\Hypertarget{class_groupe_a55465ff62cae52210cd574410ff3cec7}\label{class_groupe_a55465ff62cae52210cd574410ff3cec7} 
+\index{Groupe@{Groupe}!getMinY@{getMinY}}
+\index{getMinY@{getMinY}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{getMinY()}{getMinY()}}
+{\footnotesize\ttfamily double Groupe\+::get\+MinY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retourne la coordonnée Y minimale du groupe. 
+
+\begin{DoxyReturn}{Returns}
+Coordonnée Y minimale. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_a36d1a92894ef6406cdd4c4b734e6adf0}{Forme}}.
+
+\Hypertarget{class_groupe_a68690f47e1444ff7b3491731190905b9}\label{class_groupe_a68690f47e1444ff7b3491731190905b9} 
+\index{Groupe@{Groupe}!getNbForme@{getNbForme}}
+\index{getNbForme@{getNbForme}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{getNbForme()}{getNbForme()}}
+{\footnotesize\ttfamily int Groupe\+::get\+Nb\+Forme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retourne le nombre de formes dans le groupe. 
+
+\begin{DoxyReturn}{Returns}
+Nombre de formes dans le groupe. 
+\end{DoxyReturn}
+\Hypertarget{class_groupe_aaa8aabe064216a5e3ddda08accfeeb29}\label{class_groupe_aaa8aabe064216a5e3ddda08accfeeb29} 
+\index{Groupe@{Groupe}!homothetie@{homothetie}}
+\index{homothetie@{homothetie}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{homothetie()}{homothetie()}}
+{\footnotesize\ttfamily void Groupe\+::homothetie (\begin{DoxyParamCaption}\item[{double}]{rapport,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{V }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Homothétie du groupe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rapport} & Rapport d\textquotesingle{}homothétie. \\
+\hline
+{\em V} & Point invariant de l\textquotesingle{}homothétie. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_addb91a5b4c5c45e644d9a3f3464b72b7}{Forme}}.
+
+\Hypertarget{class_groupe_acf2a4575d5ce85eb5ce857189f48edc7}\label{class_groupe_acf2a4575d5ce85eb5ce857189f48edc7} 
+\index{Groupe@{Groupe}!operator string@{operator string}}
+\index{operator string@{operator string}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily Groupe\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Conversion du groupe en chaîne de caractères. 
+
+\begin{DoxyReturn}{Returns}
+Chaîne représentant le groupe. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_a6ad05e3231b6753d2133ca5438e0feeb}{Forme}}.
+
+\Hypertarget{class_groupe_ad2d4a8bbb9f8bbf870969a6d2348a181}\label{class_groupe_ad2d4a8bbb9f8bbf870969a6d2348a181} 
+\index{Groupe@{Groupe}!operator+@{operator+}}
+\index{operator+@{operator+}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_groupe}{Groupe}} \& Groupe\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme}{Forme}} \&}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Opérateur d\textquotesingle{}ajout d\textquotesingle{}une forme géométrique au groupe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F} & \doxylink{class_forme}{Forme} géométrique à ajouter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence vers le groupe actuel. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_forme_a2a0b46216a6a3f28197e85c300d1d09b}{Forme}}.
+
+\Hypertarget{class_groupe_a802d13ead54b4136e79f7ea299590338}\label{class_groupe_a802d13ead54b4136e79f7ea299590338} 
+\index{Groupe@{Groupe}!operator=@{operator=}}
+\index{operator=@{operator=}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_groupe}{Groupe}} \& Groupe\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_groupe}{Groupe}} \&}]{G }\end{DoxyParamCaption})}
+
+
+
+Opérateur d\textquotesingle{}assignation d\textquotesingle{}un groupe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G} & \doxylink{class_groupe}{Groupe} à assigner. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence vers le groupe actuel. 
+\end{DoxyReturn}
+\Hypertarget{class_groupe_adc701a07104c2218d189e662fa892084}\label{class_groupe_adc701a07104c2218d189e662fa892084} 
+\index{Groupe@{Groupe}!retirerFormeGeometrique@{retirerFormeGeometrique}}
+\index{retirerFormeGeometrique@{retirerFormeGeometrique}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{retirerFormeGeometrique()}{retirerFormeGeometrique()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_groupe}{Groupe}} \& Groupe\+::retirer\+Forme\+Geometrique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_forme}{Forme}} \&}]{forme }\end{DoxyParamCaption})}
+
+
+
+Retire une forme géométrique du groupe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forme} & \doxylink{class_forme}{Forme} géométrique à retirer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence vers le groupe actuel. 
+\end{DoxyReturn}
+\Hypertarget{class_groupe_a5a68be68273f72ae58ad2b7c1c29ab48}\label{class_groupe_a5a68be68273f72ae58ad2b7c1c29ab48} 
+\index{Groupe@{Groupe}!rotation@{rotation}}
+\index{rotation@{rotation}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily void Groupe\+::rotation (\begin{DoxyParamCaption}\item[{double}]{angle,  }\item[{const \mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{centre\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Rotation du groupe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Angle de rotation. \\
+\hline
+{\em centre\+Rotation} & Centre de rotation. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_a22a335ba47161007eb9a3b991542f288}{Forme}}.
+
+\Hypertarget{class_groupe_a9f046441e90e49d3a107d6b9573990eb}\label{class_groupe_a9f046441e90e49d3a107d6b9573990eb} 
+\index{Groupe@{Groupe}!translation@{translation}}
+\index{translation@{translation}!Groupe@{Groupe}}
+\doxysubsubsection{\texorpdfstring{translation()}{translation()}}
+{\footnotesize\ttfamily void Groupe\+::translation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vecteur2_d}{Vecteur2D}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Translation du groupe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vecteur de translation. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_forme_afb57420bf6ad705b88f46129bb129660}{Forme}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Forme/\mbox{\hyperlink{_groupe_8h}{Groupe.\+h}}\item 
+/\+Users/ahmet/\+Documents/\+Licence/\+L3/\+Sem2/\+Projet\+Synthese/\+App2/\+Client/\+Forme/\mbox{\hyperlink{_groupe_8cpp}{Groupe.\+cpp}}\end{DoxyCompactItemize}
