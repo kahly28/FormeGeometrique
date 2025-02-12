@@ -1,4 +1,4 @@
-Projet PPIL – Gestion de Formes Géométriques en 2D
+Gestion de Formes Géométriques en 2D
 
 Ce projet a été réalisé dans le cadre du cours "Premiers Pas vers l’Ingénierie du Logiciel" (PPIL). L'objectif est de développer une application distribuée permettant de gérer des formes géométriques en 2D. L'architecture repose sur un client en C++ et un serveur en Java qui communiquent via TCP/IP.
 
